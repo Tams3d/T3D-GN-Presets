@@ -20,18 +20,32 @@
     -  :yellow_circle: - Beta
     -  :red_circle: - Alpha
 
-## :magic_wand: Changelogs
+## :magic_wand: Changelogs & Release Notes
 
   ### Version 1.0.0 :green_circle:
 
-  - **T3D GN Presets** turns into Addon with Node-groups for quick navigation and abolished old  Append Fake-user Method which was on `Beta`
-  * Added:small_orange_diamond:popover at Geometry Node Editor - Header 
+  - **T3D GN Presets** Turns into Addon with Node-groups for quick navigation and abolished Append Fake-user Method from Pre-Alpha Release
+  - Added Popover at Geometry Node Editor - Header which contains:
      * [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs)
      * [Example Files](https://github.com/Tams3d/T3D-GN-Presets/discussions/categories/example-files)
      * [Documentation]()
      * [Report A Bug](https://github.com/Tams3d/T3D-GN-Presets/issues)
-    
-    ### Version 0.9.0 :large_blue_circle:
-  - Only available for specific users
-  - Access to [Github](https://github.com/Tams3d/T3D-GN-Presets)
-  - Added [Discussions](https://github.com/Tams3d/T3D-GN-Presets/discussions)
+  - Added to Github Respiratory `Master`
+  - Added `Experimental` Branch
+  - Added Support for Splines, Meshes, Instances, Points to `Deformers`
+  - Added Additional Support for Splines, Meshes, Points as Outputs for `Primitives`
+  - Added Adaptive Point Radius based on Geometry Resoultion & Count for `Points` Outputs
+  - Added In-depth Documentation - [Documentation]()
+
+
+## :link: Updates & Restrictions
+
+- Our Presets are made only to run on Latest Stable Blender Release, currenly Blender 3.2 & Above are supported.
+- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) most of the Node-groups contains Named Attributes for faster computation and simplicity, older versions of Blender will not be supported and will not get supported.
+- Special `LTS` branches can be added on release of Blender 3.3 & Blender 3.7 which will require much more faster, error-free, most customizable options and need seperate attendion.
+- Experimental Branch Content usages are AT YOUR OWN RISK! MAY CAUSE SIGNIFICANT LOSES AND INCOMPARTIBILITY!
+- Older Addon versions Will be discontinues after Alpha versions of the addons are released.
+- Updates will be provided frequently as-soon-as-possible for free 
+
+## Licencing & Files
+ 

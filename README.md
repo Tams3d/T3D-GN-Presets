@@ -7,8 +7,8 @@
 
 - **T3D GN Presets** is designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple **easy-to-use solution**. We assure to provide constant updates, bug fixes and support for every newest Blender Stable Releases. This Addon Will evolve many new changes over time with performance, customizability, and user requests as the main key. 
 
-- Tams 3d's Geo-Node Presets Add-on appends pre-made Geometry Node Groups at `Geometry Node Editor > Add > T3D's Presets` - with separate categories based on uses.
-- Requested Users to read [Licence & Files]() before sharing.
+- Tams 3d's Geo-Node Presets Add-on is located at `Geometry Node Editor > Add > T3D's Presets` - with separate categories based on uses.
+- Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licencing--files) before sharing.
 
 - The Addon Stability & Releases are being defined by the [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs) Version and the Color of the Circle :white_circle: followed by it.
   - For example, 
@@ -30,9 +30,6 @@
      * [Example Files](https://github.com/Tams3d/T3D-GN-Presets/discussions/categories/example-files)
      * [Documentation]()
      * [Report A Bug](https://github.com/Tams3d/T3D-GN-Presets/issues)
-  - Added to Github Respiratory `Master`
-  - Added `Experimental` Branch
-  - Add
   - Added Support for Splines, Meshes, Instances, Points to `Deformers`
   - Added Additional Support for Splines, Meshes, Points as Outputs for `Primitives`
   - Added Adaptive Point Radius based on Geometry Resolution & Count for `Points` Outputs
@@ -44,11 +41,11 @@
   - Added `Development` Branch
   - Branches are allocated based on usability and developments.
     * [Master](https://github.com/Tams3d/T3D-GN-Presets/tree/Master) - New Releases with major changes and added Support.
-    * [LTS]()- Long Term Support Based on Blender LTS Releases and production-ready (:warning: Work-In-Process)
+    * [LTS]()- Long Term Support Based on Blender LTS Releases and production-ready. (:warning: Work-In-Process)
     * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Most Frequent Updates, have the latest features and while there might be bug fixes too, they are unstable.
-    * [Developement](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works, preview checks. (Not Intended For Public Use, Strictly Only for Developers )
-   - Commits with completed changes will be moved from `Development` Branch to `Experimental` Branch after Verification
-   - Commits 
+    * [Developement](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works, preview checks. (Not Intended For Public Use, Strictly Only for Developers)
+   - Commits with completed changes will be moved from `Development` Branch to `Experimental` Branch after Verification.
+   - Commits for `LTS` should be labelled, tested intensively  to avoid conflicts. Most of the commits may get discarded.
 
 
 ## :link: Updates & Restrictions

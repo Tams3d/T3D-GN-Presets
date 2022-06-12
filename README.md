@@ -13,8 +13,8 @@
 - The Addon Stability & Releases are being defined by the [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs) Version and the Color of the Circle :white_circle: followed by it.
   - For example, 
     - Version 1.0.0 - New Release (Stable/ LTS)
-    - Version 1.1.0/ 1.1.1 - Bug Fixes, Potential changes & Performances Improvements In Node-groups (may update frequently)
-    - Version 1.0.1/ 1.0.2 - Beta/Alpha Releases (experimental purposes in [Experimental Branch ](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) )
+    - Version 1.1.0/ 1.2.0 - Bug Fixes, Potential changes & Performances Improvements In Node-groups (may update frequently)
+    - Version 1.0.1/1.1.1 - Beta/Alpha Releases (experimental purposes in [Experimental Branch ](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) )
     -  :green_circle: - Stable
     -  :large_blue_circle: - Release Candidate/Older Version
     -  :yellow_circle: - Beta
@@ -39,11 +39,15 @@
   - Added In-depth Documentation - [Documentation]()
 
 ## Github Repository Changes
+  - Added `Experimental` Branch
+  - Adeed `Development` Banch
   - Branches are allocated based on usability and developments.
     * [Master](https://github.com/Tams3d/T3D-GN-Presets/tree/Master) - New Releases with major changes and added Support.
-    * [LTS]( )- Long Term Support Based on Blender LTS Releases and production ready (:warning:Work-In-Process)
+    * [LTS]()- Long Term Support Based on Blender LTS Releases and production ready (:warning:Work-In-Process)
     * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Most Frequent Updates, have the latest features and while there might be bug fixes too, they are unstable.
     * [Developement](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works, preview checks. (Not Intended For Public Use, Strictly Only for Developers )
+   - Commits with completed changes will be moved from `Development` Branch to `Experimental` Branch after Verification
+   - Commits 
 
 
 ## :link: Updates & Restrictions
@@ -56,20 +60,24 @@
 - Updates will be provided frequently as-soon-as-possible for free 
 
 ## Licencing & Files
-# Licence
+  ### Licence
 
-The Node-groups and the addon are licensed as GNU GPL - the same license as Blender uses.
-- The nodegroups including the addon are licensed as GNU GPL - the same license as Blender uses.
+  The Node-groups and the addon are licensed as GNU GPL - the same license as Blender uses.
+  - The nodegroups including the addon are licensed as GNU GPL - the same license as Blender uses.
    * You are free for any purpose.
    * You are free to distribute.
    * You can distribute changed versions.
    * What you create with This Addon is your sole property.
    * You are not allowed to change the license or introduce additional terms and conditions.
 
-## Files & Source Code
-- [init.py]() Contains the python code for the Addon. (Not made for readability, May get updated soon)
-- The [geonode_nodes.blend]() Contains All the Node-groups as Fake-User :shield: which is being appended by the Addon. Requested to not to edit any name, tams3d - GeometryNodeTree  is the only supported Node-tree for the Addon as of the version, changes with updatation may bring `Traceball errors`
-- The [geonode_nodes.json]() Contains the actual work of the menus and submenus with names of the Node-groups. 
-- All these files follow the same [Licence](2)
+  ### Files & Source Code
+  - [init.py]() Contains the python code for the Addon. (Not made for readability, May get updated soon)
+  - The [geonode_nodes.blend]() Contains All the Node-groups as Fake-User :shield: which is being appended by the Addon. Requested to not to edit any name, tams3d -    GeometryNodeTree  is the only supported Node-tree for the Addon as of the version, changes with updatation may bring `Traceball errors`
+  - The [geonode_nodes.json]() Contains the actual work of the menus and submenus with names of the Node-groups. 
+  - All these files follow the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licence)
+
+### Bug Reports & Fixes
+  ## :ghost: Bug Reports
+  - Bug reports can be done with [Issues]()
 
  

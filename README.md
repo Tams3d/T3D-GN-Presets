@@ -30,6 +30,7 @@
      * [Example Files](https://github.com/Tams3d/T3D-GN-Presets/discussions/categories/example-files)
      * [Documentation]()
      * [Report A Bug](https://github.com/Tams3d/T3D-GN-Presets/issues)
+
   - Added Support for Splines, Meshes, Instances, Points to `Deformers`
   - Added Additional Support for Splines, Meshes, Points as Outputs for `Primitives`
   - Added Adaptive Point Radius based on Geometry Resolution & Count for `Points` Outputs

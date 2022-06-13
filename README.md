@@ -5,7 +5,7 @@
 
 ## :bulb: Introduction
 
-- **T3D GN Presets** is designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple **easy-to-use solution**. We assure to provide constant updates, bug fixes and support for every newest Blender Stable Releases. This Addon Will evolve many new changes over time with performance, customizability, and user requests as the main key. 
+- **T3D GN Presets** is designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple **easy-to-use solution**. We assure to provide constant updates, bug fixes and support for every newest Blender Stable Releases. This Addon Will evolve many new changes over time with performance, customizability, and user requests as the main key. Know about the Author and Socials [here](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licencing--files).
 
 - Tams 3d's Geo-Node Presets Add-on is located at `Geometry Node Editor > Add > T3D's Presets` - with separate categories based on uses.
 - Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licencing--files) before sharing.
@@ -34,8 +34,7 @@
   - Added Support for Splines, Meshes, Instances, Points to `Deformers`
   - Added Additional Support for Splines, Meshes, Points as Outputs for `Primitives`
   - Added Adaptive Point Radius based on Geometry Resolution & Count for `Points` Outputs
-  - Added In-depth Documentation - [Documentation]()
-
+ 
 ## :infinity: Github Repository Changes
 
   - Added `Experimental` Branch
@@ -85,9 +84,16 @@
   - Create a [Pull Request](https://github.com/Tams3d/T3D-GN-Presets/pulls) with changes and details about changes.
   - Labels will be added based on the Type of Bug.
 
-  ## :mag: Known Bugs
+  ## :mag: Known Issues
   - **Set Geometry Size** does not Support Instances
   - **UV To Mesh** only works with Uv-ed Meshes without any transformations before it.
   - `Deformers` works different when Geometry is Transformed before it.
   - **Displacer** strength is based on-axis and normal, Custom normals aren't supported yet.
  
+ # :unicorn: About 
+  - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am 15 Year Old from Chennai, India.
+  - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex set-ups in a simplififed effective way. Have 7 Months of Experiance with Blender. I mainly focus on making procedural stuffs with Geometry Nodes which can also be edited procedurally and updates based on inputs and which require minimum manual tweeks. 
+  - Catch up with me here: 
+    * [Twitter](https://twitter.com/Tams_3d)
+    * [Behance](https://www.behance.net/tamilselvan3d)
+    *

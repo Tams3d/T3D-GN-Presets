@@ -96,4 +96,4 @@
   - Catch up with me here: 
     * [Twitter](https://twitter.com/Tams_3d)
     * [Behance](https://www.behance.net/tamilselvan3d)
-    *
+    * [Discord](https://www.behance.net/tamilselvan3d)

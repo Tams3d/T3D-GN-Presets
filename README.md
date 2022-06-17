@@ -5,7 +5,8 @@
 
 ## :bulb: Introduction
 
-- **T3D GN Presets** is designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple **easy-to-use solution**. We assure to provide constant updates, bug fixes and support for every newest Blender Stable Releases. This Addon Will evolve many new changes over time with performance, customizability, and user requests as the main key. Tams 3d's Geo-Node Presets Add-on is located at `Geometry Node Editor > Add > T3D's Presets` - with separate categories based on uses. Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licencing--files) before sharing. 
+- **T3D GN Presets** is designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple **easy-to-use solution**. We assure to provide constant updates, bug fixes and support for every newest Blender Stable Releases. This Addon Will evolve many new changes over time with performance, customizability, and user requests as the main key. 
+- Tams 3d's Geo-Node Presets Add-on is located at `Geometry Node Editor > Add > T3D's Presets` - with separate categories based on uses. Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licencing--files) before sharing files and intend to modify. 
 - The Addon Stability & Releases are being defined by the [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs) Version.
   - For example, 
     - Version 1.0.0 - New Release (Stable/ LTS)
@@ -94,5 +95,6 @@
   - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex set-ups in a simplififed effective way. Have 7 Months of Experiance with Blender. I mainly focus on making procedural stuffs with Geometry Nodes which can also be edited procedurally and updates based on inputs and which require minimum manual tweeks. 
   - Catch up with me here: 
     * [Twitter](https://twitter.com/Tams_3d)
+    * [Discord](https://discord.gg/TNgzbZCdnY)
     * [Behance](https://www.behance.net/tamilselvan3d)
-    * [Discord]([https://www.behance.net/tamilselvan3d](https://discord.gg/TNgzbZCdnY))
+    

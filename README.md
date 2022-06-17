@@ -47,7 +47,7 @@
     * [LTS]()- Long Term Support Based on Blender LTS Releases and production-ready (:warning: Work-In-Process)
     * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Most Frequent Updates, have the latest features and while there might be bug fixes too, they are unstable.
     * [Developement](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works, preview checks. (Not Intended For Public Use, Strictly Only for Developers )
-   - Commits with completed changes will be moved from `Development` Branch to `Experimental` Branch after Verification
+   - Commits with completed changes will be moved from the `Development` Branch to the `Experimental` Branch after Verification
    - Commits 
 
 

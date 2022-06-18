@@ -69,7 +69,7 @@
 ## :open_file_folder: Files & Source Code
   
   - [init.py]() Contains the python code for the Addon. (Not made for readability, May get updated soon)
-  - The [geonode_nodes.blend]() Contains All the Node-groups as Fake-User :shield: which is being appended by the Addon. Requested not to edit any name, `tams3d` -    GeometryNodeTree  is the only supported Node-tree for the Addon as of the version, changes may bring errors.
+  - The [geonode_nodes.blend]() Contains All the Node-groups as Fake-User :shield: which is being appended by the Addon. Requested not to edit any name, `tams3d` -    GeometryNodeTree is the only supported Node-tree for the Addon as of the version, changes may bring errors.
   - The [geonode_nodes.json]() Contains the actual work of the menus and submenus with names of the Node-groups. 
   - All these files follow the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licence).
 
@@ -91,8 +91,8 @@
  
  
  # :unicorn: About 
-  - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am 15 Year Old Self Taught Blender Artist from India :india:.
-  - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex setups in a simplified effective way. Have 7 Months of Experience with Blender. I mainly focus on making procedural stuff with Geometry Nodes which can also be edited procedurally and updates based on inputs and which require minimum manual tweaks. 
+  - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from India :india:.
+  - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex setups in a simplified effective way. Have 7 Months of Experience with Blender. I mainly focus on making procedural stuff with Geometry Nodes which can also be edited procedurally and which require minimum manual tweaks. 
   - Catch up with me here: 
     * [Twitter](https://twitter.com/Tams_3d)
     * [Discord](https://discord.gg/TNgzbZCdnY)

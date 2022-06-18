@@ -91,10 +91,9 @@
  
  
  # :unicorn: About 
-  - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from India :india:.
+  - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from India.
   - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex setups in a simplified effective way. Have 7 Months of Experience with Blender. I mainly focus on making procedural stuff with Geometry Nodes which can also be edited procedurally and which require minimum manual tweaks. 
   - Catch up with me here: 
-    * [Twitter](https://twitter.com/Tams_3d)
-    * [Discord](https://discord.gg/TNgzbZCdnY)
     * [Behance](https://www.behance.net/tamilselvan3d)
-    
+    * [Discord](https://discord.gg/TNgzbZCdnY)
+    * [Twitter](https://twitter.com/Tams_3d)

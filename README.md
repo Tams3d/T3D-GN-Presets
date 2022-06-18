@@ -86,7 +86,7 @@
   ## :mag: Known Issues
   - **Set Geometry Size** does not Support Instances.
   - **UV To Mesh** only works with Uv-ed Meshes without any transformations before it.
-  - `Deformers` works different when Geometry is Transformed before it.
+  - `Deformers` Outputs Extra Mesh with 0 Vertices on Curves
   - **Displacer** strength is based on-axis and normal, Custom normals aren't supported yet.
  
  

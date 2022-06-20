@@ -5,7 +5,7 @@
 
 ## :bulb: Introduction
 
-- **T3D GN Presets** is designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple **easy-to-use solution**. We assure to provide constant updates, bug fixes and support for every newest Blender Stable Releases. This Addon Will evolve many new changes over time with performance, customizability, and user requests as the main key. 
+- **T3D GN Presets** are designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple **easy-to-use solution**. We assure to provide constant updates, bug fixes and support for every newest Blender Stable Releases. This Addon Will evolve many new changes over time with performance, customizability, and user requests as the main key. 
 - Tams 3d's Geo-Node Presets Add-on is located at `Geometry Node Editor > Add > T3D's Presets` - with separate categories based on uses. Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licencing--files) before sharing files and intend to modify. 
 - The Addon Stability & Releases are being defined by the [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs) Version.
   - For example, 
@@ -38,9 +38,9 @@
   - Added `Development` Branch
   - Branches are allocated based on usability and developments.
     * [Master](https://github.com/Tams3d/T3D-GN-Presets/tree/Master) - New Releases with major changes and added Support.
-    * [LTS]() - Long Term Support Based on Blender LTS Releases and production-ready. (:warning: Work-In-Process)
-    * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Most Frequent Updates, have the latest features and while there might be bug fixes too, they are unstable.
-    * [Developement](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works, preview checks. (Not Intended For Public Use, Strictly Only for Developers)
+    * [LTS]() - Long-Term Support Based on Blender LTS Releases and production-ready. (:warning: Work-In-Process)
+    * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Most Frequent Updates have the latest features and while there might be bug fixes too, they are unstable.
+    * [Development](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works and preview checks. (Not Intended For Public Use, Strictly Only for Developers)
    - Commits with completed changes will be moved from the `Development` Branch to the `Experimental` Branch after Verification.
    - `Experimental` Branch has upcoming developments which are expected to come in the `Master`
    - Commits for `LTS` should be labelled and tested intensively to avoid conflicts. These Commits are allowed to be Developed in `LTS` Branch via Pull requests.
@@ -76,8 +76,8 @@
 
 # Bug Reports & Fixes
   ## :ghost: Bug Reports
-  - Bug reports can be done with [here](https://github.com/Tams3d/T3D-GN-Presets/issues/new).
-  - It can be viewed at [Issuses](https://github.com/Tams3d/T3D-GN-Presets/issues/).
+  - Bug reports can be done [here](https://github.com/Tams3d/T3D-GN-Presets/issues/new).
+  - It can be viewed at [Issues](https://github.com/Tams3d/T3D-GN-Presets/issues/).
   
   ## :bug: Bug Fixes
   - Create a [Pull Request](https://github.com/Tams3d/T3D-GN-Presets/pulls) with changes and details about changes.
@@ -93,7 +93,13 @@
  # :unicorn: About 
   - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from India.
   - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex setups in a simplified effective way. Have 7 Months of Experience with Blender. I mainly focus on making procedural stuff with Geometry Nodes which can also be edited procedurally and which require minimum manual tweaks. 
-  - Catch up with me here: 
+  
+  ### 🚀 Experiences
+  - I have been Investing Time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender, Cinema 4D, and Substance Painter for 3D Artworks. It has been 8 months into 3D and spending Approximately 3Hrs A Day into learning through Youtube Tutorials and From the Awesome Community.
+
+  ### :clinking_glasses: Socials
+  - Catch up with me here:
     * [Behance](https://www.behance.net/tamilselvan3d)
     * [Discord](https://discord.gg/TNgzbZCdnY)
     * [Twitter](https://twitter.com/Tams_3d)
+ 

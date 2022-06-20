@@ -95,7 +95,7 @@
   - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex setups in a simplified effective way. Have 7 Months of Experience with Blender. I mainly focus on making procedural stuff with Geometry Nodes which can also be edited procedurally and which require minimum manual tweaks. 
   
   ### 🚀 Experiences
-  - I have been Investing Time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender, Cinema 4D, and Substance Painter for 3D Artworks. It has been 8 months into 3D and spending Approximately 3Hrs A Day into learning through Youtube Tutorials and From the Awesome Community.
+  - I have been Investing Time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender, Cinema 4D, and Substance Painter for 3D Artworks. It has been 8 months into 3D and Primarily Using **Blender** For 3D Stuffs and  spending Approximately 3Hrs Everyday into learning through Youtube Tutorials and From the Awesome Blender Community.
 
   ### :clinking_glasses: Socials
   - Catch up with me here:

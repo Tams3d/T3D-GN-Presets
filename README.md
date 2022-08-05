@@ -34,12 +34,12 @@
 
 ## :infinity: Github Repository Changes
 
-  - Added `Experimental` Branch
-  - Added `Development` Branch
+  - Added `Experimental` Branch.
+  - Added `Development` Branch.
   - Branches are allocated based on usability and developments.
     * [Master](https://github.com/Tams3d/T3D-GN-Presets/tree/Master) - New Releases with major changes and added Support.
     * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Most Frequent Updates have the latest features and while there might be bug fixes too, they are unstable.
-    * [Development](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works and preview checks. (Not Intended For Public Use, Strictly Only for Developers)
+    * [Development](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works and preview checks. (Not Intended For Public Use, Strictly Only for Developers).
    - Commits with completed changes will be moved from the `Development` Branch to the `Experimental` Branch after Verification.
    - `Experimental` Branch has upcoming developments which are expected to come in the `Master`
    - Commits for `LTS` should be labelled and tested intensively to avoid conflicts. These Commits are allowed to be Developed in `LTS` Branch via Pull requests.
@@ -50,23 +50,23 @@
 - Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) most of the Node-groups contain Named Attributes for faster computation and simplicity, older versions of Blender will not be supported and will not get supported.
 - Experimental Branch Content usages are AT YOUR OWN RISK! MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!
 - Older Addon versions Will be discontinued after Alpha versions of the addons are released.
-- Updates will be provided frequently as-soon-as-possible for free 
+- Updates will be provided frequently as-soon-as-possible for free.
 
 
 # Licencing & Files
  ## :page_facing_up: Licence
 
-  The Node-groups and the addon are licensed as GNU GPL - the same license as Blender uses.
-  * The node groups including the addon are licensed as GNU GPL - the same license as Blender uses.
-  * You are free for any purpose.
-  * You are free to distribute.
-  * You can distribute changed versions.
-  * What you create with This Addon is your sole property.
-  * You are not allowed to change the license or introduce additional terms and conditions.
+  The Node-groups and the addon are licensed as GNU GPL - the same license as Blender uses
+  * The node groups including the addon are licensed as GNU GPL - the same license as Blender uses
+  * You are free for any purpose
+  * You are free to distribute
+  * You can distribute changed versions
+  * What you create with This Addon is your sole property
+  * You are not allowed to change the license or introduce additional terms and conditions
 
 ## :open_file_folder: Files & Source Code
   
-  - [init.py]() Contains the python code for the Addon. (Not made for readability, May get updated soon)
+  - [init.py]() Contains the python code for the Addon. (Not made for readability, May get updated soon).
   - The [geonode_nodes.blend]() Contains All the Node-groups as Fake-User :shield: which is being appended by the Addon. Requested not to edit any name, `tams3d` -    GeometryNodeTree is the only supported Node-tree for the Addon as of the version, changes may bring errors.
   - The [geonode_nodes.json]() Contains the actual work of the menus and submenus with names of the Node-groups. 
   - All these files follow the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licence).
@@ -74,24 +74,24 @@
 
 # Bug Reports & Fixes
   ## :ghost: Bug Reports
-  - Bug reports can be done [here](https://github.com/Tams3d/T3D-GN-Presets/issues/new).
-  - It can be viewed at [Issues](https://github.com/Tams3d/T3D-GN-Presets/issues/).
+  - Bug reports can be done [here](https://github.com/Tams3d/T3D-GN-Presets/issues/new)
+  - It can be viewed at [Issues](https://github.com/Tams3d/T3D-GN-Presets/issues/)
   
   ## :bug: Bug Fixes
-  - Create a [Pull Request](https://github.com/Tams3d/T3D-GN-Presets/pulls) with changes and details about changes.
-  - Labels will be added based on the Type of Bug.
+  - Create a [Pull Request](https://github.com/Tams3d/T3D-GN-Presets/pulls) with changes and details about changes
+  - Labels will be added based on the Type of Bug
 
   ## :mag: Known Issues
-  - **Object Type:** ***Volume*** is not supported yet.
-  - **Object Type:** ***Instance*** is not supported yet.
-  - **UV To Mesh** only works with Uv-ed Meshes without any transformations before it.
-  - **Deformers** work different when Geometry is Transformed before it, Requested to use `Reset Position Node` Before Deformers.
-  - **Displacer** strength is based on-axis and normal, Custom normals aren't supported yet.
+  - **Object Type:** ***Volume*** is not supported yet
+  - **Object Type:** ***Instance*** is not supported yet
+  - **UV To Mesh** only works with Uv-ed Meshes without any transformations before it
+  - **Deformers** work different when Geometry is Transformed before it, Requested to use `Reset Position Node` Before Deformers
+  - **Displacer** strength is based on-axis and normal, Custom normals aren't supported yet
   - **Object Type:** ***Volume*** is not supported yet
  
  
  # :unicorn: About 
-  - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from India.
+  - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from **India**.
   - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex setups in a simplified effective way. Have 7 Months of Experience with Blender. I mainly focus on making procedural stuff with Geometry Nodes which can also be edited procedurally and which require minimum manual tweaks. 
   
   ### 🚀 Experiences

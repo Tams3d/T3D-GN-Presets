@@ -9,8 +9,8 @@
 - Tams 3d's Geo-Node Presets Add-on is located at `Geometry Node Editor > Add > T3D's Presets` - with separate categories based on uses. Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licencing--files) before sharing files and intend to modify. 
 - The Addon Stability & Releases are being defined by the [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs) Version.
   - For example, 
-    - Version 1.0.0 - New Release (Stable/ LTS)
-    - Version 1.1.0/ 1.2.0 - Bug Fixes, Potential changes & Performances Improvements In Node-groups (may update frequently)
+    - Version 1.0.0/ 1.1.0 - New Release (Stable/ LTS)
+    - Version 2.1.1/ 2.1.2 - Bug Fixes, Potential changes & Performances Improvements In Node-groups (may update frequently)
     - Version 0.0.1-E / 0.1.0-E - Beta/Alpha Releases (experimental purposes in [Experimental Branch ](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) )
     -  :green_circle: - Stable
     -  :large_blue_circle: - Release Candidate/Older Version
@@ -20,7 +20,7 @@
 
 ## :magic_wand: Changelogs & Release Notes
 
-  ### Version 1.0.0 :green_circle:
+  ### Current Stable Release: Version 1.0.0 :green_circle:
 
   - **T3D GN Presets** Turns into Addon with Node-groups for quick navigation and abolished Append Fake-user Method from Pre-Alpha Release
   - Added Popover at Geometry Node Editor - Header which contains:
@@ -38,7 +38,6 @@
   - Added `Development` Branch
   - Branches are allocated based on usability and developments.
     * [Master](https://github.com/Tams3d/T3D-GN-Presets/tree/Master) - New Releases with major changes and added Support.
-    * [LTS]() - Long-Term Support Based on Blender LTS Releases and production-ready. (:warning: Work-In-Process)
     * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Most Frequent Updates have the latest features and while there might be bug fixes too, they are unstable.
     * [Development](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works and preview checks. (Not Intended For Public Use, Strictly Only for Developers)
    - Commits with completed changes will be moved from the `Development` Branch to the `Experimental` Branch after Verification.
@@ -49,7 +48,6 @@
 
 - Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.2 & Above are supported.
 - Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) most of the Node-groups contain Named Attributes for faster computation and simplicity, older versions of Blender will not be supported and will not get supported.
-- Special `LTS` branches can be added on the release of Blender 3.3 & Blender 3.7 which will require much faster, error-free, most customizable options and need separate attention.
 - Experimental Branch Content usages are AT YOUR OWN RISK! MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!
 - Older Addon versions Will be discontinued after Alpha versions of the addons are released.
 - Updates will be provided frequently as-soon-as-possible for free 
@@ -84,10 +82,12 @@
   - Labels will be added based on the Type of Bug.
 
   ## :mag: Known Issues
-  - **Set Geometry Size** does not Support Instances.
+  - **Object Type:** ***Volume*** is not supported yet.
+  - **Object Type:** ***Instance*** is not supported yet.
   - **UV To Mesh** only works with Uv-ed Meshes without any transformations before it.
-  - `Deformers` Outputs Extra Mesh with 0 Vertices on Curves
+  - **Deformers** work different when Geometry is Transformed before it, Requested to use `Reset Position Node` Before Deformers.
   - **Displacer** strength is based on-axis and normal, Custom normals aren't supported yet.
+  - **Object Type:** ***Volume*** is not supported yet
  
  
  # :unicorn: About 
@@ -95,7 +95,7 @@
   - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex setups in a simplified effective way. Have 7 Months of Experience with Blender. I mainly focus on making procedural stuff with Geometry Nodes which can also be edited procedurally and which require minimum manual tweaks. 
   
   ### 🚀 Experiences
-  - I have been Investing Time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender, Cinema 4D, and Substance Painter for 3D Artworks. It has been 8 months into 3D and Primarily Using **Blender** For 3D Stuffs and  spending Approximately 3Hrs Everyday into learning through Youtube Tutorials and From the Awesome Blender Community.
+  - I have been Investing Time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender and Cinema 4D for 3D Artworks. It has been 8 months into 3D and Primarily Using **Blender** For 3D Stuffs and  spending Approximately 2Hrs Everyday learning through Youtube Tutorials and From the Awesome Blender Community.
 
   ### :clinking_glasses: Socials
   - Catch up with me here:

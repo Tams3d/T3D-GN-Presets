@@ -46,10 +46,10 @@
 ## :link: Updates & Restrictions
 
 - Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.3 & Above are supported.
-- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) most of the Node-groups contain Named Attributes for faster computation and simplicity some nodes like "UV To Mesh" & "Sweep Curve" uses Specific Attribute Domain which are Interpolated by "Interpolate Domain", older versions of Blender will not be supported and will not get supported.
+- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) most of the Node-groups contain Named Attributes for faster computation and simplicity some nodes like "UV To Mesh" & "Sweep Curve" uses Specific Attribute Domain which is Interpolated by "Interpolate Domain", older versions of Blender will not be supported and will not get supported.
 - Experimental Branch Content usages are AT YOUR OWN RISK! MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!
 - Older Addon versions Will be discontinued and User Manually Need to Upgrade to New Versions
-- Updates will be provided frequently as-soon-as-possible undoubtly and for free!
+- Updates will be provided frequently as-soon-as-possible undoubtedly and for free!
 
 
 # Licencing & Files
@@ -82,7 +82,7 @@
 
   ## :mag: Known Issues
   - **Object Type:** ***Volume*** is not supported yet
-  - **Object Type:** ***Instance*** is not supported yet, rRealise Instances before using them.
+  - **Object Type:** ***Instance*** is not supported yet, Realise Instances before using them.
   - **UV To Mesh** only works with Uv-ed Meshes without any transformations before it
   - **Deformers** work different when Geometry is Transformed before it, Requested to use `Reset Position Node` Before Deformers
   - **Displacer** strength is based on-axis and normal, Custom normals aren't supported yet

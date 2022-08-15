@@ -1,5 +1,5 @@
 # T3D-Geo-Node-Presets
-## A Collection of Incredibly useful nodes for Geometry Nodes - Blender 3.2 & above
+## A Collection of Incredibly useful nodes for Geometry Nodes - Blender 3.3 & above
 
 ![T3D GN Presets](https://user-images.githubusercontent.com/106262964/173188615-21216a7b-6e8b-4319-bf33-954b940ac4b5.png)
 
@@ -29,8 +29,7 @@
      * [Report A Bug](https://github.com/Tams3d/T3D-GN-Presets/issues)
 
   - Added Support for Splines, Meshes, Instances, Points to `Deformers`
-  - Added Additional Support for Splines, Meshes, Points as Outputs for `Primitives`
-  - Added Adaptive Point Radius based on Geometry Resolution & Count for `Points` Outputs
+  - Added Selection Nodes
 
 ## :infinity: Github Repository Changes
 
@@ -46,11 +45,11 @@
 
 ## :link: Updates & Restrictions
 
-- Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.2 & Above are supported.
-- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) most of the Node-groups contain Named Attributes for faster computation and simplicity, older versions of Blender will not be supported and will not get supported.
+- Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.3 & Above are supported.
+- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) most of the Node-groups contain Named Attributes for faster computation and simplicity some nodes like "UV To Mesh" & "Sweep Curve" uses Specific Attribute Domain which are Interpolated by "Interpolate Domain", older versions of Blender will not be supported and will not get supported.
 - Experimental Branch Content usages are AT YOUR OWN RISK! MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!
-- Older Addon versions Will be discontinued after Alpha versions of the addons are released.
-- Updates will be provided frequently as-soon-as-possible for free.
+- Older Addon versions Will be discontinued and User Manually Need to Upgrade to New Versions
+- Updates will be provided frequently as-soon-as-possible undoubtly and for free!
 
 
 # Licencing & Files
@@ -59,7 +58,7 @@
   The Node-groups and the addon are licensed as GNU GPL - the same license as Blender uses
   * The node groups including the addon are licensed as GNU GPL - the same license as Blender uses
   * You are free for any purpose
-  * You are free to distribute
+  * You are free to distribute unless the license is modified
   * You can distribute changed versions
   * What you create with This Addon is your sole property
   * You are not allowed to change the license or introduce additional terms and conditions
@@ -83,7 +82,7 @@
 
   ## :mag: Known Issues
   - **Object Type:** ***Volume*** is not supported yet
-  - **Object Type:** ***Instance*** is not supported yet
+  - **Object Type:** ***Instance*** is not supported yet, rRealise Instances before using them.
   - **UV To Mesh** only works with Uv-ed Meshes without any transformations before it
   - **Deformers** work different when Geometry is Transformed before it, Requested to use `Reset Position Node` Before Deformers
   - **Displacer** strength is based on-axis and normal, Custom normals aren't supported yet

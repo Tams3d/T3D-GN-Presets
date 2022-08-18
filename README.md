@@ -27,9 +27,8 @@
      * [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs)
      * [Example Files](https://discord.gg/eKdswfAS)
      * [Report A Bug](https://github.com/Tams3d/T3D-GN-Presets/issues)
-
   - Added Support for Splines, Meshes, Instances, Points to `Deformers`
-  - Added Selection Nodes
+  - Added Selection Nodes To Inputs
 
 ## :infinity: Github Repository Changes
 
@@ -74,26 +73,26 @@
 # Bug Reports & Fixes
   ## :ghost: Bug Reports
   - Bug reports can be done [here](https://github.com/Tams3d/T3D-GN-Presets/issues/new)
-  - It can be viewed at [Issues](https://github.com/Tams3d/T3D-GN-Presets/issues/)
+  - Developers can be viewed at [Issues](https://github.com/Tams3d/T3D-GN-Presets/issues/) for Bug Fixes
   
   ## :bug: Bug Fixes
-  - Create a [Pull Request](https://github.com/Tams3d/T3D-GN-Presets/pulls) with changes and details about changes
+  - Create a [Pull Request](https://github.com/Tams3d/T3D-GN-Presets/pulls) with changes and details about changes.Recommended to include Project File with Blender Version
   - Labels will be added based on the Type of Bug
 
   ## :mag: Known Issues
-  - **Object Type:** ***Volume*** is not supported yet
-  - **Object Type:** ***Instance*** is not supported yet, Realise Instances before using them.
-  - **UV To Mesh** only works with Uv-ed Meshes without any transformations before it
+  - **Geometry Type:** ***Volume*** is not supported yet
+  - **Geometry Type:** ***Instance*** is not supported yet, Realise Instances before using them.
+  - **UV To Mesh** only works with Uv-ed Meshes
   - **Deformers** work different when Geometry is Transformed before it, Requested to use `Reset Position Node` Before Deformers
   - **Displacer** strength is based on-axis and normal, Custom normals aren't supported yet
-  - **Object Type:** ***Volume*** is not supported yet
- 
- 
+  - **Distribute Points in Volume** Selection is 3D based, similar to Volume Cube Density.
+
+  
  # :unicorn: About 
   - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from **India**.
   - My Vision is to create *Free & Paid Resources* for the Blender Community which does complex task or require complex setups in a simplified effective way. Have 7 Months of Experience with Blender. I mainly focus on making procedural stuff with Geometry Nodes which can also be edited procedurally and which require minimum manual tweaks. 
   
-  ### 🚀 Experiences
+  ### 🚀 Experience
   - I have been Investing Time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender and Cinema 4D for 3D Artworks. It has been 8 months into 3D and Primarily Using **Blender** For 3D Stuffs and  spending Approximately 2Hrs Everyday learning through Youtube Tutorials and From the Awesome Blender Community.
 
   ### :clinking_glasses: Socials

@@ -23,7 +23,7 @@
 
   ### Current Beta Release: Version 0.0.9-E 🟡
 
-  - **T3D GN Presets** is now a Fully Functional Addon with menus and submenus.
+  - **T3D GN Presets** is a Fully Functional Addon with menus and submenus.
   - Added Popover at Geometry Node Editor - Header, which contains:
      * [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs)
      * [Example Files](https://discord.gg/eKdswfAS)
@@ -43,12 +43,12 @@
 
 ## :link: Updates & Restrictions
 
-- Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.3 & Above are supported.
-- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742), most Node-groups contain Named Attributes for faster computation and simplicity. Some nodes like "UV To Mesh" & "Sweep Curve" uses a Specific Attribute Domain, which is Interpolated by "Interpolate Domain", older versions of Blender will not be supported and will not get supported.
+- Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.3 LTS & Above are supported.
+- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742), most Node-groups contain Named Attributes for faster.computation and simplicity. Some nodes like "UV To Mesh" & "Sweep Curve" uses a Specific Attribute Domain, which is Interpolated by [Interpolate Domain](https://developer.blender.org/D15289), older versions of Blender will not be supported and will not get supported.
 - Experimental Branch Content usages are at your own risk! IT MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!
-- Older Addon versions Will be discontinued, and User Manually Need to Upgrade to New Versions
+- Older Addon versions Will be discontinued, and User Manually Need to Upgrade to New Versions.
 - Updates will frequently be provided as-soon-as-possible undoubtedly and for free!
-- Tams 3d's GN Presets has been used as T3D Presets to preserve string length.
+- `Tams 3d's GN Presets` has been used as `T3D Presets` to preserve string length.
 
 
 # Licencing & Files

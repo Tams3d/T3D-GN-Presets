@@ -28,8 +28,7 @@
      * [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs)
      * [Example Files](https://discord.gg/eKdswfAS)
      * [Report A Bug](https://github.com/Tams3d/T3D-GN-Presets/issues)
-  - Created [Tams 3d's Discord server](https://discord.gg/TNgzbZCdnY) to connect with the community for Support, help and resources, including dev talks.
-  - Added Support for New Nodes.
+  - Created [Tams 3d's Discord server](https://discord.gg/TNgzbZCdnY) to connect with the community for Support, Resources, including dev talks.
 
 ## :infinity: Github Repository Changes
 
@@ -81,7 +80,7 @@
   - Create a [Pull Request](https://github.com/Tams3d/T3D-GN-Presets/pulls) with changes and details about changes. Recommended to include Project File with Blender Version
   - Labels will be added based on the Type of Bug
 
-  ## :mag: Known Issues.
+  ## :mag: Known Issues
   - **Deformers** work differently when Geometry is Transformed before it; requested to use `Reset Position` before them.
   - **Displacer** strength is based on-axis and normal; custom normals aren't supported yet
   - **Distribute Points in Volume** selection is 3D based, similar to Volume Cube Density.
@@ -93,7 +92,7 @@
   
  # :unicorn: About 
   - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from **India**.
-  - My Vision is to create *Free & Paid Resources* for the Blender Community, which does the complex task or requires complex setups in a simplified, effective way. I  Have 7 Months of Experience with Blender, mainly focusing on making procedural stuff with Geometry Nodes which can also be edited procedurally and require minimum manual tweaks. 
+  - My Vision is to create *Free & Paid Resources* for the Blender Community, which does complex task or requires complex setups in a simplified, effective way. I  Have 7 Months of Experience with Blender, mainly focusing on making procedural stuff with Geometry Nodes which can also be edited procedurally and require minimum manual tweaks. 
   
   ### 🚀 Experience
   - I have been Investing time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender and Cinema 4D for 3D Artworks. It has been eight months into 3D and Primarily Using **Blender** For 3D stuff and spending Approximately 2Hrs Everyday learning through Youtube Tutorials and From the Awesome Blender Community.

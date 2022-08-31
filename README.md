@@ -5,7 +5,7 @@
 
 ## :bulb: Introduction
 
-- **T3D GN Presets** are designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple, **easy-to-use solution**. We assure to provide constant updates, bug fixes and Support for every newest Blender Stable Releases. 
+- **T3D GN Presets** are designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple, **easy-to-use solution**. We assure to provide constant updates, bug fixes, and Support for every newest Blender Stable Releases. 
 - This Addon Will evolve many new changes over time with performance, customizability, and user requests as the main key. 
 - **T3D GN Presets** Add-on is located at `Geometry Node Editor > Add > T3D Presets` - with separate categories based on uses. Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#licencing--files) before sharing files and intend to modify. 
 - The Addon Stability & Releases are being defined by the [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/edit/Master/README.md#magic_wand-changelogs) Version.
@@ -14,14 +14,14 @@
     - Version 2.1.1/ 2.1.2 - Bug Fixes, Potential changes & Performances Improvements In Node-groups (may update frequently)
     - Version 0.0.1-E / 0.1.0-E - Beta/Alpha Releases (experimental purposes in [Experimental Branch ](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) )
     -  :green_circle: - Stable
-    -  :large_blue_circle: - Release Candidate/Older Version
+    -  :large_blue_circle: - Release Candidate
     -  :yellow_circle: - Beta
     -  :red_circle: - Alpha
 
 
 ## :magic_wand: Changelogs & Release Notes
 
-  ### Current Beta Release: Version 0.0.9-E 🟡
+  ### Current Beta Release: Version 1.0.0 :large_blue_circle:
 
   - **T3D GN Presets** is a Fully Functional Addon with menus and submenus.
   - Added Popover at Geometry Node Editor - Header, which contains:
@@ -32,19 +32,14 @@
 
 ## :infinity: Github Repository Changes
 
-  - Added `Experimental` Branch.
-  - Added `Development` Branch.
   - Branches are allocated based on usability and developments.
     * [Master](https://github.com/Tams3d/T3D-GN-Presets/tree/Master) - New Releases with major changes and added Support.
-    * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Most Frequent Updates have the latest features, and while there might be bug fixes too, they are unstable.
-    * [Development](https://github.com/Tams3d/T3D-GN-Presets/tree/Development) - Contains Incomplete codes, To-do works and preview checks. (Not Intended For Public Use, Strictly Only for Developers).
-   - Commits with completed changes will be moved from the `Development` Branch to the `Experimental` Branch after Verification.
-   - `Experimental` Branch has upcoming developments which are expected to come in the `Master`
+    * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Contains the latest features and while there might be cool bug fixes too, they are unstable and can mess up your files.
 
 ## :link: Updates & Restrictions
 
 - Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.3 LTS & Above are supported.
-- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742), most Node-groups contain Named Attributes for faster.computation and simplicity. Some nodes like "UV To Mesh" & "Sweep Curve" uses a Specific Attribute Domain, which is Interpolated by [Interpolate Domain](https://developer.blender.org/D15289), older versions of Blender will not be supported and will not get supported.
+- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742), most Node-groups contain Named Attributes for faster computation and simplicity. Some nodes like "UV To Mesh" & "Sweep Curve" uses a Specific Attribute Domain, which is Interpolated by [Interpolate Domain](https://developer.blender.org/D15289); older versions of Blender will not be supported and will not get supported.
 - Experimental Branch Content usages are at your own risk! IT MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!
 - Older Addon versions Will be discontinued, and User Manually Need to Upgrade to New Versions.
 - Updates will frequently be provided as-soon-as-possible undoubtedly and for free!
@@ -75,11 +70,9 @@
   ## :ghost: Bug Reports
   - Bug reports can be done [here](https://github.com/Tams3d/T3D-GN-Presets/issues/new)
   - Developers can be viewed at [Issues](https://github.com/Tams3d/T3D-GN-Presets/issues/) for Bug Fixes
+  - The community is welcome to provide fixes and support
   
-  ## :bug: Bug Fixes
-  - Create a [Pull Request](https://github.com/Tams3d/T3D-GN-Presets/pulls) with changes and details about changes. Recommended to include Project File with Blender Version
-  - Labels will be added based on the Type of Bug
-
+  
   ## :mag: Known Issues
   - **Deformers** work differently when Geometry is Transformed before it; requested to use `Reset Position` before them.
   - **Displacer** strength is based on-axis and normal; custom normals aren't supported yet
@@ -92,7 +85,7 @@
   
  # :unicorn: About 
   - Hey! I am **Tamil Selvan** also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from **India**.
-  - My Vision is to create *Free & Paid Resources* for the Blender Community, which does complex task or requires complex setups in a simplified, effective way. I  Have 7 Months of Experience with Blender, mainly focusing on making procedural stuff with Geometry Nodes which can also be edited procedurally and require minimum manual tweaks. 
+  - My Vision is to create *Free & Paid Resources* for the Blender Community which requires complex setups in a simplified, effective way. I  Have 7 Months of Experience with Blender, mainly focusing on making procedural stuff with Geometry Nodes which can also be edited procedurally and require minimum manual tweaks. 
   
   ### 🚀 Experience
   - I have been Investing time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender and Cinema 4D for 3D Artworks. It has been eight months into 3D and Primarily Using **Blender** For 3D stuff and spending Approximately 2Hrs Everyday learning through Youtube Tutorials and From the Awesome Blender Community.

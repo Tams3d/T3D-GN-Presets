@@ -25,7 +25,7 @@
 
   - **T3D GN Presets** is a Fully Functional Addon with menus and submenus.
   - Added Popover at Geometry Node Editor - Header, which contains:
-     * [Changelogs]https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#magic_wand-changelogs--release-notes)
+     * [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#magic_wand-changelogs--release-notes)
      * [Example Files](https://discord.gg/eKdswfAS)
      * [Report A Bug](https://github.com/Tams3d/T3D-GN-Presets/issues)
   - Created [Tams 3d's Discord server](https://discord.gg/TNgzbZCdnY) to connect with the community for Support, Resources, including dev talks.

@@ -216,10 +216,10 @@ class T3D_PT_T3D_PRESET__UPDATES_T3D(bpy.types.Panel):
         column_T3D.alignment = 'Expand'.upper()
         op = column_T3D.operator(
             'wm.url_open', text='Changelogs', icon_value=93, emboss=True, depress=False)
-        op.url = 'https://github.com/Tams3d/T3D-GN-Presets/edit/Development/README.md#magic_wand-changelogs--release-notes'
+        op.url = 'https://github.com/Tams3d/T3D-GN-Presets#magic_wand-changelogs--release-notes'
         op = column_T3D.operator(
             'wm.url_open', text='Example Files', icon_value=695, emboss=True, depress=False)
-        op.url = 'https://discord.gg/eKdswfAS'
+        op.url = 'https://discord.com/invite/TNgzbZCdnY'
         op = column_T3D.operator(
             'wm.url_open', text='Report A Bug', icon_value=68, emboss=True, depress=False)
         op.url = 'https://github.com/Tams3d/T3D-GN-Presets/issues/'

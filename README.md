@@ -38,12 +38,12 @@
 
 ## :link: Updates & Restrictions
 
-- Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.3 LTS & Above are supported.
-- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742), most Node-groups contain Named Attributes for faster computation and simplicity. Some nodes like "UV To Mesh" & "Sweep Curve" uses a Specific Attribute Domain, which is Interpolated by [Interpolate Domain](https://developer.blender.org/D15289); older versions of Blender will not be supported and will not get supported.
-- Experimental Branch Content usages are at your own risk! IT MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!
-- Older Addon versions will be discontinued, and User Manually Need to Upgrade to New Versions.
-- Updates will frequently be provided as-soon-as-possible, undoubtedly and for free!
+- **Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.3 LTS & Above are supported.**
+- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) - nodes contains some **Internal Dependencies** which may conflict with existing attributes.
+- [Experimental Branch](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) Content usages are at your own risk! *IT MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!*
+- Older versions will be discontinued, and User Need to Upgrade to [New Version](https://github.com/Tams3d/T3D-GN-Presets/releases).
 - `Tams 3d's GN Presets` have been used as `T3D Presets` to preserve string length.
+- Updates will frequently be provided as-soon-as-possible, undoubtedly and for **free!**
 
 
 # Licencing & Files

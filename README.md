@@ -68,10 +68,9 @@
 
 # Bug Reports & Fixes
   ## :ghost: Bug Reports
-  - Bug reports can be done [here](https://github.com/Tams3d/T3D-GN-Presets/issues/new).
-  - Developers can be viewed at [Issues](https://github.com/Tams3d/T3D-GN-Presets/issues/) for Bug Fixes.
-  - The community is welcome to provide fixes and support.
-  
+  - Submit Bug reports and feature request [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
+  - Review file changes [here](https://github.com/Tams3d/T3D-GN-Presets/pulls).
+  - Fixes will be provided periodically.
   
   ## :mag: Known Issues
   - **Deformers** work differently when Geometry is Transformed before it; requested to use `Reset Position` before them.

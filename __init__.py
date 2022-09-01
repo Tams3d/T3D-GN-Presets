@@ -5,13 +5,15 @@ import os
 import bpy
 import json
 bl_info = {
-    "name": "Tams 3d's Geo-Node Presets",
-    "author": "Tamil Selvan",
+    "name": "Tams 3d's GN Presets",
     "description": "A Collection of Incredibly useful nodes for Geometry Nodes",
-    "location": "Geometry Node Editor > Add > T3D Presets",
-    "blender": (3, 3, 0),
+    "author": "Tamil Selvan",
     "version": (1, 0, 0),
-    "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets",
+    "blender": (3, 3, 0),
+    "location": "Geometry Node Editor > Add > T3D Presets",
+    "doc_url":  "https://github.com/Tams3d/T3D-GN-Presets",
+    "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues",
+    "support": "COMMUNITY",
     "category": "Node",
 }
 

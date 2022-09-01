@@ -65,6 +65,7 @@
 
 # Bug Reports & Fixes
   ## :ghost: Bug Reports
+
   - Submit Bug reports and feature requests [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
   - Review file changes [here](https://github.com/Tams3d/T3D-GN-Presets/pulls).
   - Fixes will be provided periodically.

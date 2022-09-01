@@ -5,9 +5,10 @@
 
 ## :bulb: Introduction
 
-- **T3D GN Presets** are designed to solve basic operations which require much more complex node trees and time-consuming processes with a simple, **easy-to-use solution**. We assure to provide constant updates, bug fixes, and Support for every newest Blender Stable Releases. 
-- This Addon Will evolve many new changes over time with performance, customizability, and user requests as the primary key. 
-- **T3D GN Presets** Add-on is located at `Geometry Node Editor > Add > T3D Presets` - with separate categories based on uses. Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#licencing--files) before sharing files and intend to modify. 
+- **T3D GN Presets** are designed to solve basic operations which require complex node tree setups and time-consuming processes with a simple, **easy-to-use solution**. We assure to provide constant updates, bug fixes, and support for every upcoming [Blender](https://www.blender.org/) releases as-soon-as-possible, undoubtedly and for **free!**
+- This addon will evolve many new changes over time with performance, customizability, and user requests as the primary key. 
+- **T3D GN Presets** Add-on is located at `Geometry Node Editor > Add > T3D Presets` - with separate categories based on uses.
+- Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#licencing--files) before sharing files and intend to modify. 
 - The Addon Stability & Releases are being defined by the [Version](https://github.com/Tams3d/T3D-GN-Presets#current-release-version-100-large_blue_circle).
   - For example, 
     - Version 1.0.0/ 1.1.0 - New Release (Stable/ LTS)
@@ -38,13 +39,11 @@
 
 ## :link: Updates & Restrictions
 
-- **Our Presets are made only to run on Latest Stable Blender Release as of date - Blender 3.3 LTS & Above are supported.**
+- Our Presets are made only to run on Latest Stable Blender Release as of date - **Blender 3.3 LTS & Above**
 - Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) - nodes contains some **Internal Dependencies** which may conflict with existing attributes.
-- [Experimental Branch](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) Content usages are at your own risk! *IT MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!*
+- [Experimental Branch](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) Content usages **MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!**
 - Older versions will be discontinued, and User Need to Upgrade to [New Version](https://github.com/Tams3d/T3D-GN-Presets/releases).
 - `Tams 3d's GN Presets` have been used as `T3D Presets` to preserve string length.
-- Updates will frequently be provided as-soon-as-possible, undoubtedly and for **free!**
-
 
 # Licencing & Files
  ## :page_facing_up: Licence

@@ -22,7 +22,7 @@
 
 ## :magic_wand: Changelogs & Release Notes
 
-  ### Current Release: Version 1.0.0 :large_blue_circle:
+  ### Current Release: Version 1.0.0 🟢
 
   - **T3D GN Presets** is a Fully Functional Addon with menus and submenus.
   - Added Popover at Geometry Node Editor - Header, which contains:

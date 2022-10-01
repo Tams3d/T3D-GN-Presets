@@ -1,96 +1,150 @@
-# Tams 3d's GN Presets
-## A Collection of Incredibly useful nodes for Geometry Nodes - Blender 3.3 & above
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/106262964/191753865-f69ae775-f7cf-4075-8ac9-0d1861b9fef1.png"
+       width="100">
+  <!--T3D Icon with Head er-->
+  <h1>Tams 3d's GN Presets</h1>
+  <h3>A Collection of Incredibly useful nodes for Geometry Nodes</h3>
 
-![T3D GN Presets](https://user-images.githubusercontent.com/106262964/173188615-21216a7b-6e8b-4319-bf33-954b940ac4b5.png)
+[Introduction]() | [Installation]() | [Release Notes]() |  [Development]() | [Licence]() |  [About]() 
+  <!--Center Sub-header-->
 
-## :bulb: Introduction
+***<<<<< Work-In-Process >>>>>***
+</div>
+<br>
 
-- **T3D GN Presets** are designed to solve basic operations which require complex node tree setups and time-consuming processes with a simple, **easy-to-use solution**. We assure to provide constant updates, bug fixes, and support for every upcoming [Blender](https://www.blender.org/) releases as-soon-as-possible, undoubtedly and for **free!**
-- This addon will evolve many new changes over time with performance, customizability, and user requests as the primary key. 
-- **T3D GN Presets** Add-on is located at `Geometry Node Editor > Add > T3D Presets` - with separate categories based on uses.
-- Requested Users to read [Licence & Files](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#licencing--files) before sharing files and intend to modify. 
-- The Addon Stability & Releases are being defined by the [Version](https://github.com/Tams3d/T3D-GN-Presets#current-release-version-100-large_blue_circle).
-  - For example, 
-    - Version 1.0.0/ 1.1.0 - New Release (Stable/ LTS)
-    - Version 1.1.1/ 2.1.2 - Bug Fixes, Potential changes & Performances Improvements In Node-groups (may update frequently)
-    - Version 0.0.1-E / 0.1.0-E - Beta/Alpha Releases in [Experimental](https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/README.md)
-    -  :green_circle: - Stable
-    -  :large_blue_circle: - Release Candidate
-    -  :yellow_circle: - Beta
-    -  :red_circle: - Alpha
+# Introduction:
+* [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/) are Custom made Node Groups for Geometry Nodes which include Primitive Geometries, Deformers, Fields, Generators, Utilities and much more for **free!** only for [Blender](https://www.blender.org). 
+* This is an essential component of an artist’s toolkit which enables users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
+* *T3D GN Presets* is a user-friendly addon that helps artists generate faster recursions of ideas by unlocking proceduralism. 
 
+# Installation:
+<div align="center">
+<<<< Video Place Holder - Installation T3D GN Presets >>>>
+  <!-- A Video about How to install T3D GN Presets-->
+  </div>
+<br>
+  <!-- A short description -->
+- Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos fugit excepturi nulla distinctio quasi dolorum sed voluptatem temporibus id eligendi quaerat, quibusdam fuga minus iure magni ut neque cupiditate blanditiis natus repellendus ab dolorem? Blanditiis quisquam, error porro omnis ad reprehenderit explicabo incidunt. Nesciunt, at rerum? Officiis, quibusdam nesciunt quas placeat debitis ratione delectus voluptatibus eaque ullam, doloribus nisi beatae doloremque iure cupiditate, minima tenetur adipisci? Sint consectetur temporibus sit beatae cumque nam distinctio!
+<div align="center">
 
-## :magic_wand: Changelogs & Release Notes
+<<<< Video Place Holder - Updating T3D GN Presets >>>>
+  <!-- A Video about How to update T3D GN Presets-->
+  </div>
+<br>
+  <!-- A short desciption -->
+- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea facilis maiores dolor vel dolore! Dolorum praesentium harum perferendis atque doloremque quam rerum sapiente officiis. Labore quia repudiandae obcaecati dignissimos. Laboriosam ipsa omnis quidem quasi, maiores fuga dolor magni ad ratione? Facilis pariatur facere quaerat aspernatur deleniti dolorem, corporis nemo eveniet!
 
-  ### Current Release: Version 1.0.0 :large_blue_circle:
+# Release Notes:
+- T3D-GN-Presets (v1.0.1) is currently in Alpha. Find older version release notes [here]().     
+- [Hyperlinks]() are set to `Experimental` Branch contents. 
+- [Corrective Release]() has been introduced for minor fixes.
 
-  - **T3D GN Presets** is a Fully Functional Addon with menus and submenus.
-  - Added Popover at Geometry Node Editor - Header, which contains:
-     * [Changelogs](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#magic_wand-changelogs--release-notes)
-     * [Example Files](https://discord.com/invite/TNgzbZCdnY)
-     * [Report A Bug](https://github.com/Tams3d/T3D-GN-Presets/issues)
-  - Created [Tams 3d's Discord server](https://discord.gg/TNgzbZCdnY) to connect with the community for Support, Resources, including dev talks.
+# Core:
+- Complete Restructuring of [ `_init_.py` ]() which packs more information to developers such as Licence, Previous updates and further improvements.
+- Removed unfinished/ unreleased features.
+- Maintained lowercase and relative paths 
+- Replaced Popover with only Icon `<img src="https://user-images.githubusercontent.com/106262964/191753865-f69ae775-f7cf-4075-8ac9-0d1861b9fef1.png"
+width="10">`
 
-## :infinity: Github Repository Changes
+## Performance
+- Rewritten `Displacer` gains 5-10% speed and stability with a 1 Million vertex grid.
+- Rewritten `UV To Mesh` is now 2-5% faster. 
+- Rewritten `Align To Spline` to work with all types of splines
+- Rewritten all Fields nodes to improve stability. Fixed inverted direction while transforming with empties.
+- Removal of UV feature in `Sweep Curve` gains 85% increase. Supports non-cyclic curves
+- Renamed & Rewritten `Reset Position` to `Center Elements` is 15% faster with Mesh, Curves, Points, Instances, Volume Combined
+- Rewritten `Inset Faces` works without internal dependencies to reduce attribute storing computations  
 
-  - Branches are allocated based on usability and developments.
-    * [Master](https://github.com/Tams3d/T3D-GN-Presets/tree/Master) - New Releases with major changes and added Support.
-    * [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) - Contains the latest features, and while there might be cool bug fixes too, they are unstable and can mess up your files.
+## New Nodes & Categories :
+### Nodes
+- **Smooth Curve** - Curve to Bezier with smoothing
+- **Prism Field** - Prism Falloff
+- **Torus Field** - Torus Falloff
+- **Modify Field** - Field Modifier with direct controls of the Input Field
+- **Atom Array** - Generate Atom Array with Vertex and Edge Instances
 
-## :link: Updates & Restrictions
+### Category: SDF (Signed Distance Function)
+#### Primitives:
+- SDF Box
+- SDF Cylinder
+- SDF Ngon
+- SDF Torus
 
-- Our Presets are made only to run on Latest Stable Blender Release as of date - **Blender 3.3 LTS & Above**
-- Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) - nodes contains some **Internal Dependencies** which may conflict with existing attributes.
-- [Experimental Branch](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) Content usages **MAY CAUSE SIGNIFICANT LOSS AND INCOMPATIBILITY!**
-- Older versions will be discontinued, and User Need to Upgrade to [New Version](https://github.com/Tams3d/T3D-GN-Presets/releases).
-- `Tams 3d's GN Presets` have been used as `T3D Presets` to preserve string length.
+#### Modifiers:
+- SDF Boolean
+- SDF Displacement
 
-# Licencing & Files
- ## :page_facing_up: Licence
+## New Features & Changes :
+- Added *Tooltips*
+- Added *Separators*
+- Renamed Inputs and Outputs to make uniform across the category
+- Added per Mesh island control and Selection to `Center Elements`
+- Added Bound Center in `Center Elements` for faster computation
+- Renamed `Manifold Edge Selection` to `Non-Manifold Edge Selection` with Non-Manifold Edge Selection Output
+- Added Global strength with Axis Controls for `Displacer` Now Supports Geometry without Generic Normal Attribute
+- Made _Center at Origin_ as default in Point and Curve Primitives
+- Added Invert in `Transforms To Position and Vector Mapping` 
+- Added and corrected Offset Output in `Center Elements` & `Rotate Elements`
+- Added Support for *Geometry Type: Volume* in `Instancers`
+- `Poke Faces` now outputs New Vertices Selection
+- Fixed `Spherify` to maintain Face Area
+- Corrected inverted scale in `Transforms to Position`
 
-  * The node groups, including the Addon, are licensed as [GNU GPL](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/LICENSE) - the same license as Blender uses
+##  Breaking Changes:
+- Removed UV from `Sweep Curve`
+- Reset Position renamed to `Center Elements`
+- Fields are made Scale-based instead of size-based
+
+</details>
+
+#### Corrective Releases:
+- As of now, there are no updates regarding corrective Releases, bug reports will be viewed and resolved as soon as possible.
+- Minor fixes will be directly committed from `Experimental` → `Master` apart from [Release]()
+- Substantial fixes will be released directly replacing the Main Release as Corrective Release.
+
+# Development:
+- Developments are happening on daily basis in [Experimental]() Branch regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
+- Support for [Blender 3.4 Alpha]() is not yet started as of now. There will be a huge improvement in UI like *[Mix RGB]() , [Transfer Attribute]()*
+- We will have discussions regarding the *Removal/ Renaming/ Restructuring* of nodes like `Distribute Points in Volume` , and  `Sweep Curve`.
+- Plans for [Corrective Releases]()
+- Plans for adding nodes as [Assets](https://developer.blender.org/rBbdb57541475f20)
+- Devtalks are held on My [Discord Server]()
+
+## :ghost: Bug Reports & Fixes
+- Submit Bug reports and feature requests [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
+- Review file changes [here](https://github.com/Tams3d/T3D-GN-Presets/pulls).
+- Fixes will be provided periodically as assured.
+
+## Fixes
+
+- [x] [Deformers](https://github.com/Tams3d/T3D-GN-Presets/issues/5) to work properly with `Center Elements`
+- [x] [Instancers](https://github.com/Tams3d/T3D-GN-Presets/issues/6) support Geometry type: *Volume*
+- [x] [UV To Mesh](https://github.com/Tams3d/T3D-GN-Presets/issues/7) gets *Generate UV* option
+
+## Access to Source Code:
+
+- [ `_init_.py` ]() defines the addon followed by [geonode_groups.json]() which contains a list of categories with nodes.
+- [geonode_nodes.blend]() contains all the Node-groups which are displayed under `T3D GN Presets` 
+
+# Licence:
+
+- The node groups, including the Addon, are licensed as [GNU GPL]() - the same license as Blender uses
   * You are free for any purpose.
   * You are free to distribute unless the license is modified.
   * You can distribute changed versions.
   * What you create with This Addon is your sole property.
   * You are not allowed to change the license or introduce additional terms and conditions.
 
-## :open_file_folder: Files & Source Code
-  
-  - [init.py]() has the python code for the Addon, which contains some adaptations from other scripts with the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/LICENSE).
-  - The [geonode_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/geonode_nodes.blend) contains All the Node-groups as Fake-User which is being appended by the Addon; changes may bring errors.
-  - The [geonode_nodes.json](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/geonode_nodes.json) contains the actual work of the menus and submenus with names of the Node-groups. 
-  - All these files follow the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#licencing--files).
-
-
-# Bug Reports & Fixes
-  ## :ghost: Bug Reports
-
-  - Submit Bug reports and feature requests [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
-  - Review file changes [here](https://github.com/Tams3d/T3D-GN-Presets/pulls).
-  - Fixes will be provided periodically.
-  
-  ## :mag: Known Issues
-  - **Deformers** work differently when Geometry is Transformed before it; requested to use `Reset Position` before them.
-  - **Displacer** strength is based on-axis and normal; custom normals aren't supported yet.
-  - **Distribute Points in Volume** selection is 3D based, similar to Volume Cube Density.
-  - **Easing** works only for fields between 0-1.
-  - **Geometry Type:** ***Instance*** is not supported yet,  `Realise Instances` before using them.
-  - **Geometry Type:** ***Volume*** is not supported yet.
-  - **UV To Mesh** only works with Uv-ed Meshes.
-
-  
- # :unicorn: About 
+# :unicorn: About 
   - Hey! I am **Tamil Selvan**, also known as **tams_3d**. I am a 15-Year-Old Self Taught Blender Artist from **India**.
-  - My Vision is to create *Free & Paid Resources* for the Blender Community, which requires complex setups provided in a simplified, effective way. I  Have 7 Months of Experience with Blender, mainly focusing on making procedural stuff with Geometry Nodes which can also be edited procedurally and require minimum manual tweaks. 
+  - My Vision is to create *Free & Paid Resources* for the Blender Community, which requires complex setups provided in a simplified, effective way. I  Have 8 Months of Experience with Blender, mainly focusing on making procedural stuff with Geometry Nodes.
   
   ### 🚀 Experience
-  - I have been Investing time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender & Cinema 4D for 3D Artworks. Primarily Using **Blender** For 3D stuff and spending Approximately 2Hrs Everyday learning through Youtube Tutorials and From the Awesome Blender Community.
+  - I have been Investing time into 2D and 3D learning and developing my skillset. I primarily use **Blender** for 3D stuff learning through Youtube Tutorials and from the awesome Blender Community.
 
   ### :clinking_glasses: Socials
   - Catch up with me here:
     * [Behance](https://www.behance.net/tamilselvan3d)
     * [Discord](https://discord.gg/TNgzbZCdnY)
-    * [Github](https://github.com/Tams3d)
+    * [GitHub](https://github.com/Tams3d)
     * [Twitter](https://twitter.com/Tams_3d)
- 

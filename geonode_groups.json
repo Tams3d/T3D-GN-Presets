@@ -1,0 +1,130 @@
+{
+    "Coordinates": [
+        "Cartesian to Cylindrical ~ Cartesian to Cylindrical ",
+        "Cartesian to Spherical ~ Cartesian to Spherical",
+        "Cylindrical to Cartesian ~ Cylindrical to Cartesian",
+        "Spherical to Cartesian ~ Spherical to Cartesian"
+    ],
+
+    "Curve": [
+        "Align To Spline ~ Align Geometry to Spline with position offsets",
+        "Lathe Curve ~ Mesh from Curve by rotating points around a fixed circular axis",
+        "Smooth Curve ~ Curve to Bezier with smoothing",
+        "Sweep Curve ~ Mesh from Profile Curve along with input Curve with parameters"
+    ],
+
+    "Curve Primitives": [
+        "Curve Ellipse ~ Curve Primitive with Curve parameters",
+        "Logarithmic Spiral ~ Curve Primitive with Curve parameters",
+        "Spirograph ~ Curve Primitive with Curve parameters",
+        "Spiroshell ~ Curve Primitive with Curve parameters"
+    ],
+
+    "Deformers": [
+        "Bend ~ Deform along an arbitrary axis",
+        "Bulge ~ Thickening and Thinning ",
+        "Displacer ~ Displace Geometry based on Texture",
+        "Shear ~ Slide Geometry along an arbitrary axis",
+        "Spherify ~ Deform Geometry to sphere",
+        "Taper ~ Linear Thickening or Thinning",
+        "Twist ~ Rotation along an arbitrary axis",
+        "_",
+        "UV To Mesh ~ Deform Mesh to specified UV"
+    ],
+
+    "Easing": [
+        "easeCirc ~ Easing In and Out",
+        "easeCubic ~ Easing In and Out",
+        "easeElastic ~ Easing In and Out",
+        "easeExpo ~ Easing In and Out",
+        "easeQuad ~ Easing In and Out",
+        "easeQuart ~ Easing In and Out",
+        "easeQuint ~ Easing In and Out",
+        "easeSine ~ Easing In and Out"
+    ],
+
+    "Fields": [
+        "Box Field ~ Cubical Falloff",
+        "Cylinder Field ~ Cylindrical Falloff",
+        "Linear Field ~ Gradient Falloff",
+        "Ngon Field ~ Infinite Ngon Falloff",
+        "Prism Field ~ Prism Falloff",
+        "Radial Field ~ Infinite Radial Falloff",
+        "Spherical Field ~ Spherical Falloff",
+        "Torus Field ~ Torus Falloff",
+        "_",
+        "Modify Field ~ Field Modifier with direct controls of the input Field"
+    ],
+
+    "Generators": [
+        "Atom Array ~ Generate Atom Array",
+        "Distribute Points in Volume ~ Generate Points from Volume"
+    ],
+
+    "Geometry": [
+        "Geometry To Spline ~ Convert any input Geometry to Spline",
+        "Parent To Object ~ Parent Location, Rotation, Scale to Object",
+        "Position Elements ~ Reset Location to Worldspace Coordinates",
+        "Rotate Elements ~ Rotate Bound Origin",
+        "Set Geometry Size ~ Reset Bound Geometry",
+        "Set Geometry Visibility ~ Set Visibility in the viewport or Render"
+    ],
+
+    "Input": [
+        "Boundary Edge Selection ~ Selection of all edges with one neighbouring face ",
+        "Edge Angle Selection ~ Selection of particular edge with specified edge angle ",
+        "Face Sides Selection ~ Selection of all faces that have a specified number of edges.",
+        "Loose Edge Selection ~ Selection of all faces that do not share edges with other faces",
+        "Non-Manifold Edge Selection ~ Selection of any edge shared by more than two faces",
+        "_",
+        "Is Empty Geometry ~ Is Geometry Empty or with No Points? Used with a switch to avoid computations",
+        "Is Inside Volume ~ Is Geometry have Volume inside it"
+    ],
+
+    "Instancers": [
+        "Grid Instancer ~ Instance along X,Y,Z Axis",
+        "Linear Instancer ~ Instance along Straight Linear",
+        "Radial Instancer ~ Instance along Arc",
+        "Spherical Instancer ~ Instance on Spherical Spiral"
+    ],
+
+    "Mesh": [
+        "Inset Faces ~ Inner Extrusion of faces",
+        "Poke Faces ~ Poke faces at face center with access to depth",
+        "Segmental Extrude ~ Repeated Extrusion of segments",
+        "Shade Auto Smooth ~ Edge Split over unsigned angles of degree",
+        "_",
+        "Mesh To SDF ~ Mesh to Signed Distance Function",
+        "Mesh To Field ~ Mesh to proximate Field"
+    ],
+
+    "Point Primitives": [
+        "Point Grid ~ Point Primitive with Points over XYZ Directions with spacing",
+        "Point Honeycomb ~ Point Primitive with Points offset over X & Y to form Honeycomb-like structure",
+        "Phyllotaxis ~ Point Primitive with Point over the arrangement of leaves on a plant stem"
+    ],
+
+    "SDF":  [
+        "SDF Box ~ SDF Primitive Box",
+        "SDF Cylinder ~ SDF Primitive Cylinder",
+        "SDF Ngon ~ SDF Primitive Ngon",
+        "SDF Sphere ~ SDF Primitive Sphere",
+        "SDF Torus ~ SDF Primitive Torus",
+        "_",
+        "SDF Boolean ~ Combine two SDF to output Union/ Difference/ Intersection",
+        "SDF Displacement ~ Displacer for SDF"
+    ],
+
+    "Utilities": [
+        "Empty Group ~ Group with input and output",
+        "Transforms To Position ~ Location, Rotation, Scale to Position"
+    ],
+
+    "Vector": [
+        "Replace Vector ~ Replace specific Values in X,Y,Z",
+        "Seamless Vector ~ Make 4D Texture Seamless",
+        "Vector Clamp ~ Clamp Vector Minimum and Maximum",
+        "Vector Mapping ~ Control Location, Rotation, Scale of a Vector"
+
+    ]
+}

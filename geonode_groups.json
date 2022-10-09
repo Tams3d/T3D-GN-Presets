@@ -62,10 +62,9 @@
     ],
 
     "Geometry": [
+        "Center Elements ~ Reset Location to Worldspace Coordinates",
         "Geometry To Spline ~ Convert any input Geometry to Spline",
         "Parent To Object ~ Parent Location, Rotation, Scale to Object",
-        "Position Elements ~ Reset Location to Worldspace Coordinates",
-        "Rotate Elements ~ Rotate Bound Origin",
         "Set Geometry Size ~ Reset Bound Geometry",
         "Set Geometry Visibility ~ Set Visibility in the viewport or Render"
     ],
@@ -91,6 +90,7 @@
     "Mesh": [
         "Inset Faces ~ Inner Extrusion of faces",
         "Poke Faces ~ Poke faces at face center with access to depth",
+        "Rotate Elements ~ Rotate at Individual Origin",
         "Segmental Extrude ~ Repeated Extrusion of segments",
         "Shade Auto Smooth ~ Edge Split over unsigned angles of degree",
         "_",

@@ -17,14 +17,14 @@ This program is free software; you can redistribute it and/or modify
 #General Info
     Addon:  T3D-GN-Presets
     Author: Tamil Selvan
-    Description: T3D GN Presets helps artists generate faster recrusions of ideas by unlocking non-destructive procedural workflows to extreme limits in Geometry Nodes
+    Description: T3D GN Presets help artists generate faster recursions of ideas by unlocking non-destructive procedural workflows to extreme limits in Geometry Nodes
     Source: https://github.com/Tams3d/T3D-GN-Presets
     Version:
         Addon: v1.0.1
         Blender: 3.3 LTS - 3.4 Alpha
     Changelogs & Release Notes:    
     Expected Release Date: (In Experimental Stage - Work in Progress)
-    Last Update: 01.10.2022
+    Last Update: 09.10.2022
 """
 
 # Importing Modules
@@ -39,7 +39,7 @@ from bpy.types import Operator, Menu
 bl_info = {
     "name": "Tams 3d's GN Presets",
     "author": "Tamil Selvan",
-    "description": "T3D GN Presets helps artists generate faster recrusions of ideas by unlocking non-destructive procedural workflows to extreme limits in Geometry Nodes",
+    "description": "T3D GN Presets contains custom-made Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
     "location": "Geometry Node Editor > Add > T3D GN Presets",
     "warning": "Alpha Version (Experimental Branch)",
     "blender": (3, 3, 0),
@@ -234,7 +234,8 @@ def register():
 # Functions to Unregister
 def unregister():
     for func in draw_menu_functions:
-        bpy.types.NODE_MT_t3d_menu.remove(func)
+        bpy.types.NODE_MT_t3d_menu.remove(
++func)
     if hasattr(bpy.types, "NODE_MT_t3d_menu"):
         bpy.types.NODE_MT_add.remove(add_t3d_button)
         bpy.utils.unregister_class(NODE_MT_t3d_menu)

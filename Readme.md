@@ -5,10 +5,9 @@
   <h1>Tams 3d's GN Presets</h1>
   <h3>A Collection of Incredibly useful nodes for Geometry Nodes</h3>
 
-[Introduction]() | [Installation]() | [Release Notes]() | [Development]() | [Licence]() | [About]() 
+[Introduction](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental#-introduction) | [Release Notes](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental#-release-notes) | [Development](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental#-development) | [Licence](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental#licencing--files) | [About](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental#-about) 
   <!--Center Sub-header-->
 
-***<<<<< Work-In-Process >>>>>***
 </div>
 <br>
 
@@ -18,12 +17,12 @@
 * *T3D GN Presets* is a user-friendly addon that helps artists generate faster recursions of ideas by unlocking proceduralism. 
 
 # 🪄 Release Notes:
-- T3D-GN-Presets (v1.0.1) is currently in Beta. Find older version release notes [here]().     
-- [Hyperlinks]() are set to `Experimental` Branch contents. 
-- [Corrective Release]() has been introduced for minor fixes.
+- T3D-GN-Presets (v1.0.1) is currently in Beta. Find older version release notes [here](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental/Changelogs).     
+- [Hyperlinks]((https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental/) are set to `Experimental` Branch contents. 
+- [Corrective Release](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental#-corrective-releases) has been introduced for minor fixes.
 
 # ⚙️ Core:
-- Complete Restructuring of [ `_init_.py` ]() which packs more information to developers such as Licence, Previous updates and further improvements.
+- Complete Restructuring of [ `_init_.py` ](https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/__init__.py) which packs more information to developers such as Licence, Previous updates and further improvements.
 - Removed unfinished/ unreleased features.
 - Maintained lowercase and relative paths.
 - Cleared Popover & with only Icon.
@@ -77,13 +76,13 @@
 - Removed category `Generators`
 
 # 🎯 Development:
-- Developments are happening on at regular basis in [Experimental]() Branch regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
-- Support for [Blender 3.5 Alpha]() is not yet started as of now. [Simulation Nodes](https://builder.blender.org/download/experimental/geometry-nodes-simulation/)  will get supported eventually. 
-- Dev talks are held on My [Discord Server]()
+- Developments are happening on at regular basis in [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) Branch regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
+- Support for [Blender 3.5 Alpha](https://wiki.blender.org/wiki/Reference/Release_Notes) is not yet started as of now. [Simulation Nodes](https://builder.blender.org/download/experimental/geometry-nodes-simulation/)  will get supported eventually. 
+- Dev talks are held on My [Discord Server](https://discord.gg/TNgzbZCdnY)
 
 #### ✅ Corrective Releases:
 - As of now, there are no updates regarding corrective Releases, bug reports will be viewed and resolved as soon as possible.
-- Minor fixes will be directly committed from `Experimental` → `Master` apart from [Release]()
+- Minor fixes will be directly committed from `Experimental` → `Master` apart from [Release](https://github.com/Tams3d/T3D-GN-Presets/releases/)
 - Substantial fixes will be released directly replacing the Main Release as Corrective Release.
 
 ## ♾️ GitHub Repository Changes
@@ -108,7 +107,7 @@
 
 # Licencing & Files:
 ## 📄 Licence
-- The Node groups, including the Addon, are licensed as [GNU GPL]() - the same license as Blender uses
+- The Node groups, including the Addon, are licensed as [GNU GPL](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/LICENSE) - the same license as Blender uses
   * You are free for any purpose.
   * You are free to distribute unless the license is modified.
   * You can distribute changed versions.
@@ -116,8 +115,8 @@
   * You are not allowed to change the license or introduce additional terms and conditions
   
 ## 📂 Access to Files:
-- [ `_init_.py` ]() defines the addon followed by [geonode_groups.json]() which contains a list of categories with nodes.
-- [geonode_nodes.blend]() contains all the Node-groups which are displayed under `T3D GN Presets` 
+- [ `_init_.py` ]((https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/__init__.py) defines the addon followed by [geonode_groups.json](https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/geonode_groups.json) which contains a list of categories with nodes.
+- [geonode_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/geonode_nodes.blend) contains all the Node-groups which are displayed under `T3D GN Presets` 
 - All these files follow the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#licencing--files).
 
 # 🦄 About 

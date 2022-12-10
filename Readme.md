@@ -17,8 +17,8 @@
 * *T3D GN Presets* is a user-friendly addon that helps artists generate faster recursions of ideas by unlocking proceduralism. 
 
 # 🪄 Release Notes:
-- T3D-GN-Presets (v1.0.1) is currently in Beta. Find older version release notes [here](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental/Changelogs).     
-- [Hyperlinks]((https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental/) are set to `Experimental` Branch contents. 
+- T3D-GN-Presets (v1.1.0) is currently in Beta. Find older version release notes [here](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental/Changelogs).     
+- [Hyperlinks](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental/) are set to `Experimental` Branch contents. 
 - [Corrective Release](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental#-corrective-releases) has been introduced for minor fixes.
 
 # ⚙️ Core:
@@ -67,16 +67,15 @@
 - Fixed `Spherify` to maintain Face Area
 - Corrected inverted scale in `Transforms to Position`
 
-## 🚨 Breaking Changes:
+## 🚨 Breaking Changes
 - Removed UV from `Sweep Curve`
 - Reset Position renamed to `Center Elements`
-- Removed *Offset* in `Rotate Elements`, `Set Geometry Size`, `Center Elements` 
-- Fields are made Scale-based instead of size-based
-- Fields are optimised to use with empty which may behave oddly in different Viewport Perspective
-- Removed category `Generators`
+- Removed *Offset* in `Rotate Elements` `Set Geometry Size` `Center Elements` 
+- Fields are optimised to use with empty which may behave oddly in different Viewport Perspective and are made Scale-based instead of size-based
+- Removed category `Generators` which includes _Distribute Points in Volume_
 
-# 🎯 Development:
-- Developments are happening on at regular basis in [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) Branch regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
+# 🎯 Development
+- Developments are happening on a regular basis in [Experimental](https://github.com/Tams3d/T3D-GN-Presets/tree/Experimental) Branch regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
 - Support for [Blender 3.5 Alpha](https://wiki.blender.org/wiki/Reference/Release_Notes) is not yet started as of now. [Simulation Nodes](https://builder.blender.org/download/experimental/geometry-nodes-simulation/)  will get supported eventually. 
 - Dev talks are held on My [Discord Server](https://discord.gg/TNgzbZCdnY)
 
@@ -103,7 +102,7 @@
 - Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) - nodes contain some **Internal Dependencies** which may conflict with existing attributes.
 - Transfer Attribute node has been removed and split into multiple more specific nodes - [Sample Index, Sample Nearest, Sample Nearest Surface ](https://developer.blender.org/D15909)
 - Older versions will be discontinued, and the User Needs to manually upgrade to [New Version](https://github.com/Tams3d/T3D-GN-Presets/releases).
-- `Tams 3d's GN Presets` have been used as `T3D GN Presets` to preserve string length.
+- `Tams 3d's GN Presets` have been used as `T3D GN Presets` to conserve string length.
 
 # Licencing & Files:
 ## 📄 Licence
@@ -115,7 +114,7 @@
   * You are not allowed to change the license or introduce additional terms and conditions
   
 ## 📂 Access to Files:
-- [ `_init_.py` ]((https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/__init__.py) defines the addon followed by [geonode_groups.json](https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/geonode_groups.json) which contains a list of categories with nodes.
+- [ `_init_.py` ](https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/__init__.py) defines the addon followed by [geonode_groups.json](https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/geonode_groups.json) which contains a list of categories with nodes.
 - [geonode_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/Experimental/geonode_nodes.blend) contains all the Node-groups which are displayed under `T3D GN Presets` 
 - All these files follow the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#licencing--files).
 

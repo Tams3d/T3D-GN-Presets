@@ -56,11 +56,6 @@
         "Modify Field ~ Field Modifier with direct controls of the input Field"
     ],
 
-    "Generators": [
-        "Atom Array ~ Generate Atom Array",
-        "Distribute Points in Volume ~ Generate Points from Volume"
-    ],
-
     "Geometry": [
         "Center Elements ~ Reset Location to Worldspace Coordinates",
         "Geometry To Spline ~ Convert any input Geometry to Spline",
@@ -125,6 +120,5 @@
         "Seamless Vector ~ Make 4D Texture Seamless",
         "Vector Clamp ~ Clamp Vector Minimum and Maximum",
         "Vector Mapping ~ Control Location, Rotation, Scale of a Vector"
-
     ]
 }

@@ -15,16 +15,16 @@ This program is free software; you can redistribute it and/or modify
 
 
 #General Info
-    Addon:  T3D-GN-Presets
+    Addon:  T3D GN Presets
     Author: Tamil Selvan
     Description: T3D GN Presets help artists generate faster recursions of ideas by unlocking non-destructive procedural workflows to extreme limits in Geometry Nodes
     Source: https://github.com/Tams3d/T3D-GN-Presets
     Version:
         Addon: v1.0.1
-        Blender: 3.3 LTS - 3.4 Alpha
+        Blender: 3.4 Stable - 3.5 Alpha
     Changelogs & Release Notes:    
     Expected Release Date: (In Experimental Stage - Work in Progress)
-    Last Update: 09.10.2022
+    Last Update: 10.12.2022
 """
 
 # Importing Modules
@@ -37,13 +37,13 @@ from bpy.types import Operator, Menu
 
 # Addon Info
 bl_info = {
-    "name": "Tams 3d's GN Presets",
+    "name": "T3D GN Presets",
     "author": "Tamil Selvan",
     "description": "T3D GN Presets contains custom-made Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
     "location": "Geometry Node Editor > Add > T3D GN Presets",
-    "warning": "Alpha Version (Experimental Branch)",
-    "blender": (3, 3, 0),
-    "version": (1, 1, 0),
+    "warning": "Beta Version (From Experimental Branch)",
+    "blender": (3, 4, 0),
+    "version": (1, 0, 1),
     "doc_url":"",
     "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets",
     "category": "Node",
@@ -75,14 +75,12 @@ def add_t3d_button(self, context):
         self.layout.menu("NODE_MT_t3d_menu", text="T3D GN Presets", icon_value=load_preview_icon(
             os.path.join(os.path.dirname(__file__), 'Icons', 'T3D.png')))
 
-
 t3d_group_cache = {}
 geonode_cat_list = []
 draw_menu_functions = []
 
 # File Path
 dir_path = os.path.dirname(__file__)
-
 
 def geonode_cat_generator():
     global geonode_cat_list
@@ -202,7 +200,6 @@ class NODE_OT_group_add(Operator):
 
 # Node Group Type
         bpy.ops.node.add_node(type="GeometryNodeGroup")
-
         node = context.selected_nodes[0]
         node.node_tree = bpy.data.node_groups[self.group_name]
 
@@ -214,7 +211,6 @@ class NODE_OT_group_add(Operator):
     def invoke(self, context, event):
         self.store_mouse_cursor(context, event)
         return self.execute(context)
-
 
 # Functions to Register
 def register():
@@ -234,8 +230,7 @@ def register():
 # Functions to Unregister
 def unregister():
     for func in draw_menu_functions:
-        bpy.types.NODE_MT_t3d_menu.remove(
-+func)
+        bpy.types.NODE_MT_t3d_menu.remove(+func)
     if hasattr(bpy.types, "NODE_MT_t3d_menu"):
         bpy.types.NODE_MT_add.remove(add_t3d_button)
         bpy.utils.unregister_class(NODE_MT_t3d_menu)

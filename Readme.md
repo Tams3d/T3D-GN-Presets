@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://user-images.githubusercontent.com/106262964/191753865-f69ae775-f7cf-4075-8ac9-0d1861b9fef1.png"
        width="100">
-  <!--T3D Icon with Head er-->
+  <!--T3D Icon with Header-->
   <h1>Tams 3d's GN Presets</h1>
   <h3>A Collection of Incredibly useful nodes for Geometry Nodes</h3>
 
@@ -13,12 +13,12 @@
 <br>
 
 # 💡 Introduction:
-* [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/) are Custom made Node Groups for Geometry Nodes which include Primitive Geometries, Deformers, Fields, Generators, Utilities and much more for **free!** only for [Blender](https://www.blender.org). 
+* [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/) are Custom made Node Groups for Geometry Nodes which include Primitive Geometry, Deformers, Fields, SDF, Utilities and much more for **free!** only for [Blender](https://www.blender.org). 
 * This is an essential component of an artist’s toolkit which enables users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
 * *T3D GN Presets* is a user-friendly addon that helps artists generate faster recursions of ideas by unlocking proceduralism. 
 
 # 🪄 Release Notes:
-- T3D-GN-Presets (v1.0.1) is currently in Alpha. Find older version release notes [here]().     
+- T3D-GN-Presets (v1.0.1) is currently in Beta. Find older version release notes [here]().     
 - [Hyperlinks]() are set to `Experimental` Branch contents. 
 - [Corrective Release]() has been introduced for minor fixes.
 
@@ -43,7 +43,6 @@
 - **Prism Field** - Prism Falloff
 - **Torus Field** - Torus Falloff
 - **Modify Field** - Field Modifier with direct controls of the Input Field
-- **Atom Array** - Generate Atom Array with Vertex and Edge Instances
 
 ### Category: SDF (Signed Distance Function)
 - SDF Box
@@ -53,7 +52,7 @@
 - SDF Boolean
 - SDF Displacement
 
-## 🎆 New Features & Changes :
+## 🎆 New Features & Changes:
 - Added *Tooltips*
 - Added *Separators*
 - Renamed Inputs and Outputs to make uniform across the category
@@ -72,16 +71,14 @@
 ## 🚨 Breaking Changes:
 - Removed UV from `Sweep Curve`
 - Reset Position renamed to `Center Elements`
+- Removed *Offset* in `Rotate Elements`, `Set Geometry Size`, `Center Elements` 
 - Fields are made Scale-based instead of size-based
 - Fields are optimised to use with empty which may behave oddly in different Viewport Perspective
-
+- Removed category `Generators`
 
 # 🎯 Development:
-- Developments are happening on daily basis in [Experimental]() Branch regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
-- Support for [Blender 3.4 Alpha]() is not yet started as of now. There will be a huge improvement in UI like *[Mix RGB](), [Transfer Attribute]()* and some complete restructuring.
-- We will have discussions regarding the *Removal/ Renaming/ Restructuring* of nodes like `Distribute Points in Volume`, and `Sweep Curve`.
-- Plans for adding nodes as [Assets](https://developer.blender.org/rBbdb57541475f20)
-- Plans for indexing T3D GN Presets nodes with normal Search
+- Developments are happening on at regular basis in [Experimental]() Branch regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
+- Support for [Blender 3.5 Alpha]() is not yet started as of now. [Simulation Nodes](https://builder.blender.org/download/experimental/geometry-nodes-simulation/)  will get supported eventually. 
 - Dev talks are held on My [Discord Server]()
 
 #### ✅ Corrective Releases:
@@ -103,8 +100,9 @@
 
 ## 🔗 Updates & Restrictions:
 
-- Our Presets are made only to run on Latest Stable Blender Release as of date - **Blender 3.3 LTS & Above**
+- Our Presets are made only to run on Latest Stable Blender Release as of date - **Blender 3.4 & Above**
 - Due to the Introduction of [Named Attributes System](https://developer.blender.org/T91742) - nodes contain some **Internal Dependencies** which may conflict with existing attributes.
+- Transfer Attribute node has been removed and split into multiple more specific nodes - [Sample Index, Sample Nearest, Sample Nearest Surface ](https://developer.blender.org/D15909)
 - Older versions will be discontinued, and the User Needs to manually upgrade to [New Version](https://github.com/Tams3d/T3D-GN-Presets/releases).
 - `Tams 3d's GN Presets` have been used as `T3D GN Presets` to preserve string length.
 

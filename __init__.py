@@ -20,7 +20,7 @@ This program is free software; you can redistribute it and/or modify
     Description: T3D GN Presets help artists generate faster recursions of ideas by unlocking non-destructive procedural workflows to extreme limits in Geometry Nodes
     Source: https://github.com/Tams3d/T3D-GN-Presets
     Version:
-        Addon: v1.0.1
+        Addon: v1.1.0
         Blender: 3.4 Stable - 3.5 Alpha
     Changelogs & Release Notes:    
     Expected Release Date: (In Experimental Stage - Work in Progress)
@@ -43,7 +43,7 @@ bl_info = {
     "location": "Geometry Node Editor > Add > T3D GN Presets",
     "warning": "Beta Version (From Experimental Branch)",
     "blender": (3, 4, 0),
-    "version": (1, 0, 1),
+    "version": (1, 1, 0),
     "doc_url":"",
     "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets",
     "category": "Node",

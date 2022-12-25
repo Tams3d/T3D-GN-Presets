@@ -1,25 +1,54 @@
+"""
+#Licence
+This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTIBILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+#General Info
+    Addon:  T3D GN Presets
+    Author: Tamil Selvan
+    Description: T3D GN Presets help artists generate faster recursions of ideas by unlocking non-destructive procedural workflows to extreme limits in Geometry Nodes
+    Source: https://github.com/Tams3d/T3D-GN-Presets
+    Version:
+        Addon: v1.1.0
+        Blender: 3.4 Stable - 3.5 Alpha
+    Changelogs & Release Notes:    
+    Release Date: 25.12.2022
+"""
+
+# Importing Modules
+import bpy
+import json
+import os
 from bpy.utils import *
 from bpy.props import StringProperty
 from bpy.types import Operator, Menu
-import os
-import bpy
-import json
+
+# Addon Info
 bl_info = {
-    "name": "Tams 3d's GN Presets",
-    "description": "A Collection of Incredibly useful nodes for Geometry Nodes",
+    "name": "T3D GN Presets",
     "author": "Tamil Selvan",
-    "version": (1, 0, 0),
-    "blender": (3, 3, 0),
-    "location": "Geometry Node Editor > Add > T3D Presets",
-    "doc_url":  "https://github.com/Tams3d/T3D-GN-Presets",
+    "description": "T3D GN Presets contains custom-made Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
+    "location": "Geometry Node Editor > Add > T3D GN Presets",
+    "warning": "Beta Version (From Experimental Branch)",
+    "blender": (3, 4, 0),
+    "version": (1, 1, 0),
+    "doc_url":"https://github.com/Tams3d/T3D-GN-Presets",
     "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues",
-    "support": "COMMUNITY",
     "category": "Node",
 }
 
-addon_keymaps = {}
+# Load Icons
 _icons = None
-
 
 def load_preview_icon(path):
     global _icons
@@ -30,26 +59,32 @@ def load_preview_icon(path):
             return 0
     return _icons[path].icon_id
 
+# T3D Node Header at Geometry Node Editor
+def t3d_ht_header(self, context):
+    if not (False):
+        layout = self.layout
+        if (bpy.context.area.ui_type == 'GeometryNodeTree'):
+            layout.label(icon_value=load_preview_icon(
+                os.path.join(os.path.dirname(__file__), 'Icons', 'T3D.png')))
 
+# T3D GN Presets Menu + Icon at Geometry Node Editor > Add > T3D GN Presets
 def add_t3d_button(self, context):
     if context.area.ui_type == "GeometryNodeTree":
-        self.layout.menu("NODE_MT_t3d_menu", text="T3D Presets", icon_value=load_preview_icon(
-            os.path.join(os.path.dirname(__file__), 'assets', 'T3D.png')))
-
+        self.layout.menu("NODE_MT_t3d_menu", text="T3D GN Presets", icon_value=load_preview_icon(
+            os.path.join(os.path.dirname(__file__), 'Icons', 'T3D.png')))
 
 t3d_group_cache = {}
 geonode_cat_list = []
 draw_menu_functions = []
 
+# File Path
 dir_path = os.path.dirname(__file__)
-
 
 def geonode_cat_generator():
     global geonode_cat_list
     global draw_menu_functions
 
     geonode_cat_list = []
-
     draw_menu_functions = []
 
     for item in t3d_group_cache.items():
@@ -60,10 +95,10 @@ def geonode_cat_generator():
                 if group_name == "_":
                     layout.separator(factor=1.0)
                     continue
-                entry = group_name.split("~")
+                entry = group_name.split(" ~ ")
                 props = layout.operator(
                     NODE_OT_group_add.bl_idname,
-                    text=entry[0].replace("3D", ""),
+                    text=entry[0],
                 )
                 props.group_name = entry[0]
 
@@ -73,17 +108,17 @@ def geonode_cat_generator():
         itemid = item[0].split("_")[0]
 
         menu_type = type(
-            "NODE_MT_category_" + itemid,
-            (bpy.types.Menu,),
+            "NODE_MT_category_" + itemid, (bpy.types.Menu,),
+            # Replace Blankspace with "_" to avoid naming conflicts
             {
                 "bl_idname": "NODE_MT_category_" + itemid.replace(" ", "_"),
                 "bl_space_type": "NODE_EDITOR",
                 "bl_label": item[0],
-                "draw": custom_draw,
-            },
+                "draw": custom_draw
+            }
         )
         if menu_type not in geonode_cat_list:
-
+            # Wrapper Function
             def generate_menu_draw(name, label):
                 def draw_menu(self, context):
                     self.layout.menu(name, text=label.split("_")[0])
@@ -102,6 +137,7 @@ class NODE_MT_t3d_menu(Menu):
     bl_label = "T3D"
     bl_idname = "NODE_MT_t3d_menu"
 
+# Menu at specified NodeTree Editor
     @classmethod
     def poll(cls, context):
         return context.space_data.tree_type == "GeometryNodeTree"
@@ -109,18 +145,19 @@ class NODE_MT_t3d_menu(Menu):
     def draw(self, context):
         pass
 
-
+# Append Operator
 class NODE_OT_group_add(Operator):
     """Add a node group"""
 
     bl_idname = "tams3d.group_add"
-    bl_label = "Add node group"
+    bl_label = "Add a node group"
     bl_description = "Append Node Group"
     bl_options = {"REGISTER", "UNDO"}
 
     group_name: StringProperty()
     tooltip: StringProperty()
 
+# Store Mouse Cursor Location (x,y)
     @staticmethod
     def store_mouse_cursor(context, event):
         space = context.space_data
@@ -133,16 +170,19 @@ class NODE_OT_group_add(Operator):
         else:
             space.cursor_location = tree.view_center
 
+# Run Append Operator on specified NodeTree
     @classmethod
     def poll(cls, context):
         return context.space_data.node_tree
 
+# Use available Tooltip
     @classmethod
     def description(self, context, props):
         return props.tooltip
 
+# Find .blend file in specified Directory
+# If .blend file is absent, raise FileNotFoundError with File path
     def execute(self, context):
-        old_groups = set(bpy.data.node_groups)
 
         for file in os.listdir(dir_path):
             if file.endswith(".blend"):
@@ -151,15 +191,17 @@ class NODE_OT_group_add(Operator):
         else:
             raise FileNotFoundError("No .blend File in directory " + dir_path)
 
+# Load Specified Type of Node Group as Library from specified Filepath as unlinked
         with bpy.data.libraries.load(filepath, link=False) as (data_from, data_to):
             if self.group_name not in bpy.data.node_groups:
                 data_to.node_groups.append(self.group_name)
 
+# Node Group Type
         bpy.ops.node.add_node(type="GeometryNodeGroup")
-
         node = context.selected_nodes[0]
         node.node_tree = bpy.data.node_groups[self.group_name]
 
+# Place Node Group at Mouse Cursor Location
         node.location = context.space_data.cursor_location
         bpy.ops.transform.translate("INVOKE_DEFAULT")
         return {"FINISHED"}
@@ -168,71 +210,11 @@ class NODE_OT_group_add(Operator):
         self.store_mouse_cursor(context, event)
         return self.execute(context)
 
-
-def t3d_add_to_node_ht_header_T3D(self, context):
-    if not (False):
-        layout = self.layout
-        if bpy.context.area.ui_type == 'GeometryNodeTree':
-            row_T3D = layout.row(heading='', align=True)
-            row_T3D.alert = False
-            row_T3D.enabled = True
-            row_T3D.use_property_split = False
-            row_T3D.use_property_decorate = False
-            row_T3D.scale_x = 1.0
-            row_T3D.scale_y = 1.0
-            row_T3D.alignment = 'Expand'.upper()
-            row_T3D.label(text='', icon_value=load_preview_icon(
-                os.path.join(os.path.dirname(__file__), 'assets', 'T3D.png')))
-            row_T3D.popover('T3D_PT_T3D_PRESET__UPDATES_T3D',
-                            text='', icon_value=0)
-        else:
-            pass
-
-
-class T3D_PT_T3D_PRESET__UPDATES_T3D(bpy.types.Panel):
-    bl_label = 'T3D Preset  Updates'
-    bl_idname = 'T3D_PT_T3D_PRESET__UPDATES_T3D'
-    bl_space_type = 'VIEW_3D'
-    bl_region_type = 'WINDOW'
-    bl_context = ''
-    bl_order = 0
-
-    @classmethod
-    def poll(cls, context):
-        return not (False)
-
-    def draw_header(self, context):
-        layout = self.layout
-
-    def draw(self, context):
-        layout = self.layout
-        column_T3D = layout.column(heading='', align=True)
-        column_T3D.alert = False
-        column_T3D.enabled = True
-        column_T3D.use_property_split = False
-        column_T3D.use_property_decorate = False
-        column_T3D.scale_x = 0.0
-        column_T3D.scale_y = 1.25
-        column_T3D.alignment = 'Expand'.upper()
-        op = column_T3D.operator(
-            'wm.url_open', text='Changelogs', icon_value=93, emboss=True, depress=False)
-        op.url = 'https://github.com/Tams3d/T3D-GN-Presets#magic_wand-changelogs--release-notes'
-        op = column_T3D.operator(
-            'wm.url_open', text='Example Files', icon_value=695, emboss=True, depress=False)
-        op.url = 'https://discord.com/invite/TNgzbZCdnY'
-        op = column_T3D.operator(
-            'wm.url_open', text='Report A Bug', icon_value=68, emboss=True, depress=False)
-        op.url = 'https://github.com/Tams3d/T3D-GN-Presets/issues/'
-
-
-def draw(self, context):   
-        layout = self.layout
-        addon_updater_ops.update_settings_ui(self, context)
-
+# Functions to Register
 def register():
     global t3d_group_cache
-    with open(os.path.join(os.path.dirname(__file__), "geonode_nodes.json"), "r") as f:
-        t3d_group_cache = json.loads(f.read())
+    with open(os.path.join(os.path.dirname(__file__), "geonode_groups.json"), "r") as v:
+        t3d_group_cache = json.loads(v.read())
 
     if not hasattr(bpy.types, "NODE_MT_t3d_menu"):
         bpy.utils.register_class(NODE_MT_t3d_menu)
@@ -241,11 +223,9 @@ def register():
     geonode_cat_generator()
     global _icons
     _icons = bpy.utils.previews.new()
+    bpy.types.NODE_HT_header.append(t3d_ht_header)
 
-    bpy.types.NODE_HT_header.append(t3d_add_to_node_ht_header_T3D)
-    bpy.utils.register_class(T3D_PT_T3D_PRESET__UPDATES_T3D)
-
-
+# Functions to Unregister
 def unregister():
     for func in draw_menu_functions:
         bpy.types.NODE_MT_t3d_menu.remove(func)
@@ -255,5 +235,4 @@ def unregister():
     bpy.utils.unregister_class(NODE_OT_group_add)
     global _icons
     bpy.utils.previews.remove(_icons)
-    bpy.types.NODE_HT_header.remove(t3d_add_to_node_ht_header_T3D)
-    bpy.utils.unregister_class(T3D_PT_T3D_PRESET__UPDATES_T3D)
+    bpy.types.NODE_HT_header.remove(t3d_ht_header)

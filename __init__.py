@@ -13,7 +13,6 @@ This program is free software; you can redistribute it and/or modify
  You should have received a copy of the GNU General Public License
  along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-
 #General Info
     Addon:  T3D GN Presets
     Author: Tamil Selvan
@@ -23,8 +22,7 @@ This program is free software; you can redistribute it and/or modify
         Addon: v1.1.0
         Blender: 3.4 Stable - 3.5 Alpha
     Changelogs & Release Notes:    
-    Expected Release Date: (In Experimental Stage - Work in Progress)
-    Last Update: 25.12.2022
+    Release Date: 25.12.2022
 """
 
 # Importing Modules

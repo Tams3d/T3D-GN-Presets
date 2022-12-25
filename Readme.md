@@ -1,4 +1,3 @@
-# Heading at Cemter
 <div align="center">
 
 # Tams 3d's GN Presets
@@ -14,7 +13,8 @@
 * *T3D GN Presets* is a user-friendly addon that helps artists generate faster recursions of ideas by unlocking proceduralism. 
 
 # 🪄 Release Notes:
-- **T3D-GN-Presets (v1.1.0)** is now Active 🚀 . Find older version release notes [here](https://github.com/Tams3d/T3D-GN-Presets/tree/Master/Changelogs).     
+- **T3D-GN-Presets (v1.1.0)** is now Active and Stable
+- Find older version release notes [here](https://github.com/Tams3d/T3D-GN-Presets/tree/Master/Changelogs).     
 - [Corrective Release](https://github.com/Tams3d/T3D-GN-Presets/tree/Master#-corrective-releases) has been introduced for minor fixes.
 
 # ⚙️ Core:

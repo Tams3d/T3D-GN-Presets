@@ -25,6 +25,7 @@
         "Bulge ~ Thickening and Thinning ",
         "Displacer ~ Displace Geometry based on Texture",
         "Shear ~ Slide Geometry along an arbitrary axis",
+        "Smooth ~ Averages Face Position",
         "Spherify ~ Deform Geometry to sphere",
         "Taper ~ Linear Thickening or Thinning",
         "Twist ~ Rotation along an arbitrary axis",
@@ -77,7 +78,7 @@
 
     "Instancers": [
         "Grid Instancer ~ Instance along X,Y,Z Axis",
-        "Linear Instancer ~ Instance along Straight Linear",
+        "Linear Instancer ~ Instance along Straight Line",
         "Radial Instancer ~ Instance along Arc",
         "Spherical Instancer ~ Instance on Spherical Spiral"
     ],

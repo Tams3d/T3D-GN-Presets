@@ -24,7 +24,7 @@ This program is free software; you can redistribute it and/or modify
         Blender: 3.4 Stable - 3.5 Alpha
     Changelogs & Release Notes:    
     Expected Release Date: (In Experimental Stage - Work in Progress)
-    Last Update: 10.12.2022
+    Last Update: 25.12.2022
 """
 
 # Importing Modules
@@ -44,8 +44,8 @@ bl_info = {
     "warning": "Beta Version (From Experimental Branch)",
     "blender": (3, 4, 0),
     "version": (1, 1, 0),
-    "doc_url":"",
-    "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets",
+    "doc_url":"https://github.com/Tams3d/T3D-GN-Presets",
+    "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues",
     "category": "Node",
 }
 
@@ -152,7 +152,7 @@ class NODE_OT_group_add(Operator):
     """Add a node group"""
 
     bl_idname = "tams3d.group_add"
-    bl_label = "Add node group"
+    bl_label = "Add a node group"
     bl_description = "Append Node Group"
     bl_options = {"REGISTER", "UNDO"}
 
@@ -183,7 +183,7 @@ class NODE_OT_group_add(Operator):
         return props.tooltip
 
 # Find .blend file in specified Directory
-# If .blend file is absent, raise FileNotFoundError
+# If .blend file is absent, raise FileNotFoundError with File path
     def execute(self, context):
 
         for file in os.listdir(dir_path):
@@ -193,7 +193,7 @@ class NODE_OT_group_add(Operator):
         else:
             raise FileNotFoundError("No .blend File in directory " + dir_path)
 
-# Load Specified Type of Node Group as Library from specified Filepath unlinked
+# Load Specified Type of Node Group as Library from specified Filepath as unlinked
         with bpy.data.libraries.load(filepath, link=False) as (data_from, data_to):
             if self.group_name not in bpy.data.node_groups:
                 data_to.node_groups.append(self.group_name)
@@ -230,7 +230,7 @@ def register():
 # Functions to Unregister
 def unregister():
     for func in draw_menu_functions:
-        bpy.types.NODE_MT_t3d_menu.remove(+func)
+        bpy.types.NODE_MT_t3d_menu.remove(func)
     if hasattr(bpy.types, "NODE_MT_t3d_menu"):
         bpy.types.NODE_MT_add.remove(add_t3d_button)
         bpy.utils.unregister_class(NODE_MT_t3d_menu)

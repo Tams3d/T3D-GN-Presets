@@ -39,7 +39,7 @@ bl_info = {
     "author": "Tamil Selvan",
     "description": "T3D GN Presets contains custom-made Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
     "location": "Geometry Node Editor > Add > T3D GN Presets",
-    "warning": "Beta Version (From Experimental Branch)",
+    "warning": "",
     "blender": (3, 4, 0),
     "version": (1, 1, 0),
     "doc_url":"https://github.com/Tams3d/T3D-GN-Presets",

@@ -41,7 +41,7 @@ bl_info = {
     "location": "Geometry Node Editor > Add > T3D GN Presets",
     "warning": "",
     "blender": (3, 4, 0),
-    "version": (1, 1, 0),
+    "version": (1, 1, 1),
     "doc_url":"https://github.com/Tams3d/T3D-GN-Presets",
     "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues",
     "category": "Node",

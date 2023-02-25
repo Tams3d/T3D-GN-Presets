@@ -1,7 +1,7 @@
 <div align="center">
 
 # Tams 3d's GN Presets
-##  A Collection of Incredibly useful nodes for Geometry Nodes - 3.4 & Above
+##  A Collection of Incredibly useful nodes for Geometry Nodes - 3.4
 ![T3D GN Presets](https://user-images.githubusercontent.com/106262964/173188615-21216a7b-6e8b-4319-bf33-954b940ac4b5.png)
 
 <br>

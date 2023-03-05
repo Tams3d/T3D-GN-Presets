@@ -3,7 +3,7 @@
 This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; either version 3 of the License, or
- (at your option) any later version.
+ at your option any later version.
 
  This program is distributed in the hope that it will be useful, but
  WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -19,10 +19,8 @@ This program is free software; you can redistribute it and/or modify
     Description: T3D GN Presets help artists generate faster recursions of ideas by unlocking non-destructive procedural workflows to extreme limits in Geometry Nodes
     Source: https://github.com/Tams3d/T3D-GN-Presets
     Version:
-        Addon: v1.1.0
-        Blender: 3.4 Stable - 3.5 Alpha
-    Changelogs & Release Notes:    
-    Release Date: 25.12.2022
+        Addon: v1.2.0
+        Blender: 3.5 Beta - 3.6 LTS
 """
 
 # Importing Modules
@@ -39,9 +37,9 @@ bl_info = {
     "author": "Tamil Selvan",
     "description": "T3D GN Presets contains custom-made Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
     "location": "Geometry Node Editor > Add > T3D GN Presets",
-    "warning": "",
-    "blender": (3, 4, 0),
-    "version": (1, 1, 0),
+    "warning": "Alpha Version - Subjected to many changes",
+    "blender": (3, 5, 0),
+    "version": (1, 2, 0),
     "doc_url":"https://github.com/Tams3d/T3D-GN-Presets",
     "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues",
     "category": "Node",
@@ -95,6 +93,13 @@ def geonode_cat_generator():
                 if group_name == "_":
                     layout.separator(factor=1.0)
                     continue
+
+                # Use group name starts with "^ " as disabled button (Separation and Visual purposes)
+                if group_name.startswith("^ "):
+                    layout.label(text=group_name.split("^ ")[1])
+                    continue   
+
+                # Set group name after " ~ " as tooltip
                 entry = group_name.split(" ~ ")
                 props = layout.operator(
                     NODE_OT_group_add.bl_idname,
@@ -189,7 +194,7 @@ class NODE_OT_group_add(Operator):
                 filepath = os.path.join(dir_path, file)
                 break
         else:
-            raise FileNotFoundError("No .blend File in directory " + dir_path)
+            raise FileNotFoundError(" T3D GN Presets File has been modified - No .blend File in directory ")
 
 # Load Specified Type of Node Group as Library from specified Filepath as unlinked
         with bpy.data.libraries.load(filepath, link=False) as (data_from, data_to):
@@ -225,6 +230,7 @@ def register():
     _icons = bpy.utils.previews.new()
     bpy.types.NODE_HT_header.append(t3d_ht_header)
 
+
 # Functions to Unregister
 def unregister():
     for func in draw_menu_functions:
@@ -236,3 +242,6 @@ def unregister():
     global _icons
     bpy.utils.previews.remove(_icons)
     bpy.types.NODE_HT_header.remove(t3d_ht_header)
+
+if __name__ == "__main__":
+    register()

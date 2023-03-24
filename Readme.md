@@ -12,7 +12,7 @@
 * This is an essential component of an artist’s toolkit which enables users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
 
 # 🪄 Release Notes:
-- **T3D-GN-Presets (v1.2.0)** is currenly in **Beta 🟡** untill 22 March, 2023. **Subjected to changed**
+- **T3D-GN-Presets (v1.2.0)** is currenly in **Beta 🟡**
 - Download older versions for Blender 3.4 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases).     
 - [Corrective Release](https://github.com/Tams3d/T3D-GN-Presets/tree/Master#-corrective-releases) has been introduced for minor fixes especially for [LTS](https://github.com/Tams3d/T3D-GN-Presets/releases/tag/LTS)
 

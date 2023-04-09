@@ -3,7 +3,6 @@
         "Align To Spline ~ Align Geometry to Spline with position offsets",
         "Extend Curve ~ Entent endpoints of Curve along Tangent",
         "Lathe Curve ~ Mesh from Curve by rotating points around a fixed circular axis",
-        "Smooth Curve ~ Curve to Bezier with smoothing",
         "Sweep Curve ~ Mesh from Profile Curve along with input Curve with parameters"
     ],
     "Curve Primitives": [
@@ -12,21 +11,12 @@
         "Spirograph ~ Curve Primitive",
         "Spiroshell ~ Curve Primitive"
     ],
-    "Hair Curves": [
-        "Clump Hair Curves ~ Clumps existing Hair Curves based on guide curve",
-        "Grow/Shrink Hair Curves ~ Change the length of Hair Curves preserving the original shape",
-        "Guide Curves ~ Creates an attribute that maps each curve to its nearest guide via index",
-        "Rotate Hair Curves ~ Rotates each hair curve around an axis",
-        "Set Hair Curve Length ~ Set Hair Curve length ",
-        "Set Hair Curve Radius ~ Set Hair Curve radius of root and tip",
-        "Straighten Hair Curves ~ Straightens hair curves between root and tip."
-    ],
     "Deformers": [
         "Bend ~ Bend along specified axis",
         "Bulge ~ Thickening and Thinning at center along specified axis ",
         "Displacer ~ Displace Geometry based on Texture",
         "Shear ~ Slide Geometry along specified axis",
-        "Smooth Mesh ~ Averages Face Position",
+        "Smooth Geometry ~ Averages Position",
         "Spherify ~ Deform Geometry to sphere (Similar to edit mode 'To Sphere')",
         "Taper ~ Linear Thickening or Thinning at edges",
         "Twist ~ Twist along specified axis"
@@ -49,9 +39,7 @@
         "Linear Field ~ Gradient Falloff",
         "Prism Field ~ Prism Falloff",
         "Spherical Field ~ Spherical Falloff",
-        "Torus Field ~ Torus Falloff",
-        "_",
-        "Modify Field ~ Field Modifier with direct controls of the input Field"
+        "Torus Field ~ Torus Falloff"
     ],
 
     "Geometry": [

@@ -57,7 +57,7 @@
 
 ## :open_file_folder: Files & Source Code
   
-  - [init.py]() has the python code for the Addon, which contains some adaptations from other scripts with the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/LICENSE).
+  - [init.py]() has the Python code for the Addon, which contains some adaptations from other scripts with the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/LICENSE).
   - The [geonode_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/geonode_nodes.blend) contains All the Node-groups as Fake-User which is being appended by the Addon; changes may bring errors.
   - The [geonode_nodes.json](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/geonode_nodes.json) contains the actual work of the menus and submenus with names of the Node-groups. 
   - All these files follow the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#licencing--files).
@@ -85,7 +85,7 @@
   - My Vision is to create *Free & Paid Resources* for the Blender Community, which requires complex setups provided in a simplified, effective way. I  Have 7 Months of Experience with Blender, mainly focusing on making procedural stuff with Geometry Nodes which can also be edited procedurally and require minimum manual tweaks. 
   
   ### 🚀 Experience
-  - I have been Investing time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, Premiere Pro for 2D Art Creations and Blender & Cinema 4D for 3D Artworks. Primarily Using **Blender** For 3D stuff and spending Approximately 2Hrs Everyday learning through Youtube Tutorials and From the Awesome Blender Community.
+  - I have been Investing time into 2D and 3D learning and developing skills at mid of COVID-19 Outbreak, and explored software like Photoshop, After Effects, and Premiere Pro for 2D Art Creations and Blender & Cinema 4D for 3D Artwork. Primarily Using **Blender** For 3D stuff and spending Approximately 2Hrs every day learning through Youtube Tutorials and From the Awesome Blender Community.
 
   ### :clinking_glasses: Socials
   - Catch up with me here:

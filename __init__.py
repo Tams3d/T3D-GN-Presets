@@ -20,7 +20,7 @@ This program is free software; you can redistribute it and/or modify
     Source: https://github.com/Tams3d/T3D-GN-Presets
     Version:
         Addon: v1.2.0
-        Blender: 3.5 Beta - 3.6 LTS
+        Blender: 3.5 Stable - 3.6 LTS
 """
 
 # Importing Modules
@@ -37,7 +37,7 @@ bl_info = {
     "author": "Tamil Selvan",
     "description": "T3D GN Presets contains custom-made Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
     "location": "Geometry Node Editor > Add > T3D GN Presets",
-    "warning": "Alpha Version - Subjected to many changes",
+    "warning": "Beta Version - Release on 23.4.2022 ",
     "blender": (3, 5, 0),
     "version": (1, 2, 0),
     "doc_url":"https://github.com/Tams3d/T3D-GN-Presets",

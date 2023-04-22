@@ -2,7 +2,7 @@
 
 # T3D GN Presets
 ##  A Collection of Incredibly useful nodes for Geometry Nodes - 3.5
-![T3D GN Presets](https://user-images.githubusercontent.com/106262964/173188615-21216a7b-6e8b-4319-bf33-954b940ac4b5.png)
+![T3D GN Presets](https://user-images.githubusercontent.com/106262964/233781475-2a48c999-f843-476a-a9bb-75e61e0781f4.png)
 
 <br>
 </div>
@@ -12,25 +12,26 @@
 * This is an essential component of an artist’s toolkit which enables users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
 
 # 🪄 Release Notes:
-- **T3D-GN-Presets (v1.2.0)** is currenly in **Beta 🟡** until `23.04.2022`
-- Download older versions for Blender 3.4 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases).     
-- [Corrective Release](https://github.com/Tams3d/T3D-GN-Presets/tree/Master#-corrective-releases) has been introduced for minor fixes especially for [LTS](https://github.com/Tams3d/T3D-GN-Presets/releases/tag/LTS)
+- **T3D-GN-Presets (v1.2.0)** to be released on 23.04.2023
+- Download older versions for Blender 3.4 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
+- [Corrective Release](https://github.com/Tams3d/T3D-GN-Presets/tree/Master#-corrective-releases) has been introduced for [LTS](https://github.com/Tams3d/T3D-GN-Presets/releases/tag/LTS)
 
 # ⚙️ Core:
 ## Source Files
 - Execute code when it runs as script, prevents running as imported module.
-- Added disabled buttons for Seperation and Visual Improvement, **`^ `** as prefix makes disabled button
+- Added disabled buttons for Separation and Visual Improvement, **`^ `** as prefix makes disabled button
 - Tooltips are now more specific on functions 
-- `Deformers` which work in all type of geometry are now converted to **Assets**
-- Added [Icons]() for `Deformers` which now supports **Asset Browser**
+- `Deformers` which work in all types of geometry are now converted to **Assets**
+- Added [Icons](https://github.com/Tams3d/T3D-GN-Presets/tree/Master/Icons) for `Deformers` which now supports **Asset Browser**
 
 ## Nodes
+- Fixed Tooltips
 - Changed Appropriate input sub-type.
 - Replaced appropriate **[Mix node](https://archive.blender.org/developer/D13749)** for Data Types: float, vector & color.
-- Files saved with the new node are not compatible with older versions of Blender. Files saved with older version of addon are still compatible.
-- `Coordinates` has been moved to `Vector` (Catergory)
+- Files saved with the new node are not compatible with older versions of Blender. Files saved with older versions of addons are still compatible.
+- `Coordinates` have been moved to `Vector` (Catergory)
 - Renamed **Smooth >>> Smooth Geometry**, provided support for Mesh & Curves
-- Fixed `Carterian to Cylindrical` **(r, θ, z)**
+- Fixed `Cartesian to Cylindrical` **(r, θ, z)**
 - Fixed `Fields` scale evaluation
 - *Field Inputs* are now hidden by default
 - Removed **Modify Field** as functions of it can be created with basic setups
@@ -38,7 +39,7 @@
 
 ## 🪅 Performance:
 - `Smooth Geometry` evaluates much faster, ignores Point Clouds and Instances
-- `UV To Mesh` to calculate UV at initial position avoilds flicker and more stable and 1.5x faster because of [Spilt Edges mesh operator and multi-threading](https://projects.blender.org/blender/blender/commit/e83f46ea7630)
+- `UV To Mesh` to calculate UV at initial position avoids flicker and more stable and 1.5x faster because of [Spilt Edges mesh operator and multi-threading](https://projects.blender.org/blender/blender/commit/e83f46ea7630)
 - `Geometry To Spline` does not remap index, removal of *Trim* 
 - *Boolean inputs* to be made constant to avoid field computation in `Align To Spline` `Set Geometry Visibility` `Lathe Curve`
 
@@ -66,7 +67,7 @@
 
 ## 🎆 New Features & Changes:
 - Added `Deformers` as **Assets** now supports Drag & Drop with Asset Browser for appended nodes.
-- Added *Disabled Buttons* as inter-catergory Seperators
+- Added *Disabled Buttons* as inter-catergory Separators
 - Added Per Axis Strength as default `Displacer`
 - Added *Position* input for **SDF**
 - `Smooth Geometry` can now input **Stiffness** works with Mesh
@@ -76,16 +77,16 @@
 - **Deformers** now support *Instances* as realised geometry.
 
 ## 👻 Bug Reports
-- Bug reports are always welcomed in the form as reports or sugestions.
-- Suggestions can be included with bried explanations on usability.
+- Bug reports are always welcomed in the form as reports or suggestions.
+- Suggestions can be included with brief explanations of usability.
 - Submit Bug reports and feature requests [here](https://github.com/Tams3d/T3D-GN-Presets/issues)
 
 # 🎯 Development
-- Developments are happening locally in regular basis regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) releases.
-- [Simulation Nodes](https://builder.blender.org/download/experimental/geometry-nodes-simulation/)  will get eventually supported when packed with Stable Blender releases. 
+- Developments are happening locally on regular basis regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
+- [Simulation Nodes](https://builder.blender.org/download/experimental/geometry-nodes-simulation/)  will get eventually be supported when packed with Stable Blender releases. 
 - Support for Hair Curves has been provided by default. 
 - Dev conversations may get started in future on My [Discord Server](https://discord.gg/TNgzbZCdnY)
-- Closed [GitHub Projects](https://github.com/users/Tams3d/projects/2/views/1) for maintainance reasons.
+- Closed [GitHub Projects](https://github.com/users/Tams3d/projects/2/views/1) for maintinance reasons.
 - Closed & Removed *Experimental Branch*
 - Removed `v1.0.0` release as a replacement for [`Corrective Release (v1.0.1)`](https://github.com/Tams3d/T3D-GN-Presets/releases/tag/v1.0.1)
 

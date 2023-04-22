@@ -72,7 +72,7 @@
         "_",
         "^ Index",
         "_",
-        "Select Index Range"
+        "Select Index Range ~ Select Index by Min & Max"
     ],
 
     "Instancers": [
@@ -123,14 +123,14 @@
     "UV": [
         "^ Deform Mesh with UV",
         "_",
-        "UV Deform",
-        "UV To Mesh",
+        "UV Deform ~ Deform Mesh by another mesh's UV",
+        "UV To Mesh ~ Geometrical Representation Of UV Mapping",
         "_",
         "^ Modifiers",
         "_",
-        "Flip UV",
-        "UV Displace",
-        "UV Project"
+        "Flip UV ~ Flip UV along X,Y axis",
+        "UV Displace ~ Displacer for UV",
+        "UV Project ~ Project UV from specified axis"
 
     ],
     "Vector": [

@@ -83,7 +83,7 @@
     ],
 
     "Mesh": [
-        "Delete Islands - Deletes Mesh Island by size",
+        "Delete Islands ~ Deletes Mesh Island by size",
         "Inset Faces ~ Inner Extrusion of faces",
         "Poke Faces ~ Poke faces at face center with access to depth",
         "Rotate Elements ~ Rotate at Individual Origin",

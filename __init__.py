@@ -35,9 +35,8 @@ from bpy.types import Operator, Menu
 bl_info = {
     "name": "T3D GN Presets",
     "author": "Tamil Selvan",
-    "description": "T3D GN Presets contains custom-made Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
+    "description": "T3D GN Presets contains Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
     "location": "Geometry Node Editor > Add > T3D GN Presets",
-    "warning": "Beta Version - Release on 23.4.2022 ",
     "blender": (3, 5, 0),
     "version": (1, 2, 0),
     "doc_url":"https://github.com/Tams3d/T3D-GN-Presets",

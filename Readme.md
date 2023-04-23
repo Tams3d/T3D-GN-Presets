@@ -12,7 +12,7 @@
 * This is an essential component of an artist’s toolkit which enables users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
 
 # 🪄 Release Notes:
-- **T3D-GN-Presets (v1.2.0)** to be released on 23.04.2023
+- **T3D-GN-Presets (v1.2.0)** released on 24.04.2023
 - Download older versions for Blender 3.4 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
 - [Corrective Release](https://github.com/Tams3d/T3D-GN-Presets/tree/Master#-corrective-releases) has been introduced for [LTS](https://github.com/Tams3d/T3D-GN-Presets/releases/tag/LTS)
 
@@ -53,7 +53,7 @@
 
 ### Input:
 - **Component Selection** - Select Individual Components
-- **Edge Path Selection** - Select shortest edge path"
+- **Edge Path Selection** - Select shortest edge path
 - **Select Similar Vertices** - Select Similar Vertices by property type
 - **Select Similar Edges** - Select Similar Edges by property type
 - **Select Similar Faces** - Select Similar Faces by property type

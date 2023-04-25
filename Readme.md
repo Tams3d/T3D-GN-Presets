@@ -1,20 +1,20 @@
 <div align="center">
 
 # T3D GN Presets
-##  A Collection of Incredibly useful nodes for Geometry Nodes - 3.5
+##  A Collection of Incredibly useful nodes for Geometry Nodes - Blender 3.5
 ![T3D GN Presets](https://user-images.githubusercontent.com/106262964/233781475-2a48c999-f843-476a-a9bb-75e61e0781f4.png)
 
 <br>
 </div>
 
 # 💡 Introduction:
-* [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/) contains Node Groups for Geometry Nodes which include Deformers, Fields, SDF, UV, Utilities and much more for **free!**
+* [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/) contains Node groups for Geometry Nodes which include Deformers, Fields, SDF, UV, Utilities and much more for **free!**
 * This is an essential component of an artist’s toolkit which enables users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
 
 # 🪄 Release Notes:
 - **T3D-GN-Presets (v1.2.0)** released on 24.04.2023
 - Download older versions for Blender 3.4 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
-- [Corrective Release](https://github.com/Tams3d/T3D-GN-Presets/tree/Master#-corrective-releases) has been introduced for [LTS](https://github.com/Tams3d/T3D-GN-Presets/releases/tag/LTS)
+- **Corrective Release** has been introduced for [Blender 3.3 LTS](https://github.com/Tams3d/T3D-GN-Presets/releases/tag/v1.0.1)
 
 # ⚙️ Core:
 ## Source Files

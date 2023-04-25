@@ -40,7 +40,7 @@ bl_info = {
     "blender": (3, 5, 0),
     "version": (1, 2, 0),
     "doc_url":"https://github.com/Tams3d/T3D-GN-Presets",
-    "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues",
+    "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues/new/choose",
     "category": "Node",
 }
 

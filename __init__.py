@@ -1,5 +1,4 @@
 """
-#Licence
 This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; either version 3 of the License, or
@@ -12,15 +11,6 @@ This program is free software; you can redistribute it and/or modify
 
  You should have received a copy of the GNU General Public License
  along with this program. If not, see <http://www.gnu.org/licenses/>.
-
-#General Info
-    Addon:  T3D GN Presets
-    Author: Tamil Selvan
-    Description: T3D GN Presets help artists generate faster recursions of ideas by unlocking non-destructive procedural workflows to extreme limits in Geometry Nodes
-    Source: https://github.com/Tams3d/T3D-GN-Presets
-    Version:
-        Addon: v1.2.0
-        Blender: 3.5 Stable - 3.6 LTS
 """
 
 # Importing Modules
@@ -46,7 +36,6 @@ bl_info = {
 
 # Load Icons
 _icons = None
-
 def load_preview_icon(path):
     global _icons
     if not path in _icons:
@@ -113,7 +102,6 @@ def geonode_cat_generator():
 
         menu_type = type(
             "NODE_MT_category_" + itemid, (bpy.types.Menu,),
-            # Replace Blankspace with "_" to avoid naming conflicts
             {
                 "bl_idname": "NODE_MT_category_" + itemid.replace(" ", "_"),
                 "bl_space_type": "NODE_EDITOR",
@@ -122,7 +110,6 @@ def geonode_cat_generator():
             }
         )
         if menu_type not in geonode_cat_list:
-            # Wrapper Function
             def generate_menu_draw(name, label):
                 def draw_menu(self, context):
                     self.layout.menu(name, text=label.split("_")[0])
@@ -141,7 +128,6 @@ class NODE_MT_t3d_menu(Menu):
     bl_label = "T3D"
     bl_idname = "NODE_MT_t3d_menu"
 
-# Menu at specified NodeTree Editor
     @classmethod
     def poll(cls, context):
         return context.space_data.tree_type == "GeometryNodeTree"
@@ -161,7 +147,6 @@ class NODE_OT_group_add(Operator):
     group_name: StringProperty()
     tooltip: StringProperty()
 
-# Store Mouse Cursor Location (x,y)
     @staticmethod
     def store_mouse_cursor(context, event):
         space = context.space_data
@@ -174,18 +159,14 @@ class NODE_OT_group_add(Operator):
         else:
             space.cursor_location = tree.view_center
 
-# Run Append Operator on specified NodeTree
     @classmethod
     def poll(cls, context):
         return context.space_data.node_tree
 
-# Use available Tooltip
     @classmethod
     def description(self, context, props):
         return props.tooltip
 
-# Find .blend file in specified Directory
-# If .blend file is absent, raise FileNotFoundError with File path
     def execute(self, context):
 
         for file in os.listdir(dir_path):
@@ -193,14 +174,12 @@ class NODE_OT_group_add(Operator):
                 filepath = os.path.join(dir_path, file)
                 break
         else:
-            raise FileNotFoundError(" T3D GN Presets File has been modified - No .blend File in directory ")
+            raise FileNotFoundError("T3D GN Presets File has been modified - No .blend File in directory")
 
-# Load Specified Type of Node Group as Library from specified Filepath as unlinked
         with bpy.data.libraries.load(filepath, link=False) as (data_from, data_to):
             if self.group_name not in bpy.data.node_groups:
                 data_to.node_groups.append(self.group_name)
 
-# Node Group Type
         bpy.ops.node.add_node(type="GeometryNodeGroup")
         node = context.selected_nodes[0]
         node.node_tree = bpy.data.node_groups[self.group_name]
@@ -228,7 +207,6 @@ def register():
     global _icons
     _icons = bpy.utils.previews.new()
     bpy.types.NODE_HT_header.append(t3d_ht_header)
-
 
 # Functions to Unregister
 def unregister():

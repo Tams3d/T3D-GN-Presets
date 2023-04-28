@@ -1,9 +1,9 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
+title: 'Bug Report: '
 labels: Bug
-assignees: Tams3d
+assignees:
 
 ---
 
@@ -14,8 +14,8 @@ A clear and precise description of what the bug is.
 Steps to reproduce the behaviour:
 1. Go to '...'
 2. Add '....' Node
-3. Change settings to '....'
-4. See an error
+3. Change value to '....'
+4. See an issue
 
 **Expected behaviour**
 A clear description of what you expected to happen.
@@ -25,8 +25,8 @@ If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
  - OS: [e.g. Windows]
- - Blender [e.g. 3.3 LTS]
- - Addon Version [e.g. v1.0.0]
+ - Blender [e.g. 3.5]
+ - Addon Version [e.g. v1.2.0]
 
 **Additional context**
 Add any other context about the problem here. (blend file or a video clip)

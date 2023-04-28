@@ -65,7 +65,7 @@
         "Is Empty Geometry ~ Is Geometry Empty or with No Points? Used with a switch to avoid computations",
         "Is Inside Volume ~ Is Geometry have Volume inside it",
         "_",
-        "^ Select Similarity",
+        "^ Select by Similarity",
         "_",
         "Select Similar Vertices",
         "Select Similar Edges",
@@ -118,11 +118,6 @@
         "SDF Displacement ~ Displacer for SDF"
     ],
 
-    "Utilities": [
-        "Rename Named Attribute",
-        "Empty Group ~ Group with input and output",
-        "Transforms To Position ~ Location, Rotation, Scale to Position"
-    ],
     "UV": [
         "^ Deform Mesh with UV",
         "_",
@@ -133,6 +128,9 @@
         "_",
         "Flip UV ~ Flip UV along X,Y axis",
         "UV Displace ~ Displacer for UV",
+        "_",
+        "^ UV Projection",
+        "_",
         "UV Project ~ Project UV from specified axis"
 
     ],
@@ -148,6 +146,7 @@
         "_",
         "Replace Vector ~ Replace specific Values in X,Y,Z",
         "Seamless Vector ~ Make 4D Texture Seamless",
+        "Transforms To Position ~ Location, Rotation, Scale to Position",
         "Vector Clamp ~ Clamp Vector Minimum and Maximum",
         "Vector Mapping ~ Control Location, Rotation, Scale of a Vector"
     ]

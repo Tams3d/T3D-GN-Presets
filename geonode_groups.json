@@ -131,7 +131,7 @@
         "_",
         "^ UV Projection",
         "_",
-        "UV Project ~ Project UV from specified axis"
+        "UV Project ~ Project UV by rotation (Defaulted to Z positive)"
 
     ],
     "Vector": [

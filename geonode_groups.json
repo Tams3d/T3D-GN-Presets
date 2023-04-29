@@ -1,9 +1,9 @@
 {
     "Curve": [
         "Align To Spline ~ Align Geometry to Spline with position offsets",
-        "Extend Curve ~ Entent endpoints of Curve along Tangent",
+        "Extend Curve ~ Entend endpoints of Curve along Tangent",
         "Lathe Curve ~ Mesh from Curve by rotating points around a fixed circular axis",
-        "Sweep Curve ~ Mesh from Profile Curve along with input Curve with parameters"
+        "Sweep Curve ~ Mesh from Profile Curve with even thickness"
     ],
     "Curve Primitives": [
         "Curve Ellipse ~ Curve Primitive",
@@ -55,7 +55,7 @@
         "^ Selection",
         "_",
         "Boundary Edge Selection ~ Selection of all edges with one neighbouring face ",
-        "Component Selection ~ Selectt Individual Components",
+        "Component Selection ~ Select Individual Components",
         "Edge Angle Selection ~ Selection of particular edge with specified edge angle ",
         "Edge Path Selection ~ Select shortest edge path",
         "Face Sides Selection ~ Selection of all faces that have a specified number of edges.",
@@ -63,7 +63,7 @@
         "Non-Manifold Edge Selection ~ Selection of any edge shared by more than two faces",
         "_",
         "Geometry Size ~ Outputs bound geometry size",
-        "Is Empty Geometry ~ Is Geometry Empty or with No Points? Used with a switch to avoid computations",
+        "Is Empty Geometry ~ Is Geometry Empty or with No Points, used with a switch to avoid computations",
         "Is Inside Volume ~ Is Geometry have Volume inside it",
         "_",
         "^ Select by Similarity",
@@ -92,7 +92,7 @@
         "Segmental Extrude ~ Repeated Extrusion of segments",
         "Shade Auto Smooth ~ Edge Split over unsigned angles of degree",
         "Match Topology ~ Transforms Mesh by Topology",
-        "Simple Decimate ~ Merge Faces by distance by proximated points",
+        "Simple Decimate ~ Merge Faces by distance by proximate points",
         "Vertex Slide ~ Move vertices based on index",
         "_",
         "Mesh To SDF ~ Mesh to Signed Distance Function",
@@ -102,7 +102,7 @@
     "Point Primitives": [
         "Point Grid ~ Point Primitive with Points over XYZ Directions with spacing",
         "Point Honeycomb ~ Point Primitive with Points offset over X & Y to form Honeycomb-like structure",
-        "Phyllotaxis ~ Point Primitive with Point over the arrangement of leaves on a plant stem"
+        "Phyllotaxis ~ Point Primitive like arrangement of leaves on a plant stem"
     ],
 
     "SDF":  [

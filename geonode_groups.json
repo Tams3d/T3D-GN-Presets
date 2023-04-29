@@ -23,14 +23,15 @@
     ],
 
     "Easing": [
-        "easeCirc ~ Easing In and Out",
-        "easeCubic ~ Easing In and Out",
-        "easeElastic ~ Easing In and Out",
-        "easeExpo ~ Easing In and Out",
+        "easeSine ~ Easing In and Out",
         "easeQuad ~ Easing In and Out",
+        "easeCubic ~ Easing In and Out",
         "easeQuart ~ Easing In and Out",
         "easeQuint ~ Easing In and Out",
-        "easeSine ~ Easing In and Out"
+        "easeExpo ~ Easing In and Out",
+        "easeCirc ~ Easing In and Out",
+        "easeElastic ~ Easing In and Out"
+
     ],
 
     "Fields": [

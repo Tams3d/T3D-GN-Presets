@@ -14,15 +14,15 @@
 
 # 🪄 Release Notes:
 
-- **T3D-GN-Presets (v1.3.0)** to be released on 27.05.2023.
-- Download stable versions [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
-- **Corrective Release** for [Blender 3.3 LTS (v1.0.2)](https://github.com/Tams3d/T3D-GN-Presets/releases/tag/v1.0.1) on development
+- **T3D-GN-Presets (v1.3.0)** to be released on 27.05.2023
+- Download stable version for Blender 3.5 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
 
 # ⚙️ Core:
 
 ## Source Files
 - Removed unnecessary code comments, empty lines and spaces [(0d4126a)](https://github.com/Tams3d/T3D-GN-Presets/commit/0d4126a9272584c5f80e585ce6ace9d085e8bce2)
 - Optimised all icons for Deformers. **Displacer** and **Smooth Geometry** are now assets. Filled necessary informations [(42fdcbc)](https://github.com/Tams3d/T3D-GN-Presets/commit/42fdcbce5ce1547c0f42f93cfab3eb0191b9b14c)
+- Removed Exif data from images, solves empty Icon issue
 
 ## Nodes
 - Fixed implicit issues with nodes [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
@@ -40,24 +40,34 @@
 # 🎉 New Nodes, Features & Changes:
 
 ## New Nodes:
-- **Geometry Size** - Outputs bound geometry size
-- **Simple Decimate** - Merge Faces by distance by proximate points
+- **Align Island** - Aligns Mesh Island by axis
+- **Geometry Size** - Outputs bound geometry size, bound center and max size
 - **Match Topology** - Transforms Mesh by Topology
+- **Simple Decimate** - Merge Faces by distance by proximate points
 
 ## 🎆 New Features & Changes:
-- **Transforms To Position** is moved to Vector (category) [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
+
+- Nodes are rearranged based on usability with separations. Tooltips are made mandatory for all nodes.
+- **Point Honeycomb** inputs Poin Radius
+- **Rotate Elements** now supports Edges
+- Renamed **Transforms To Position** >>> **Transform Position**
+- **Transform Position** is moved to Vector (category) [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
 - **Smooth Geometry** does not restore initial size and position to avoid jitter [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
 - Easing nodes are rearranged based on easing strength [(ff3cbc9)](https://github.com/Tams3d/T3D-GN-Presets/commit/ff3cbc97200fff4e4262fb747f2c9fe88f19a27b)
-- **Vertex Slide** has been pored with new Index of Nearest [(1ab598b)](https://github.com/Tams3d/T3D-GN-Presets/commit/1ab598bb74ef5d80a6cc69caff7a3f897f844815)
+- **Vertex Slide** has been ported with new Index of Nearest [(1ab598b)](https://github.com/Tams3d/T3D-GN-Presets/commit/1ab598bb74ef5d80a6cc69caff7a3f897f844815)
+
+## Breaking Changes:
+- Removed **Select Index Range** 
+- Breaks backwards compatibility in **Vertex Slide**. **Index of Nearest** does not support offsetting, input of Nearest Index is removed.
+
+# 🎯 Development
+- Developments are happening locally regularly regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
+- Check development process [here.](https://github.com/Tams3d/T3D-GN-Presets/issues/16) New tasks might be created depending on the needs. Community Contributions are always welcomed
 
 ## 👻 Bug Reports
 - Bug reports are always welcomed in the form of reports or suggestions.
 - Suggestions can be included with brief explanations of usability.
 - Submit Bug reports and feature requests [here](https://github.com/Tams3d/T3D-GN-Presets/issues)
-
-# 🎯 Development
-- Developments are happening locally regularly regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
-- Check development process [here.](https://github.com/Tams3d/T3D-GN-Presets/issues/16) New tasks might be created depending on the needs. Community Contributions are always welcomed
 
 # Licencing & Files:
 ## 📄 Licence

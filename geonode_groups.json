@@ -1,9 +1,13 @@
 {
     "Curve": [
-        "Align To Spline ~ Align Geometry to Spline with position offsets",
+        "^ Operators",
+        "_",
         "Extend Curve ~ Entend endpoints of Curve along Tangent",
         "Lathe Curve ~ Mesh from Curve by rotating points around a fixed circular axis",
-        "Sweep Curve ~ Mesh from Profile Curve with even thickness"
+        "Sweep Curve ~ Mesh from Profile Curve with even thickness",
+        "_",
+        "Align To Spline ~ Align Geometry to Spline with position offsets"
+
     ],
     "Curve Primitives": [
         "Curve Ellipse ~ Curve Primitive",
@@ -12,14 +16,16 @@
         "Spiroshell ~ Curve Primitive"
     ],
     "Deformers": [
+        "^ Geometry",
         "Bend ~ Bend along specified axis",
         "Bulge ~ Thickening and Thinning at the center along specified axis ",
         "Displacer ~ Displace Geometry based on Texture",
         "Shear ~ Slide Geometry along specified axis",
         "Smooth Geometry ~ Averages Position",
-        "Spherify ~ Deform Geometry to a sphere (Similar to edit mode 'To Sphere')",
         "Taper ~ Linear Thickening or Thinning at edges",
-        "Twist ~ Twist along specified axis"
+        "Twist ~ Twist along specified axis",
+        "^ Mesh",
+        "Spherify ~ Deform Mesh to a sphere (Similar to edit mode 'To Sphere')"
     ],
 
     "Easing": [
@@ -31,7 +37,6 @@
         "easeExpo ~ Easing In and Out",
         "easeCirc ~ Easing In and Out",
         "easeElastic ~ Easing In and Out"
-
     ],
 
     "Fields": [
@@ -45,10 +50,12 @@
 
     "Geometry": [
         "Center Elements ~ Reset Location to Worldspace Coordinates",
-        "Geometry To Spline ~ Convert any input Geometry to Spline",
         "Parent To Object ~ Parent Location, Rotation, Scale to Object",
+        "_",
         "Set Geometry Size ~ Reset Bound Geometry",
-        "Set Geometry Visibility ~ Set Visibility in the viewport or Render"
+        "Set Geometry Visibility ~ Set Visibility in the viewport or Render",
+        "_",
+        "Geometry To Spline ~ Convert any input Geometry to Spline"
     ],
 
     "Input": [
@@ -62,7 +69,6 @@
         "Loose Edge Selection ~ Selection of all faces that do not share edges with other faces",
         "Non-Manifold Edge Selection ~ Selection of any edge shared by more than two faces",
         "_",
-        "Geometry Size ~ Outputs bound geometry size",
         "Is Empty Geometry ~ Is Geometry Empty or with No Points, used with a switch to avoid computations",
         "Is Inside Volume ~ Is Geometry have Volume inside it",
         "_",
@@ -72,9 +78,8 @@
         "Select Similar Edges",
         "Select Similar Faces",
         "_",
-        "^ Index",
-        "_",
-        "Select Index Range ~ Select Index by Min & Max"
+        "Geometry Size ~ Outputs bound geometry size, bound center and max size",
+        "Island Center ~ Outputs individual Mesh Island center"
     ],
 
     "Instancers": [
@@ -85,15 +90,19 @@
     ],
 
     "Mesh": [
-        "Delete Islands ~ Deletes Mesh Island by size",
-        "Inset Faces ~ Inner Extrusion of faces",
-        "Poke Faces ~ Poke faces at face center with access to depth",
         "Rotate Elements ~ Rotate at Individual Origin",
         "Segmental Extrude ~ Repeated Extrusion of segments",
         "Shade Auto Smooth ~ Edge Split over unsigned angles of degree",
         "Match Topology ~ Transforms Mesh by Topology",
         "Simple Decimate ~ Merge Faces by distance by proximate points",
         "Vertex Slide ~ Move vertices based on index",
+        "_",
+        "Inset Faces ~ Inner Extrusion of faces",
+        "Poke Faces ~ Poke faces at face center with access to depth",
+        "_",
+        "^ Mesh Island",
+        "Align Islands ~ Aligns Mesh Island by axis",
+        "Delete Islands ~ Deletes Mesh Island by size",
         "_",
         "Mesh To SDF ~ Mesh to Signed Distance Function",
         "Mesh To Field ~ Mesh to proximate Field"
@@ -147,8 +156,11 @@
         "_",
         "Replace Vector ~ Replace specific Values in X,Y,Z",
         "Seamless Vector ~ Make 4D Texture Seamless",
-        "Transforms To Position ~ Location, Rotation, Scale to Position",
-        "Vector Clamp ~ Clamp Vector Minimum and Maximum",
+        "Vector Clamp ~ Clamp Vector Min and Max",
+        "_",
+        "^ Transformation",
+        "_",
+        "Transform Position ~ Transform Location, Rotation, Scale of Position",
         "Vector Mapping ~ Control Location, Rotation, Scale of a Vector"
     ]
 }

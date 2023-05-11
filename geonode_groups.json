@@ -17,6 +17,7 @@
     ],
     "Deformers": [
         "^ Geometry",
+        "_",
         "Bend ~ Bend along specified axis",
         "Bulge ~ Thickening and Thinning at the center along specified axis ",
         "Displacer ~ Displace Geometry based on Texture",
@@ -24,7 +25,9 @@
         "Smooth Geometry ~ Averages Position",
         "Taper ~ Linear Thickening or Thinning at edges",
         "Twist ~ Twist along specified axis",
+        "_",
         "^ Mesh",
+        "_",
         "Spherify ~ Deform Mesh to a sphere (Similar to edit mode 'To Sphere')"
     ],
 
@@ -90,9 +93,14 @@
     ],
 
     "Mesh": [
+        "^ Transformation",
+        "_",
         "Rotate Elements ~ Rotate at Individual Origin",
-        "Segmental Extrude ~ Repeated Extrusion of segments",
         "Shade Auto Smooth ~ Edge Split over unsigned angles of degree",
+        "_",
+        "^ Topology",
+        "_",
+        "Segmental Extrude ~ Repeated Extrusion of segments",
         "Match Topology ~ Transforms Mesh by Topology",
         "Simple Decimate ~ Merge Faces by distance by proximate points",
         "Vertex Slide ~ Move vertices based on index",
@@ -101,6 +109,7 @@
         "Poke Faces ~ Poke faces at face center with access to depth",
         "_",
         "^ Mesh Island",
+        "_",
         "Align Islands ~ Aligns Mesh Island by axis",
         "Delete Islands ~ Deletes Mesh Island by size",
         "_",

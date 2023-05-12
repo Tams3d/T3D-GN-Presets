@@ -25,6 +25,7 @@
 - Removed Exif data from images, solves empty Icon issue
 
 ## Nodes
+- Nodes are rearranged based on usability with separations. Tooltips are made mandatory for all nodes.
 - Fixed implicit issues with nodes [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
   - Fixed jitter in Smooth Geometry
   - Clamp Fields and SDF
@@ -34,21 +35,22 @@
 ## 🪅 Performance:
 - Nodes with Store Named Attribute are slightly faster and memory efficient [(b54398c16c)](https://projects.blender.org/blender/blender/commit/b54398c16cfee14a054e2c3ec82d091b34c79a34)
 - Assets are now loaded faster, saves upto 10 mb [(42fdcbc)](https://github.com/Tams3d/T3D-GN-Presets/commit/42fdcbce5ce1547c0f42f93cfab3eb0191b9b14c)
-- Rewritten **UV Project** uses Euler Angles to project and fit mesh islands inside a 1-meter boundary
-- Fixed overhead with **UV Project** with high poly mesh
+- Fixed overhead with **UV To Mesh** and **UV Project** with high poly mesh
 
 # 🎉 New Nodes, Features & Changes:
 
 ## New Nodes:
-- **Align Island** - Aligns Mesh Island by axis
+
+### Input
+- **Island Center** - Outputs individual Mesh Island center
 - **Geometry Size** - Outputs bound geometry size, bound center and max size
+
+### Mesh
+- **Align Island** - Aligns Mesh Island by axis
 - **Match Topology** - Transforms Mesh by Topology
 - **Simple Decimate** - Merge Faces by distance by proximate points
 
 ## 🎆 New Features & Changes:
-
-- Nodes are rearranged based on usability with separations. Tooltips are made mandatory for all nodes.
-- **Point Honeycomb** inputs Poin Radius
 - **Rotate Elements** now supports Edges
 - Renamed **Transforms To Position** >>> **Transform Position**
 - **Transform Position** is moved to Vector (category) [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
@@ -56,9 +58,18 @@
 - Easing nodes are rearranged based on easing strength [(ff3cbc9)](https://github.com/Tams3d/T3D-GN-Presets/commit/ff3cbc97200fff4e4262fb747f2c9fe88f19a27b)
 - **Vertex Slide** has been ported with new Index of Nearest [(1ab598b)](https://github.com/Tams3d/T3D-GN-Presets/commit/1ab598bb74ef5d80a6cc69caff7a3f897f844815)
 
+### UV
+- **UV To Mesh** used `UVMap` as default
+- **UV Project** has been rewritten, inputs selection, uses Euler Angles to project - defaulted to (0,180°,0) as Z positive (Top project) and fit mesh islands inside a 1-meter boundary
+
+### Point Primitives
+- **Point Honeycomb** inputs Point Radius
+- **Point Phyllotaxis** has been changed to curve to points method. Now inputs Point Radius and outputs Normal and Rotation
+
 ## Breaking Changes:
 - Removed **Select Index Range** 
-- Breaks backwards compatibility in **Vertex Slide**. **Index of Nearest** does not support offsetting, input of Nearest Index is removed.
+- Breaks backward compatibility in **Vertex Slide**. **Index of Nearest** does not support offsetting, _Nearest Index_ is removed.
+- Removal of _Generate UV_ in **UV To Mesh** 
 
 # 🎯 Development
 - Developments are happening locally regularly regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.

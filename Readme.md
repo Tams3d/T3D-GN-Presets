@@ -26,6 +26,7 @@
 
 ## Nodes
 - Nodes are rearranged based on usability with separations. Tooltips are made mandatory for all nodes.
+- Support for NURBS in all curve nodes
 - Fixed implicit issues with nodes [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
   - Fixed jitter in Smooth Geometry
   - Clamp Fields and SDF
@@ -36,6 +37,8 @@
 - Nodes with Store Named Attribute are slightly faster and memory efficient [(b54398c16c)](https://projects.blender.org/blender/blender/commit/b54398c16cfee14a054e2c3ec82d091b34c79a34)
 - Assets are now loaded faster, saves upto 10 mb [(42fdcbc)](https://github.com/Tams3d/T3D-GN-Presets/commit/42fdcbce5ce1547c0f42f93cfab3eb0191b9b14c)
 - Fixed overhead with **UV To Mesh** and **UV Project** with high poly mesh
+- Removed internal dependancies in **Sweep Curve** 
+- All curve primimitives  are made to use Curve Circle or Arc as default. Removes Resample Curve computation
 
 # 🎉 New Nodes, Features & Changes:
 
@@ -51,6 +54,12 @@
 - **Simple Decimate** - Merge Faces by distance by proximate points
 
 ## 🎆 New Features & Changes:
+
+### Curve
+- **Lathe Curve:** Removed Curvature, uses evaluated points
+- **Sweep Curve:** Removed Radius, uses default radius implicitly. Removed all internal dependencies and replaced with Capture Attribute
+- Resolution input is made constant to fix overlapping issue in all curve prmitives
+- Fixed inputs in **Lograthemic Spiral**
 - **Rotate Elements** now supports Edges
 - Renamed **Transforms To Position** >>> **Transform Position**
 - **Transform Position** is moved to Vector (category) [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
@@ -67,6 +76,7 @@
 - **Point Phyllotaxis** has been changed to curve to points method. Now inputs Point Radius and outputs Normal and Rotation
 
 ## Breaking Changes:
+- Removed **Spiroshell** due to its unstability
 - Removed **Select Index Range** 
 - Breaks backward compatibility in **Vertex Slide**. **Index of Nearest** does not support offsetting, _Nearest Index_ is removed.
 - Removal of _Generate UV_ in **UV To Mesh** 

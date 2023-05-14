@@ -37,8 +37,8 @@
 - Nodes with Store Named Attribute are slightly faster and memory efficient [(b54398c16c)](https://projects.blender.org/blender/blender/commit/b54398c16cfee14a054e2c3ec82d091b34c79a34)
 - Assets are now loaded faster, saves upto 10 mb [(42fdcbc)](https://github.com/Tams3d/T3D-GN-Presets/commit/42fdcbce5ce1547c0f42f93cfab3eb0191b9b14c)
 - Fixed overhead with **UV To Mesh** and **UV Project** with high poly mesh
-- Removed internal dependancies in **Sweep Curve** 
-- All curve primimitives  are made to use Curve Circle or Arc as default. Removes Resample Curve computation
+- Removed internal dependencies in **Sweep Curve** 
+- All curve primitives are made to use Curve Circle or Arc as default. Removes Resample Curve computation
 
 # 🎉 New Nodes, Features & Changes:
 
@@ -55,17 +55,20 @@
 
 ## 🎆 New Features & Changes:
 
-### Curve
-- **Lathe Curve:** Removed Curvature, uses evaluated points
-- **Sweep Curve:** Removed Radius, uses default radius implicitly. Removed all internal dependencies and replaced with Capture Attribute
-- Resolution input is made constant to fix overlapping issue in all curve prmitives
-- Fixed inputs in **Lograthemic Spiral**
 - **Rotate Elements** now supports Edges
 - Renamed **Transforms To Position** >>> **Transform Position**
 - **Transform Position** is moved to Vector (category) [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
 - **Smooth Geometry** does not restore initial size and position to avoid jitter [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
 - Easing nodes are rearranged based on easing strength [(ff3cbc9)](https://github.com/Tams3d/T3D-GN-Presets/commit/ff3cbc97200fff4e4262fb747f2c9fe88f19a27b)
 - **Vertex Slide** has been ported with new Index of Nearest [(1ab598b)](https://github.com/Tams3d/T3D-GN-Presets/commit/1ab598bb74ef5d80a6cc69caff7a3f897f844815)
+- **Displacer** supports point clouds, inputs normal. Normal attribute is used by default.
+- `Deformers` supports instances, and allows direct input of instances. Instances are realised internally.
+
+### Curve
+- **Lathe Curve:** Removed Curvature, uses evaluated points
+- **Sweep Curve:** Removed Radius, uses default radius implicitly. Removed all internal dependencies and replaced them with Capture Attribute
+- Resolution input is made constant to fix overlapping issues in all curve primitives
+- Fixed inputs in **Lograthemic Spiral**
 
 ### UV
 - **UV To Mesh** used `UVMap` as default
@@ -76,7 +79,7 @@
 - **Point Phyllotaxis** has been changed to curve to points method. Now inputs Point Radius and outputs Normal and Rotation
 
 ## Breaking Changes:
-- Removed **Spiroshell** due to its unstability
+- Removed **Spiroshell** due to its instability
 - Removed **Select Index Range** 
 - Breaks backward compatibility in **Vertex Slide**. **Index of Nearest** does not support offsetting, _Nearest Index_ is removed.
 - Removal of _Generate UV_ in **UV To Mesh** 

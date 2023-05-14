@@ -7,14 +7,14 @@
         "Sweep Curve ~ Mesh from Profile Curve with even thickness",
         "_",
         "Align To Spline ~ Align Geometry to Spline with position offsets"
-
     ],
+
     "Curve Primitives": [
         "Curve Ellipse ~ Curve Primitive",
         "Logarithmic Spiral ~ Curve Primitive",
-        "Spirograph ~ Curve Primitive",
-        "Spiroshell ~ Curve Primitive"
+        "Spirograph ~ Curve Primitive"
     ],
+
     "Deformers": [
         "^ Geometry",
         "_",
@@ -153,6 +153,7 @@
         "UV Project ~ Project UV by rotation (Defaulted to Z positive)"
 
     ],
+
     "Vector": [
         "^ Coordinates",
         "_",

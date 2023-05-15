@@ -9,6 +9,12 @@
         "Align To Spline ~ Align Geometry to Spline with position offsets"
     ],
 
+    "Curve Primitives": [
+        "Curve Ellipse ~ Curve Primitive",
+        "Logarithmic Spiral ~ Curve Primitive",
+        "Spirograph ~ Curve Primitive"
+    ],
+
     "Deformers": [
         "^ Geometry",
         "_",
@@ -111,15 +117,7 @@
         "Mesh To Field ~ Mesh to proximate Field"
     ],
 
-    "Primitives": [
-        "^ Curve Primitives",
-        "_",
-        "Curve Ellipse ~ Curve Primitive",
-        "Logarithmic Spiral ~ Curve Primitive",
-        "Spirograph ~ Curve Primitive",
-        "_",
-        "^ Point Primitives",
-        "_",
+    "Point Primitives": [
         "Point Grid ~ Point Primitive with Points over XYZ Directions with spacing",
         "Point Honeycomb ~ Point Primitive with Points offset over X & Y to form Honeycomb-like structure",
         "Phyllotaxis ~ Point Primitive like arrangement of leaves on a plant stem"
@@ -153,6 +151,7 @@
         "^ UV Projection",
         "_",
         "UV Project ~ Project UV by rotation (Defaulted to Z positive)"
+
     ],
 
     "Vector": [

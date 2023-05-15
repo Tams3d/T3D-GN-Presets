@@ -55,9 +55,10 @@
 
 ## 🎆 New Features & Changes:
 
+- `Curve Primitives` and `Point Primitives` are moved to new `Primitives` category
 - **Rotate Elements** now supports Edges
 - Renamed **Transforms To Position** >>> **Transform Position**
-- **Transform Position** is moved to Vector (category) [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
+- **Transform Position** is `moved Vector` category [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
 - **Smooth Geometry** does not restore initial size and position to avoid jitter [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
 - Easing nodes are rearranged based on easing strength [(ff3cbc9)](https://github.com/Tams3d/T3D-GN-Presets/commit/ff3cbc97200fff4e4262fb747f2c9fe88f19a27b)
 - **Vertex Slide** has been ported with new Index of Nearest [(1ab598b)](https://github.com/Tams3d/T3D-GN-Presets/commit/1ab598bb74ef5d80a6cc69caff7a3f897f844815)
@@ -68,15 +69,15 @@
 - **Lathe Curve:** Removed Curvature, uses evaluated points
 - **Sweep Curve:** Removed Radius, uses default radius implicitly. Removed all internal dependencies and replaced them with Capture Attribute
 - Resolution input is made constant to fix overlapping issues in all curve primitives
+
+### Primitives
 - Fixed inputs in **Lograthemic Spiral**
+- **Point Honeycomb** inputs Point Radius
+- **Point Phyllotaxis** has been changed to curve to points method. Now inputs Point Radius and outputs Normal and Rotation
 
 ### UV
 - **UV To Mesh** used `UVMap` as default
 - **UV Project** has been rewritten, inputs selection, uses Euler Angles to project - defaulted to (0,180°,0) as Z positive (Top project) and fit mesh islands inside a 1-meter boundary
-
-### Point Primitives
-- **Point Honeycomb** inputs Point Radius
-- **Point Phyllotaxis** has been changed to curve to points method. Now inputs Point Radius and outputs Normal and Rotation
 
 ## Breaking Changes:
 - Removed **Spiroshell** due to its instability

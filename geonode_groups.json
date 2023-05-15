@@ -1,5 +1,5 @@
 {
-    "Curve": [
+    " Curve ": [
         "^ Operators",
         "_",
         "Extend Curve ~ Entend endpoints of Curve along Tangent",
@@ -9,13 +9,13 @@
         "Align To Spline ~ Align Geometry to Spline with position offsets"
     ],
 
-    "Curve Primitives": [
+    " Curve Primitives ": [
         "Curve Ellipse ~ Curve Primitive",
         "Logarithmic Spiral ~ Curve Primitive",
         "Spirograph ~ Curve Primitive"
     ],
 
-    "Deformers": [
+    " Deformers ": [
         "^ Geometry",
         "_",
         "Bend ~ Bend along specified axis",
@@ -31,7 +31,7 @@
         "Spherify ~ Deform Mesh to a sphere (Similar to edit mode 'To Sphere')"
     ],
 
-    "Easing": [
+    " Easing ": [
         "easeSine ~ Easing In and Out",
         "easeQuad ~ Easing In and Out",
         "easeCubic ~ Easing In and Out",
@@ -42,7 +42,7 @@
         "easeElastic ~ Easing In and Out"
     ],
 
-    "Fields": [
+    " Fields ": [
         "Box Field ~ Cubical Falloff",
         "Cylinder Field ~ Cylindrical Falloff",
         "Linear Field ~ Gradient Falloff",
@@ -51,7 +51,7 @@
         "Torus Field ~ Torus Falloff"
     ],
 
-    "Geometry": [
+    " Geometry ": [
         "Center Elements ~ Reset Location to Worldspace Coordinates",
         "Parent To Object ~ Parent Location, Rotation, Scale to Object",
         "_",
@@ -61,7 +61,7 @@
         "Geometry To Spline ~ Convert any input Geometry to Spline"
     ],
 
-    "Input": [
+    " Input ": [
         "^ Selection",
         "_",
         "Boundary Edge Selection ~ Selection of all edges with one neighbouring face ",
@@ -85,14 +85,14 @@
         "Island Center ~ Outputs individual Mesh Island center"
     ],
 
-    "Instancers": [
+    " Instancers ": [
         "Grid Instancer ~ Instance along X,Y,Z Axis",
         "Linear Instancer ~ Instance along Straight Line",
         "Radial Instancer ~ Instance along Arc",
         "Spherical Instancer ~ Instance on Spherical Spiral"
     ],
 
-    "Mesh": [
+    " Mesh ": [
         "^ Transformation",
         "_",
         "Rotate Elements ~ Rotate at Individual Origin",
@@ -117,13 +117,13 @@
         "Mesh To Field ~ Mesh to proximate Field"
     ],
 
-    "Point Primitives": [
+    " Point Primitives ": [
         "Point Grid ~ Point Primitive with Points over XYZ Directions with spacing",
         "Point Honeycomb ~ Point Primitive with Points offset over X & Y to form Honeycomb-like structure",
         "Phyllotaxis ~ Point Primitive like arrangement of leaves on a plant stem"
     ],
 
-    "SDF":  [
+    " SDF ":  [
         "^ Primitives",
         "_",
         "SDF Box ~ SDF Primitive Box",
@@ -137,7 +137,7 @@
         "SDF Displacement ~ Displacer for SDF"
     ],
 
-    "UV": [
+    " UV ": [
         "^ Deform Mesh with UV",
         "_",
         "UV Deform ~ Deform Mesh by another mesh's UV",
@@ -154,7 +154,7 @@
 
     ],
 
-    "Vector": [
+    " Vector ": [
         "^ Coordinates",
         "_",
         "Cartesian to Cylindrical ~ Cartesian to Cylindrical ",

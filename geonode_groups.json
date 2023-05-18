@@ -113,8 +113,8 @@
         "Align Islands ~ Aligns Mesh Island by axis",
         "Delete Islands ~ Deletes Mesh Island by size",
         "_",
-        "Mesh To SDF ~ Mesh to Signed Distance Function",
-        "Mesh To Field ~ Mesh to proximate Field"
+        "Mesh To Field ~ Mesh to proximate Field",
+        "Mesh To SDF ~ Mesh to Signed Distance Function"
     ],
 
     " Point Primitives ": [

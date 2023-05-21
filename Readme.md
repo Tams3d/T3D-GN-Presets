@@ -106,7 +106,8 @@
 
 # 🎯 Development
 - Developments are happening locally regularly regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
-- Check development process [here.](https://github.com/Tams3d/T3D-GN-Presets/issues/16) New tasks might be created depending on the needs. Community Contributions are always welcomed
+- Documentation is currently in **_work-in-progress_**
+- Supports **Blender 4.0** without any issues. 
 
 ## 👻 Bug Reports
 - Bug reports are always welcomed in the form of reports or suggestions.

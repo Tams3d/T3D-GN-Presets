@@ -23,13 +23,12 @@
 - Removed unnecessary code comments, empty lines and spaces [(0d4126a)](https://github.com/Tams3d/T3D-GN-Presets/commit/0d4126a9272584c5f80e585ce6ace9d085e8bce2)
 - Optimised all icons for Deformers. **Displacer** and **Smooth Geometry** are now assets. Filled necessary informations [(42fdcbc)](https://github.com/Tams3d/T3D-GN-Presets/commit/42fdcbce5ce1547c0f42f93cfab3eb0191b9b14c)
 - Removed Exif data from images, solves empty Icon issue
+- Solved conflicts with other addons [(3a45e95)](https://github.com/Tams3d/T3D-GN-Presets/commit/3a45e95160c7debb92531a1a297737428bc5e6ed)
 
 ## Nodes
 - Nodes are rearranged based on usability with separations. Tooltips are made mandatory for all nodes.
 - Support for NURBS in all curve nodes
 - Fixed implicit issues with nodes [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
-  - Fixed jitter in Smooth Geometry
-  - Clamp Fields and SDF
   - Fix rotation center in Parent To Object
   - Maintain consistency in input and output names
 
@@ -39,7 +38,7 @@
 - Fixed overhead with **UV To Mesh** and **UV Project** with high poly mesh
 - Removed internal dependencies in **Sweep Curve** 
 - All curve primitives are made to use Curve Circle or Arc as default. Removes Resample Curve computation
-
+- `Deformers` work up to 35% faster and more stable.
 # 🎉 New Nodes, Features & Changes:
 
 ## New Nodes:
@@ -56,27 +55,48 @@
 ## 🎆 New Features & Changes:
 
 - **Rotate Elements** now supports Edges
-- Renamed **Transforms To Position** >>> **Transform Position**
-- **Transform Position** is moved to Vector (category) [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
-- **Smooth Geometry** does not restore initial size and position to avoid jitter [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
+- Renamed **Linear Instancer** inputs same as **Mesh Line**
+  - Start >>> **Start Location**
+  - End >>> **Offset**
+- **Radial Instancer** is rewritten, supports instances and removal of Trim Start as replacement of **Offset** and **Trim End**
+- Removed Clamp from **Mesh To Field** & **Mesh To SDF**
 - Easing nodes are rearranged based on easing strength [(ff3cbc9)](https://github.com/Tams3d/T3D-GN-Presets/commit/ff3cbc97200fff4e4262fb747f2c9fe88f19a27b)
 - **Vertex Slide** has been ported with new Index of Nearest [(1ab598b)](https://github.com/Tams3d/T3D-GN-Presets/commit/1ab598bb74ef5d80a6cc69caff7a3f897f844815)
-- **Displacer** supports point clouds, inputs normal. Normal attribute is used by default.
-- `Deformers` supports instances, and allows direct input of instances. Instances are realised internally.
 
 ### Curve
-- **Lathe Curve:** Removed Curvature, uses evaluated points
+- **Lathe Curve:** Removed Curvature, uses evaluated points [(855f108)](https://github.com/Tams3d/T3D-GN-Presets/commit/855f1087a1c09dc2ac028785eb6196f1ca77b5c7)
 - **Sweep Curve:** Removed Radius, uses default radius implicitly. Removed all internal dependencies and replaced them with Capture Attribute
 - Resolution input is made constant to fix overlapping issues in all curve primitives
-- Fixed inputs in **Lograthemic Spiral**
+- Fixed inputs in **Logarithmic Spiral**
+
+### Deformer
+- All `Deformers` are completely rewritten to work faster, allowing direct input of instances. Instances are realised internally.
+- **Bend** works dynamically and does not change the geometry's location. **Expansion** is converted to float and works along with **Angle**
+- **Displacer** supports point clouds and inputs normal. Normal attribute is used by default.
+- **Smooth Geometry** works more efficiently
+  - Does not restore initial size and position to avoid jitter [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3) 
+  - Shade Smooth is enabled by default [(cbda951)](https://github.com/Tams3d/T3D-GN-Presets/commit/cbda9510f702be35f9425adeb8effa5b37f3096d)
+  - Selection input works as expected, dynamically works with stiffness
+- Fixed **Shear** inverted **Angle**
+- Changes in internal dependencies **(Named attributes)**
+
+### Fields
+- Exposed Clamp in Fields
+- Spherical Field uses Gradient Texture
+
+### Point Primitives
+- **Point Honeycomb** inputs Point Radius
+- **Point Phyllotaxis** has been changed to curve to points method. Now inputs Point Radius and outputs Normal and Rotation
 
 ### UV
 - **UV To Mesh** used `UVMap` as default
 - **UV Project** has been rewritten, inputs selection, uses Euler Angles to project - defaulted to (0,180°,0) as Z positive (Top project) and fit mesh islands inside a 1-meter boundary
 
-### Point Primitives
-- **Point Honeycomb** inputs Point Radius
-- **Point Phyllotaxis** has been changed to curve to points method. Now inputs Point Radius and outputs Normal and Rotation
+### Vector
+- **Vector Clamp** uses Min Max as Clamp Type [(2dc59bc)](https://github.com/Tams3d/T3D-GN-Presets/commit/2dc59bc45c39f187f5b4ce382b3d8edc91ed2bb1)
+- Renamed **Transforms To Position** >>> **Transform Position**
+- **Transform Position** is moved to Vector (category) [(c7acb1c)](https://github.com/Tams3d/T3D-GN-Presets/commit/c7acb1c97e18864f473bb6a37d39b4d48f8beac3)
+
 
 ## Breaking Changes:
 - Removed **Spiroshell** due to its instability

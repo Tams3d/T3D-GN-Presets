@@ -99,6 +99,7 @@
 
 
 ## Breaking Changes:
+- Removed **Empty Group** and **Renamed Named Attribute**
 - Removed **Spiroshell** due to its instability
 - Removed **Select Index Range** 
 - Breaks backward compatibility in **Vertex Slide**. **Index of Nearest** does not support offsetting, _Nearest Index_ is removed.

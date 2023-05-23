@@ -14,7 +14,7 @@
 
 # 🪄 Release Notes:
 
-- **T3D-GN-Presets (v1.3.0)** to be released on 27.05.2023
+- **T3D-GN-Presets (v1.3.0)** to be released on 27.06.2023
 - Download stable version for Blender 3.5 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
 
 # ⚙️ Core:

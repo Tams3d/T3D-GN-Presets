@@ -33,11 +33,11 @@
   - Maintain consistency in input and output names
 
 ## 🪅 Performance:
-- Nodes with Store Named Attribute are slightly faster and memory efficient [(b54398c16c)](https://projects.blender.org/blender/blender/commit/b54398c16cfee14a054e2c3ec82d091b34c79a34)
+- Nodes with Store Named Attribute and Delete Geometry are slightly faster
 - Assets are now loaded faster, saves upto 10 mb [(42fdcbc)](https://github.com/Tams3d/T3D-GN-Presets/commit/42fdcbce5ce1547c0f42f93cfab3eb0191b9b14c)
 - Fixed overhead with **UV To Mesh** and **UV Project** with high poly mesh
 - Removed internal dependencies in **Sweep Curve** 
-- All curve primitives are made to use Curve Circle or Arc as default. Removes Resample Curve computation
+- All curve primitives are made to use Curve Circle or Arc as default. Removes Resample Curve computations
 - `Deformers` work up to 35% faster and more stable.
 # 🎉 New Nodes, Features & Changes:
 
@@ -54,7 +54,8 @@
 
 ## 🎆 New Features & Changes:
 
-- **Rotate Elements** now supports Edges
+- **Set Geometry Size** supports direct plugging of instances (realised internally)
+- Optimised **Center Elements**, uses Bound Center by default [(8f59586)](https://github.com/Tams3d/T3D-GN-Presets/commit/8f595860f309cf65c93bbe2c515f10a62a4dc1a9)
 - Renamed **Linear Instancer** inputs same as **Mesh Line**
   - Start >>> **Start Location**
   - End >>> **Offset**
@@ -102,6 +103,7 @@
 - Removed **Empty Group** and **Renamed Named Attribute**
 - Removed **Spiroshell** due to its instability
 - Removed **Select Index Range** 
+- Removed **Rotate Elements**
 - Breaks backward compatibility in **Vertex Slide**. **Index of Nearest** does not support offsetting, _Nearest Index_ is removed.
 - Removal of _Generate UV_ in **UV To Mesh** 
 

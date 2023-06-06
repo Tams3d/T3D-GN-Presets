@@ -3,7 +3,6 @@
 *.code-workspace
 *.blend
 *.blend1
-/Icons/Icons.blend
 
 # Exception
 !geonode_nodes.blend

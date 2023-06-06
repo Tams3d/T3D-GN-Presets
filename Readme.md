@@ -9,7 +9,7 @@
 
 # 💡 Introduction:
 
-* [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/) contains Node groups for Geometry Nodes which include Deformers, Fields, SDF, UV, Utilities and much more for **free!**
+* [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/#t3d-gn-presets) contains Node groups for Geometry Nodes which include Deformers, Fields, SDF, UV, Utilities and much more for **free!**
 * This is an essential component of an artist’s toolkit which enables users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
 
 # 🪄 Release Notes:
@@ -23,7 +23,7 @@
 - Removed unnecessary code comments, empty lines and spaces [(0d4126a)](https://github.com/Tams3d/T3D-GN-Presets/commit/0d4126a9272584c5f80e585ce6ace9d085e8bce2)
 - Optimised all icons for Deformers. **Displacer** and **Smooth Geometry** are now assets. Filled necessary informations [(42fdcbc)](https://github.com/Tams3d/T3D-GN-Presets/commit/42fdcbce5ce1547c0f42f93cfab3eb0191b9b14c)
 - Removed Exif data from images, solves empty Icon issue
-- Solved conflicts with other addons [(3a45e95)](https://github.com/Tams3d/T3D-GN-Presets/commit/3a45e95160c7debb92531a1a297737428bc5e6ed)
+- Solved conflicts with other addons [(2c3d3ef)](https://github.com/Tams3d/T3D-GN-Presets/commit/2c3d3efa1246f0d100e06de502565210bc7135af)
 
 ## Nodes
 - Nodes are rearranged based on usability with separations. Tooltips are made mandatory for all nodes.
@@ -108,9 +108,8 @@
 - Removal of _Generate UV_ in **UV To Mesh** 
 
 # 🎯 Development
-- Developments are happening locally regularly regarding bug fixes, and support for every upcoming [Blender](https://www.blender.org/) release.
-- Documentation is currently in **_work-in-progress_**
-- Supports **Blender 4.0** without any issues. 
+- Developments are happening locally regularly regarding bug fixes, and support for every upcoming [Blender Release](https://www.blender.org/download/releases/)
+- Documentation is currently in **_work-in-progress_**, will be launched along with **v1.3.0 for Blender 4.0**
 
 ## 👻 Bug Reports
 - Bug reports are always welcomed in the form of reports or suggestions.
@@ -119,7 +118,7 @@
 
 # Licencing & Files:
 ## 📄 Licence
-- The Node groups, including the Addon, are licensed as [GNU GPL](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/LICENSE)
+- The Node groups, including the Addon, are licensed as [GNU GPL](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/LICENSE.txt)
   * You are free for any purpose
   * You are free to distribute unless the license is modified
   * You can distribute changed versions
@@ -129,7 +128,7 @@
 ## 📂 Access to Files:
 - [ `_init_.py` ](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/__init__.py) defines the addon followed by [geonode_groups.json](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/geonode_groups.json) which contains a list of categories with nodes.
 - [geonode_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/geonode_nodes.blend) contains all the Node-groups which are displayed under `T3D GN Presets`
-- **All Files & Assets** follow the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/README.md#licencing--files)
+- **All Files & Assets** follow the same [Licence](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/LICENSE.txt)
 
 # 🦄 About 
   - Hey! I am **Tamil Selvan**, also known as **tams_3d**. I am a 16-Year-Old Self Taught Blender Artist from **India**

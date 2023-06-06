@@ -6,7 +6,7 @@
         "Lathe Curve ~ Mesh from Curve by rotating points around a fixed circular axis",
         "Sweep Curve ~ Mesh from Profile Curve with even thickness",
         "_",
-        "Align To Spline ~ Align Geometry to Spline with position offsets"
+        "Align To Spline ~ Align Geometry to Spline with tangential orientation"
     ],
 
     " Curve Primitives ": [
@@ -93,15 +93,11 @@
     ],
 
     " Mesh ": [
-        "^ Transformation",
-        "_",
-        "Rotate Elements ~ Rotate at Individual Origin",
-        "Shade Auto Smooth ~ Edge Split over unsigned angles of degree",
-        "_",
         "^ Topology",
         "_",
-        "Segmental Extrude ~ Repeated Extrusion of segments",
         "Match Topology ~ Transforms Mesh by Topology",
+        "Shade Auto Smooth ~ Edge Split over unsigned angles of degree",
+        "Segmental Extrude ~ Repeated Extrusion of segments",
         "Simple Decimate ~ Merge Faces by distance by proximate points",
         "Vertex Slide ~ Move vertices based on index",
         "_",
@@ -166,11 +162,8 @@
         "_",
         "Replace Vector ~ Replace specific Values in X,Y,Z",
         "Seamless Vector ~ Make 4D Texture Seamless",
-        "Vector Clamp ~ Clamp Vector Min and Max",
-        "_",
-        "^ Transformation",
-        "_",
         "Transform Position ~ Transform Location, Rotation, Scale of Position",
+        "Vector Clamp ~ Clamp Vector Min and Max",
         "Vector Mapping ~ Control Location, Rotation, Scale of a Vector"
     ]
 }

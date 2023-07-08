@@ -1,7 +1,7 @@
 <div align="center">
 
 # T3D GN Presets
-##  A Collection of Incredibly useful nodes for Geometry Nodes - Blender 3.6 LTS (Beta)
+##  A Collection of Incredibly useful nodes for Geometry Nodes - Blender 3.6 LTS
 ![T3D GN Presets](https://user-images.githubusercontent.com/106262964/234839626-d88f0ce9-2399-4193-9940-2257bc728351.png)
 
 <br>
@@ -14,11 +14,11 @@
 
 # 🪄 Release Notes:
 
-- **T3D-GN-Presets (v1.3.0)** to be released on 27.06.2023
-- Download stable version for Blender 3.5 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
+- **T3D-GN-Presets (v1.3.0)** was released on 8.7.2023
+- This version requires minimum of **Blender 3.6 LTS**
+- Download older versions for Blender 3.5 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
 
 # ⚙️ Core:
-
 ## Source Files
 - Removed unnecessary code comments, empty lines and spaces [(0d4126a)](https://github.com/Tams3d/T3D-GN-Presets/commit/0d4126a9272584c5f80e585ce6ace9d085e8bce2)
 - Optimised all icons for Deformers. **Displacer** and **Smooth Geometry** are now assets. Filled necessary informations [(42fdcbc)](https://github.com/Tams3d/T3D-GN-Presets/commit/42fdcbce5ce1547c0f42f93cfab3eb0191b9b14c)
@@ -109,7 +109,7 @@
 
 # 🎯 Development
 - Developments are happening locally regularly regarding bug fixes, and support for every upcoming [Blender Release](https://www.blender.org/download/releases/)
-- Documentation is currently in **_work-in-progress_**, will be launched along with **v1.3.0 for Blender 4.0**
+- Contributing are always welcomed!
 
 ## 👻 Bug Reports
 - Bug reports are always welcomed in the form of reports or suggestions.

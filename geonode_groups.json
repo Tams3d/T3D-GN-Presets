@@ -19,7 +19,7 @@
         "^ Geometry",
         "_",
         "Bend ~ Bend along specified axis",
-        "Bulge ~ Thickening and Thinning at the center along specified axis ",
+        "Bulge ~ Thickening and Thinning at the center along specified axis",
         "Displacer ~ Displace Geometry based on Texture",
         "Shear ~ Slide Geometry along specified axis",
         "Smooth Geometry ~ Averages Position",

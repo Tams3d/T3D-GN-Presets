@@ -5,4 +5,4 @@
 *.blend1
 
 # Exception
-!geonode_nodes.blend
+!t3d_nodes.blend

@@ -1,4 +1,4 @@
-'''
+"""
     Copyright (C) 2023  Tamil Selvan
 
     This program is free software: you can redistribute it and/or modify
@@ -13,7 +13,7 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-'''
+"""
 
 # Importing Modules
 import bpy
@@ -29,15 +29,17 @@ bl_info = {
     "author": "Tamil Selvan",
     "description": "T3D GN Presets contains Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
     "location": "Geometry Node Editor > Add > T3D GN Presets",
-    "blender": (3, 6, 0),
-    "version": (1, 3, 0),
-    "doc_url":"https://github.com/Tams3d/T3D-GN-Presets",
+    "blender": (4, 0, 0),
+    "version": (1, 4, 0),
+    "doc_url": "https://github.com/Tams3d/T3D-GN-Presets",
     "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues/new/",
     "category": "Node",
 }
 
 # Load Icons
 _icons = None
+
+
 def load_preview_icon(path):
     global _icons
     if not path in _icons:
@@ -47,19 +49,30 @@ def load_preview_icon(path):
             return 0
     return _icons[path].icon_id
 
+
 # T3D Node Header at Geometry Node Editor
 def t3d_ht_header(self, context):
     if not (False):
         layout = self.layout
-        if (bpy.context.area.ui_type == 'GeometryNodeTree'):
-            layout.label(icon_value=load_preview_icon(
-                os.path.join(os.path.dirname(__file__), 'Icons', 'T3D.png')))
+        if bpy.context.area.ui_type == "GeometryNodeTree":
+            layout.label(
+                icon_value=load_preview_icon(
+                    os.path.join(os.path.dirname(__file__), "Icons", "T3D.png")
+                )
+            )
+
 
 # T3D GN Presets Menu + Icon at Geometry Node Editor > Add > T3D GN Presets
 def add_t3d_button(self, context):
     if context.area.ui_type == "GeometryNodeTree":
-        self.layout.menu("NODE_MT_t3d_menu", text="T3D GN Presets", icon_value=load_preview_icon(
-            os.path.join(os.path.dirname(__file__), 'Icons', 'T3D.png')))
+        self.layout.menu(
+            "NODE_MT_t3d_menu",
+            text="T3D GN Presets",
+            icon_value=load_preview_icon(
+                os.path.join(os.path.dirname(__file__), "Icons", "T3D.png")
+            ),
+        )
+
 
 t3d_group_cache = {}
 geonode_cat_list = []
@@ -67,6 +80,7 @@ draw_menu_functions = []
 
 # File Path
 dir_path = os.path.dirname(__file__)
+
 
 def geonode_cat_generator():
     global geonode_cat_list
@@ -84,10 +98,10 @@ def geonode_cat_generator():
                     layout.separator(factor=1.0)
                     continue
 
-                # Use group name starts with "^ " as disabled button (Separation and Visual purposes)
+                # Use group name starts with "^ " as disabled button
                 if group_name.startswith("^ "):
                     layout.label(text=group_name.split("^ ")[1])
-                    continue   
+                    continue
 
                 # Set group name after " ~ " as tooltip
                 entry = group_name.split(" ~ ")
@@ -103,23 +117,25 @@ def geonode_cat_generator():
         itemid = item[0].split("_")[0]
 
         menu_type = type(
-            "NODE_MT_category_" + itemid, (bpy.types.Menu,),
+            "NODE_MT_category_" + itemid,
+            (bpy.types.Menu,),
             {
                 "bl_idname": "NODE_MT_category_" + itemid.replace(" ", "_"),
                 "bl_space_type": "NODE_EDITOR",
                 "bl_label": item[0],
-                "draw": custom_draw
-            }
+                "draw": custom_draw,
+            },
         )
         if menu_type not in geonode_cat_list:
+
             def generate_menu_draw(name, label):
                 def draw_menu(self, context):
                     self.layout.menu(name, text=label.split("_")[0])
+
                 return draw_menu
 
             bpy.utils.register_class(menu_type)
-            draw_menu = generate_menu_draw(
-                menu_type.bl_idname, menu_type.bl_label)
+            draw_menu = generate_menu_draw(menu_type.bl_idname, menu_type.bl_label)
             bpy.types.NODE_MT_t3d_menu.append(draw_menu)
 
             draw_menu_functions.append(draw_menu)
@@ -136,6 +152,7 @@ class NODE_MT_t3d_menu(Menu):
 
     def draw(self, context):
         pass
+
 
 # Append Operator
 class NODE_OT_group_add(Operator):
@@ -170,13 +187,14 @@ class NODE_OT_group_add(Operator):
         return props.tooltip
 
     def execute(self, context):
-
         for file in os.listdir(dir_path):
             if file.endswith(".blend"):
                 filepath = os.path.join(dir_path, file)
                 break
         else:
-            raise FileNotFoundError("T3D GN Presets File has been modified - No .blend File in directory")
+            raise FileNotFoundError(
+                f"No .blend file found in the directory: {dir_path}"
+            )
 
         with bpy.data.libraries.load(filepath, link=False) as (data_from, data_to):
             if self.group_name not in bpy.data.node_groups:
@@ -186,7 +204,7 @@ class NODE_OT_group_add(Operator):
         node = context.selected_nodes[0]
         node.node_tree = bpy.data.node_groups[self.group_name]
 
-# Place Node Group at Mouse Cursor Location
+        # Place Node Group at Mouse Cursor Location
         node.location = context.space_data.cursor_location
         bpy.ops.transform.translate("INVOKE_DEFAULT")
         return {"FINISHED"}
@@ -195,10 +213,11 @@ class NODE_OT_group_add(Operator):
         self.store_mouse_cursor(context, event)
         return self.execute(context)
 
+
 # Functions to Register
 def register():
     global t3d_group_cache
-    with open(os.path.join(os.path.dirname(__file__), "geonode_groups.json"), "r") as v:
+    with open(os.path.join(os.path.dirname(__file__), "t3d_nodegroups.json"), "r") as v:
         t3d_group_cache = json.loads(v.read())
 
     if not hasattr(bpy.types, "NODE_MT_t3d_menu"):
@@ -209,6 +228,7 @@ def register():
     global _icons
     _icons = bpy.utils.previews.new()
     bpy.types.NODE_HT_header.append(t3d_ht_header)
+
 
 # Functions to Unregister
 def unregister():
@@ -221,6 +241,7 @@ def unregister():
     global _icons
     bpy.utils.previews.remove(_icons)
     bpy.types.NODE_HT_header.remove(t3d_ht_header)
+
 
 if __name__ == "__main__":
     register()

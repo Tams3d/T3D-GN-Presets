@@ -96,7 +96,6 @@
         "^ Topology",
         "_",
         "Match Topology ~ Transforms Mesh by Topology",
-        "Segmental Extrude ~ Repeated Extrusion of segments",
         "Simple Decimate ~ Merge Faces by distance by proximate points",
         "Vertex Slide ~ Move vertices based on index",
         "_",

@@ -57,7 +57,7 @@ def t3d_ht_header(self, context):
         if bpy.context.area.ui_type == "GeometryNodeTree":
             layout.label(
                 icon_value=load_preview_icon(
-                    os.path.join(os.path.dirname(__file__), "Icons", "T3D.png")
+                    os.path.join(os.path.dirname(__file__), "T3D.png")
                 )
             )
 
@@ -69,7 +69,7 @@ def add_t3d_button(self, context):
             "NODE_MT_t3d_menu",
             text="T3D GN Presets",
             icon_value=load_preview_icon(
-                os.path.join(os.path.dirname(__file__), "Icons", "T3D.png")
+                os.path.join(os.path.dirname(__file__), "T3D.png")
             ),
         )
 

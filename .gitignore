@@ -1,5 +1,6 @@
 # Files to ignore
 *.txt~
+*.txt
 *.code-workspace
 *.blend
 *.blend1

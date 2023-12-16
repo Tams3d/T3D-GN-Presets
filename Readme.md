@@ -18,11 +18,21 @@
 - Download stable version for Blender 3.6 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
 
 # Planned Changes:
+## Support
 - [ ] Support Rotation Socket Type
 - [ ] Support Subpanels
 - [ ] Support Volume & SDF nodes
 - [ ] Future Support for Matrix Inputs
+- [ ] Implicitly use "Normal" and "Position" directly from Input for Blender 4.1
+- [ ] Tooltip for all nodes
+
+## New Nodes
+- [ ] Curve Deform
+- [ ] Loft Curve
+
+## Depreciations
 - [ ] Depreciate Vector Rotate
+- [ ] Depreciate SDF nodes
 
 # ⚙️ Core:
 ## Source Files

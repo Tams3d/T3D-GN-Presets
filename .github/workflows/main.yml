@@ -1,24 +1,25 @@
-name: Zip on Commit
+name: Package Repository
 
 on:
   push:
     branches:
-      - Master
+      - master
 
 jobs:
-  build:
+  package:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2.5.0
+      uses: actions/checkout@v2
 
-    - name: Zip Repository
+    - name: Package Repository
       run: |
-        zip -r T3D-GN-Presets.zip . -x "Changelogs/*" -x ".git*"
+        # Create a zip file of the repository excluding .git and Changelogs
+        zip -r T3D-GN-Presets.zip . -x ".git/*" "Changelogs/*"
 
-    - name: Upload Zip
-      uses: actions/upload-artifact@v2.2.4
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
       with:
         name: T3D-GN-Presets
         path: T3D-GN-Presets.zip

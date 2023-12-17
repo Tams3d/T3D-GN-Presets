@@ -3,7 +3,7 @@ name: Zip on Commit
 on:
   push:
     branches:
-      - Master
+      - master
 
 jobs:
   build:
@@ -15,11 +15,35 @@ jobs:
 
     - name: Zip Repository
       run: |
+        # Exclude "Changelogs" folder and any file/folder starting with ".git"
         zip -r T3D-GN-Presets.zip . -x "Changelogs/*" -x ".git*"
-      # Exclude the "Changelogs" folder and any file/folder starting with ".git"
+
+        # Included files: All files in the repository except those excluded above
+        # Excluded files: Files under "Changelogs" folder and any file/folder starting with ".git"
 
     - name: Upload Zip
       uses: actions/upload-artifact@v2
       with:
         name: T3D-GN-Presets
         path: T3D-GN-Presets.zip
+
+on:
+  workflow_run:
+    workflows: ["Zip on Commit"]
+    types:
+      - completed
+
+jobs:
+  provide-download-link:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Artifact URL
+        id: download
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          name: T3D-GN-Presets
+          workflow: "Zip on Commit"
+
+      - name: Provide Download Link
+        run: echo "Download the zip file [here](\${{ steps.download.outputs.artifact_url }})"
+        # This step provides a clickable link to download the zip file

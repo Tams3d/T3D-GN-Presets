@@ -1,0 +1,24 @@
+name: Package Repository
+
+on:
+  push:
+    branches:
+      - Master
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Package Repository
+      run: |
+        find . -name '.git' -prune -o -name 'Changelogs' -prune -o -type f -print | xargs zip -r T3D-GN-Presets.zip
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: T3D-GN-Presets
+        path: T3D-GN-Presets.zip

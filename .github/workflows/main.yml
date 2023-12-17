@@ -1,0 +1,25 @@
+name: Zip on Commit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Zip Repository
+      run: |
+        zip -r T3D-GN-Presets.zip . -x "Changelogs/*" -x ".git*"
+      # Exclude the "Changelogs" folder and any file/folder starting with ".git"
+
+    - name: Upload Zip
+      uses: actions/upload-artifact@v2
+      with:
+        name: T3D-GN-Presets
+        path: T3D-GN-Presets.zip

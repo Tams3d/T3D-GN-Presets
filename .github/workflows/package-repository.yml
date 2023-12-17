@@ -3,7 +3,7 @@ name: Format and Package Workflow
 on:
   push:
     branches:
-      - master
+      - Master
 
 jobs:
   format-code:

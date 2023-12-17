@@ -3,7 +3,7 @@ name: Zip on Commit
 on:
   push:
     branches:
-      - main
+      - Master
 
 jobs:
   build:

@@ -28,6 +28,7 @@ jobs:
 
   provide-download-link:
     runs-on: ubuntu-latest
+    needs: build  # Ensure that the 'build' job completes before this one
     steps:
     - name: Get Artifact URL
       id: download

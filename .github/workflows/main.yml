@@ -3,24 +3,22 @@ name: Package Repository
 on:
   push:
     branches:
-      - Master
+      - master
+
 jobs:
-  build:
+  package:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Create Folder and Copy Files
+    - name: Package Code
       run: |
-        mkdir T3D-GN-presets
-        find . -type f -not -path './.git/*' -not -path './Changelog/*' -exec cp --parents {} T3D-GN-presets \;
+        # Create a zip file excluding files starting with ".git" and folders named "Changelogs"
+        zip -r T3D-GN-presets.zip . -x ".git/*" -x "Changelogs/*"
 
-    - name: Zip Folder
-      run: zip -r T3D-GN-presets.zip T3D-GN-presets
-
-    - name: Upload Artifact
+    - name: Upload Release
       uses: actions/upload-artifact@v2
       with:
         name: T3D-GN-presets

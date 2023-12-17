@@ -15,8 +15,7 @@ jobs:
 
     - name: Package Repository
       run: |
-        # Create a zip file of the repository excluding .git and Changelogs
-        zip -r T3D-GN-Presets.zip . -x ".git/*" "Changelogs/*"
+        find . -name '.git' -prune -o -name 'Changelogs' -prune -o -type f -print | zip T3D-GN-Presets.zip -@
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v2

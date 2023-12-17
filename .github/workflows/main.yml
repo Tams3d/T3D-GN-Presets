@@ -15,7 +15,7 @@ jobs:
 
     - name: Package Repository
       run: |
-        find . -name '.git' -prune -o -name 'Changelogs' -prune -o -type f -print | zip T3D-GN-Presets.zip -@
+        find . -name '.git' -prune -o -name 'Changelogs' -prune -o -type f -print | xargs zip -r T3D-GN-Presets.zip
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v2

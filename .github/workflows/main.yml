@@ -22,25 +22,3 @@ jobs:
       with:
         name: T3D-GN-Presets
         path: T3D-GN-Presets.zip
-
-  provide-download-link:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - name: Get Artifact URL
-      id: download
-      uses: dawidd6/action-download-artifact@v2
-      with:
-        name: T3D-GN-Presets
-        workflow: "Zip on Commit"
-        github_token: ${{ github.token }}
-        repo: Tams3d/T3D-GN-Presets
-        path: ./
-        allow_forks: true
-        check_artifacts: false
-        search_artifacts: false
-        skip_unpack: false
-        if_no_artifact_found: fail
-
-    - name: Provide Download Link
-      run: echo "Download the zip file [here](https://github.com/${{ github.repository }}/actions/artifacts/${{ steps.download.outputs.artifact_id }}/raw/T3D-GN-Presets.zip)"

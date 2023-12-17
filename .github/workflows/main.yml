@@ -11,24 +11,21 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2.5.0
 
     - name: Zip Repository
       run: |
-        # Exclude "Changelogs" folder and any file/folder starting with ".git"
         zip -r T3D-GN-Presets.zip . -x "Changelogs/*" -x ".git*"
 
-        # Excluded files: Files under "Changelogs" folder and any file/folder starting with ".git"
-
     - name: Upload Zip
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2.2.4
       with:
         name: T3D-GN-Presets
         path: T3D-GN-Presets.zip
 
   provide-download-link:
     runs-on: ubuntu-latest
-    needs: build  # Ensure that the 'build' job completes before this one
+    needs: build
     steps:
     - name: Get Artifact URL
       id: download
@@ -36,7 +33,14 @@ jobs:
       with:
         name: T3D-GN-Presets
         workflow: "Zip on Commit"
+        github_token: ${{ github.token }}
+        repo: Tams3d/T3D-GN-Presets
+        path: ./
+        allow_forks: true
+        check_artifacts: false
+        search_artifacts: false
+        skip_unpack: false
+        if_no_artifact_found: fail
 
     - name: Provide Download Link
-      run: echo "Download the zip file [here](\${{ steps.download.outputs.artifact_url }})"
-      # This step provides a clickable link to download the zip file
+      run: echo "Download the zip file [here](https://github.com/${{ github.repository }}/actions/artifacts/${{ steps.download.outputs.artifact_id }}/raw/T3D-GN-Presets.zip)"

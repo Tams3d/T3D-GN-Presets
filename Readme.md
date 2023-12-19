@@ -14,25 +14,39 @@
 
 # 🪄 Release Notes:
 
-- **T3D-GN-Presets (v1.4.0)** to be released on 01.01.2024
-- Download stable version for Blender 3.6 & below [here](https://github.com/Tams3d/T3D-GN-Presets/releases)    
+- **T3D-GN-Presets (v1.4.0)** to be released on 11.03.2024
+- For Blender 4.0 & below, checkout lastest releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases).
 
 # Planned Changes:
+## Aim
+- Our current goals for T3D GN Presets include ensuring smooth compatibility with Blender 4.1, introducing new features for the Grease Pencil, Volumes, and utilizing the latest Blender nodes. We're making the nodes faster, optimizing it for a better user experience.
+- Clear documentation and video tutorials are a priority, making it easy for users to understand and use T3D GN Presets.
+- We're also keen on building a friendly and supportive community where users can share experiences and learn from each other.
+
+## Core
+- [ ] Preferences Panel
+- [ ] Node Tools
+
 ## Support
 - [ ] Support Rotation Socket Type
-- [ ] Support Subpanels
+- [ ] Support for Subpanels and Gizmos
 - [ ] Support Volume & SDF nodes
-- [ ] Future Support for Matrix Inputs
-- [ ] Implicitly use "Normal" and "Position" directly from Input for Blender 4.1
+- [ ] Support for Matrix Inputs
+- [ ] Implicitly use "Normal" and "Position" directly from Input
 - [ ] Tooltip for all nodes
 
 ## New Nodes
+- [ ] Nodes for Grease Pencil
 - [ ] Curve Deform
 - [ ] Loft Curve
 
 ## Depreciations
-- [ ] Depreciate Vector Rotate
+- [x] Depreciate Segmental Extrude
+- [x] Depreciate Shade Auto Smooth
 - [ ] Depreciate SDF nodes
+
+## Documentations & Tutorials
+- Still yet to be planned. A full form doucmentation will be written and included along with the addon which also includes links to tutorial.
 
 # ⚙️ Core:
 ## Source Files
@@ -40,13 +54,10 @@
 - Renamed **geonode_groups.json** >>> [**t3d_nodegroups.json**](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/t3d_nodegroups.json)
 - Renamed **geonode_nodes.blend** >>> [**t3d_nodes.blend**](https://github.com/Tams3d/T3D-GN-Presets/blob/Master/t3d_nodes.blend)
 
-## Nodes
-- **Geometry To Spline** adapted the new Points to Curve node. [(0a2f609)](https://github.com/Tams3d/T3D-GN-Presets/commit/0a2f609)
-
 # 🎉 New Nodes, Features & Changes:
 
 ## 🎆 New Features & Changes:
-- **Geometry To Spline** inputs selection. Supports Mesh,Curve and instances.
+- **Geometry To Spline** inputs selection. Supports Mesh,Curve and instances. Adapted new Points to Curve node. [(0a2f609)](https://github.com/Tams3d/T3D-GN-Presets/commit/0a2f609)
 
 ### Deformer
 - `Deformers` can only be used in Geometry Node Modifier.
@@ -87,6 +98,5 @@
   # 🥂 Socials
   - Catch up with me here:
     * [Behance](https://www.behance.net/tamilselvan3d)
-    * [Discord](https://discord.gg/TNgzbZCdnY)
     * [GitHub](https://github.com/Tams3d)
     * [X (Twitter)](https://twitter.com/Tams_3d)

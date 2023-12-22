@@ -19,18 +19,19 @@
 import bpy
 import json
 import os
-from bpy.utils import *
+import bpy.utils
 from bpy.props import StringProperty
 from bpy.types import Operator, Menu
 
 # Addon Info
 bl_info = {
     "name": "T3D GN Presets",
-    "author": "Tamil Selvan",
     "description": "T3D GN Presets contains Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
-    "location": "Geometry Node Editor > Add > T3D GN Presets",
-    "blender": (4, 0, 0),
+    "author": "Tamil Selvan",
     "version": (1, 4, 0),
+    "blender": (4, 1, 0),
+    "location": "Geometry Node Editor > Add > T3D GN Presets",
+    "warning": "In development",
     "doc_url": "https://github.com/Tams3d/T3D-GN-Presets",
     "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues/new/",
     "category": "Node",

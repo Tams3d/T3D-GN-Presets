@@ -193,9 +193,7 @@ class NODE_OT_group_add(Operator):
                 filepath = os.path.join(dir_path, file)
                 break
         else:
-            raise FileNotFoundError(
-                f"No .blend file found in the directory: {dir_path}"
-            )
+            raise FileNotFoundError("No .blend file found in the directory:" + dir_path)
 
         with bpy.data.libraries.load(filepath, link=False) as (data_from, data_to):
             if self.group_name not in bpy.data.node_groups:

@@ -37,7 +37,7 @@ bl_info = {
     "category": "Node",
 }
 
-# Load Icons
+
 _icons = None
 
 

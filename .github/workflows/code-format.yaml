@@ -1,9 +1,6 @@
-name: Format Python Code
+name: Code Formatter
 
 on:
-  pull_request:
-    paths:
-      - '**/*.py'
   push:
     branches:
       - master

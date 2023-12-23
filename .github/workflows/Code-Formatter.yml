@@ -1,4 +1,4 @@
-name: Lint
+name: Code-Formatter
 
 on: [push, pull_request]
 
@@ -6,5 +6,29 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: psf/black@stable
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Format code with Black
+        uses: psf/black@stable
+        with:
+          args: .
+
+      - name: Commit formatted code
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "Format code with Black"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.7.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create code artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: formatted-code
+          path: .
+

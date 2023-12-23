@@ -1,13 +1,3 @@
-Ignore Changelogs/
-Now, the find command and the comment to ignore "Changelogs/" should both be executed as part of the path for the artifact.
-
-User
-add comments
-ChatGPT
-Certainly! Here's the updated YAML with comments explaining each section:
-
-yaml
-Copy code
 name: Code-Formatter
 
 on: [push, pull_request]

@@ -96,7 +96,6 @@
         "^ Topology",
         "_",
         "Match Topology ~ Transforms Mesh by Topology",
-        "Simple Decimate ~ Merge Faces by distance by proximate points",
         "Vertex Slide ~ Move vertices based on index",
         "_",
         "Inset Faces ~ Inner Extrusion of faces",
@@ -107,28 +106,13 @@
         "Align Islands ~ Aligns Mesh Island by axis",
         "Delete Islands ~ Deletes Mesh Island by size",
         "_",
-        "Mesh To Field ~ Mesh to proximate Field",
-        "Mesh To SDF ~ Mesh to Signed Distance Function"
+        "Mesh To Field ~ Mesh to proximate Field"
     ],
 
     " Point Primitives": [
         "Point Grid ~ Point Primitive with Points over XYZ Directions with spacing",
         "Point Honeycomb ~ Point Primitive with Points offset over X & Y to form Honeycomb-like structure",
         "Phyllotaxis ~ Point Primitive like arrangement of leaves on a plant stem"
-    ],
-
-    " SDF":  [
-        "^ Primitives",
-        "_",
-        "SDF Box ~ SDF Primitive Box",
-        "SDF Cylinder ~ SDF Primitive Cylinder",
-        "SDF Sphere ~ SDF Primitive Sphere",
-        "SDF Torus ~ SDF Primitive Torus",
-        "_",
-        "^ Modifiers",
-        "_",
-        "SDF Boolean ~ Combine two SDF to output Union/ Difference/ Intersection",
-        "SDF Displacement ~ Displacer for SDF"
     ],
 
     " UV": [

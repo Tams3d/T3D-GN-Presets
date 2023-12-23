@@ -14,7 +14,14 @@ jobs:
         with:
           args: .
 
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --exit-code || echo "Code changes detected"
+        continue-on-error: true
+
       - name: Commit formatted code
+        if: steps.check_changes.outputs.exit_code == '0'
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
@@ -22,6 +29,7 @@ jobs:
           git commit -m "Format code with Black"
 
       - name: Push changes
+        if: steps.check_changes.outputs.exit_code == '0'
         uses: ad-m/github-push-action@v0.7.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -31,4 +39,3 @@ jobs:
         with:
           name: formatted-code
           path: .
-

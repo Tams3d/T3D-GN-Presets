@@ -12,7 +12,7 @@ jobs:
       - name: Format code with Black
         uses: psf/black@stable
         with:
-          args: .
+          black_args: .
 
       - name: Check for changes
         id: check_changes
@@ -39,3 +39,4 @@ jobs:
         with:
           name: formatted-code
           path: .
+          

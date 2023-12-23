@@ -37,11 +37,3 @@ jobs:
         uses: ad-m/github-push-action@v0.7.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create code artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: formatted-code
-          path: |
-            # Create an artifact, excluding files under "Changelogs/"
-            find . -type f -not -path "./Changelogs/*" &&

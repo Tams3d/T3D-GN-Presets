@@ -1,3 +1,13 @@
+Ignore Changelogs/
+Now, the find command and the comment to ignore "Changelogs/" should both be executed as part of the path for the artifact.
+
+User
+add comments
+ChatGPT
+Certainly! Here's the updated YAML with comments explaining each section:
+
+yaml
+Copy code
 name: Code-Formatter
 
 on: [push, pull_request]
@@ -17,14 +27,18 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
+          # Check if there are code changes
           git diff --exit-code || echo "Code changes detected"
         continue-on-error: true
 
       - name: Commit formatted code
         if: steps.check_changes.outputs.exit_code == '0'
         run: |
+          # Configure Git user
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
+          
+          # Add and commit changes if any
           git add .
           git diff --quiet && git diff --staged --quiet || git commit -m "Format code with Black"
 
@@ -38,5 +52,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: formatted-code
-          path: .
-          
+          path: |
+            # Create an artifact, excluding files under "Changelogs/"
+            find . -type f -not -path "./Changelogs/*" &&

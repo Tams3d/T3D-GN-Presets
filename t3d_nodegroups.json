@@ -10,9 +10,9 @@
     ],
 
     " Curve Primitives": [
-        "Curve Ellipse ~ Curve Primitive",
-        "Logarithmic Spiral ~ Curve Primitive",
-        "Spirograph ~ Curve Primitive"
+        "Curve Ellipse ~ Curve Ellipse Primitive",
+        "Logarithmic Spiral ~ Logarithmic Spiral Primitive",
+        "Spirograph ~ Spirograph Primitive"
     ],
 
     " Deformers": [
@@ -46,7 +46,7 @@
         "Box Field ~ Cubical Falloff",
         "Cylinder Field ~ Cylindrical Falloff",
         "Linear Field ~ Gradient Falloff",
-        "Prism Field ~ Prism Falloff",
+        "Prism Field ~ Triangular Falloff",
         "Spherical Field ~ Spherical Falloff",
         "Torus Field ~ Torus Falloff"
     ],
@@ -58,7 +58,7 @@
         "Set Geometry Size ~ Reset Bound Geometry",
         "Set Geometry Visibility ~ Set Visibility in the viewport or Render",
         "_",
-        "Geometry To Spline ~ Convert any input Geometry to Spline"
+        "Geometry To Spline ~ Convert Geometry to Spline"
     ],
 
     " Input": [
@@ -144,7 +144,6 @@
         "_",
         "Replace Vector ~ Replace specific Values in X,Y,Z",
         "Seamless Vector ~ Make 4D Texture Seamless",
-        "Transform Position ~ Transform Location, Rotation, Scale of Position",
         "Vector Clamp ~ Clamp Vector Min and Max",
         "Vector Mapping ~ Control Location, Rotation, Scale of a Vector"
     ]

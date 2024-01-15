@@ -2,7 +2,7 @@
     " Curve": [
         "^ Operators",
         "_",
-        "Extend Curve ~ Entend endpoints of Curve along Tangent",
+        "Extend Curve ~ Extend endpoints of Curve along Tangent",
         "Lathe Curve ~ Mesh from Curve by rotating points around a fixed circular axis",
         "Sweep Curve ~ Mesh from Profile Curve with even thickness",
         "_",
@@ -52,7 +52,7 @@
     ],
 
     " Geometry": [
-        "Center Elements ~ Reset Location to Worldspace Coordinates",
+        "Center Elements ~ Reset Location to World space Coordinates",
         "Parent To Object ~ Parent Location, Rotation, Scale to Object",
         "_",
         "Set Geometry Size ~ Reset Bound Geometry",
@@ -64,7 +64,7 @@
     " Input": [
         "^ Selection",
         "_",
-        "Boundary Edge Selection ~ Selection of all edges with one neighbouring face ",
+        "Boundary Edge Selection ~ Selection of all edges with one neighboring face ",
         "Component Selection ~ Select Individual Components",
         "Edge Angle Selection ~ Selection of particular edge with specified edge angle ",
         "Edge Path Selection ~ Select shortest edge path",

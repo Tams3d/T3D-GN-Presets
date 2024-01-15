@@ -51,18 +51,6 @@ def load_preview_icon(path):
     return _icons[path].icon_id
 
 
-# T3D Node Header at Geometry Node Editor
-def t3d_ht_header(self, context):
-    if not (False):
-        layout = self.layout
-        if bpy.context.area.ui_type == "GeometryNodeTree":
-            layout.label(
-                icon_value=load_preview_icon(
-                    os.path.join(os.path.dirname(__file__), "T3D.png")
-                )
-            )
-
-
 # T3D GN Presets Menu + Icon at Geometry Node Editor > Add > T3D GN Presets
 def add_t3d_button(self, context):
     if context.area.ui_type == "GeometryNodeTree":
@@ -226,7 +214,6 @@ def register():
     geonode_cat_generator()
     global _icons
     _icons = bpy.utils.previews.new()
-    bpy.types.NODE_HT_header.append(t3d_ht_header)
 
 
 # Functions to Unregister
@@ -239,7 +226,6 @@ def unregister():
     bpy.utils.unregister_class(NODE_OT_group_add)
     global _icons
     bpy.utils.previews.remove(_icons)
-    bpy.types.NODE_HT_header.remove(t3d_ht_header)
 
 
 if __name__ == "__main__":

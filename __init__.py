@@ -19,7 +19,6 @@
 import bpy
 import json
 import os
-import bpy.utils
 from bpy.props import StringProperty
 from bpy.types import Operator, Menu
 
@@ -38,28 +37,12 @@ bl_info = {
 }
 
 
-_icons = None
-
-
-def load_preview_icon(path):
-    global _icons
-    if not path in _icons:
-        if os.path.exists(path):
-            _icons.load(path, path, "IMAGE")
-        else:
-            return 0
-    return _icons[path].icon_id
-
-
-# T3D GN Presets Menu + Icon at Geometry Node Editor > Add > T3D GN Presets
+# T3D GN Presets Menu at Geometry Node Editor > Add > T3D GN Presets
 def add_t3d_button(self, context):
     if context.area.ui_type == "GeometryNodeTree":
         self.layout.menu(
             "NODE_MT_t3d_menu",
             text="T3D GN Presets",
-            icon_value=load_preview_icon(
-                os.path.join(os.path.dirname(__file__), "T3D.png")
-            ),
         )
 
 
@@ -212,8 +195,6 @@ def register():
         bpy.types.NODE_MT_add.append(add_t3d_button)
     bpy.utils.register_class(NODE_OT_group_add)
     geonode_cat_generator()
-    global _icons
-    _icons = bpy.utils.previews.new()
 
 
 # Functions to Unregister
@@ -224,8 +205,6 @@ def unregister():
         bpy.types.NODE_MT_add.remove(add_t3d_button)
         bpy.utils.unregister_class(NODE_MT_t3d_menu)
     bpy.utils.unregister_class(NODE_OT_group_add)
-    global _icons
-    bpy.utils.previews.remove(_icons)
 
 
 if __name__ == "__main__":

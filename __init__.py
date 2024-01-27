@@ -43,6 +43,7 @@ def add_t3d_button(self, context):
         self.layout.menu(
             "NODE_MT_t3d_menu",
             text="T3D GN Presets",
+            icon="KEYTYPE_BREAKDOWN_VEC",
         )
 
 

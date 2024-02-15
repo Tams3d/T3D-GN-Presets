@@ -3,6 +3,8 @@
 # T3D GN Presets
 ##  A Collection of Incredibly useful nodes for Geometry Nodes - Blender 4.1 (Alpha)
 
+![T3D GN Presets (v1 4 0)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
+
 <br>
 </div>
 

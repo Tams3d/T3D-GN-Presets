@@ -1,7 +1,7 @@
 <div align="center">
 
 # T3D GN Presets
-##  A Collection of Incredibly useful nodes for Geometry Nodes - Blender 4.1 (Alpha)
+##  A Collection of Incredibly useful nodes for Geometry Nodes - Blender 4.1 (Beta)
 
 ![T3D GN Presets (v1 4 0)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
 
@@ -32,17 +32,18 @@
 # 🎉 New Nodes, Features & Changes:
 
 ## 🎆 New Features & Changes:
+- Icon in add menu has been changed to🔹which is similar to other Geometry Node based addons. [(c6e1442)](https://github.com/Tams3d/T3D-GN-Presets/commit/c6e1442)
 - **Rotation** inputs are changed to Rotation Socket.
 - Position and Normal inputs are set as default.
 - **Geometry To Spline** inputs selection. Supports Mesh, Curve and instances. Adapted new Points to Curve node. [(0a2f609)](https://github.com/Tams3d/T3D-GN-Presets/commit/0a2f609)
+- **Instancers** get option panel for inputs. [(3df94bc)](https://github.com/Tams3d/T3D-GN-Presets/commit/3df94bc)
+- Drop down menu implemented for **Delete Island**
+- Seamless Vector does not inputs Translation anymore.
 
 ### Deformer
-- `Deformers` can only be used in Geometry Node Modifier
+-  `Deformers` no longer support direct input of instances. The "Realize Instance" node must now be used prior to applying deformers. [(510b7d1)](https://github.com/Tams3d/T3D-GN-Presets/commit/510b7d1). Deformers as Assets no longer exists.[(074b970)](https://github.com/Tams3d/T3D-GN-Presets/commit/074b970)
 
 # 🚨 Depreciated Features:
-- `Deformers` are no longer **Assets**. [(074b970)](https://github.com/Tams3d/T3D-GN-Presets/commit/074b970)
-- Seamless Vector does not inputs Translation anymore
- [(07b67e8)](https://github.com/Tams3d/T3D-GN-Presets/commit/07b67e8)
 - Removed **Shade Auto Smooth** as a replacement for built-in [node](https://projects.blender.org/blender/blender/pulls/108014)
 - Removed `SDF` nodes [(95ae7c2)](https://github.com/Tams3d/T3D-GN-Presets/commit/95ae7c2)
 - Removed **Simple Decimate** [(95ae7c2)](https://github.com/Tams3d/T3D-GN-Presets/commit/95ae7c2)

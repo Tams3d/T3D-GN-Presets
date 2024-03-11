@@ -1,7 +1,7 @@
 <div align="center">
 
 # T3D GN Presets
-##  A Collection of Incredibly Useful Nodes for Geometry Nodes - Blender 4.1 (Beta)
+##  A Collection of Incredibly Useful Nodes for Geometry Nodes - Blender 4.1
 
 ![T3D GN Presets (v1.4.0)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
 
@@ -11,11 +11,11 @@
 # 💡 Introduction:
 
 * [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/#t3d-gn-presets) contains Node groups for Geometry Nodes, which include Deformers, Fields, UV, Utilities, and much more for **free!**
-* This is an essential component of an artist’s toolkit, enabling users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
+* This is an essential component of an artist’s toolkit, enabling users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools
 
 # 🪄 Release Notes:
 
-- **T3D-GN-Presets (v1.4.0)** to be released on 11.03.2024
+- **T3D-GN-Presets (v1.4.0)** released on 11.03.2024
 - For Blender 4.0 & below, check out the latest releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
 
 # ⚙️ Core:
@@ -27,21 +27,21 @@
 
 ## Repository
 - Renamed branch name from **Master** to [`main`](https://github.com/Tams3d/T3D-GN-Presets/tree/main) to avoid grammar conflicts.
-- Include [workflows](https://github.com/Tams3d/T3D-GN-Presets/actions) for linting.
+- Include [workflows](https://github.com/Tams3d/T3D-GN-Presets/actions) for linting
 
 # 🎉 New Nodes, Features & Changes:
 
 ## 🎆 New Features & Changes:
-- Icon in the add menu has been changed to 🔹, which is similar to other Geometry Node-based addons. ([c6e1442](https://github.com/Tams3d/T3D-GN-Presets/commit/c6e1442))
-- **Rotation** inputs are changed to Rotation Sockets.
-- Position and Normal inputs are set as default.
+- Icon in the add menu has been changed to 🔹 similar to other Geometry Node-based addons. ([c6e1442](https://github.com/Tams3d/T3D-GN-Presets/commit/c6e1442))
+- **Rotation** inputs are changed to Rotation Sockets
+- Position and Normal inputs are set as default
 - **Geometry To Spline** inputs selection. Supports Mesh, Curve, and instances. Adapted new Points to Curve node. ([0a2f609](https://github.com/Tams3d/T3D-GN-Presets/commit/0a2f609))
 - **Instancers** get option panel for inputs. ([3df94bc](https://github.com/Tams3d/T3D-GN-Presets/commit/3df94bc))
-- Dropdown menu implemented for **Delete Island**.
-- Seamless Vector does not require inputs for Translation anymore.
+- Dropdown menu implemented for **Delete Island** and **Replace Vector**
+- **Seamless Vector** does not require inputs for Translation anymore
 
 ### Deformer
-- `Deformers` no longer support direct input of instances. The "Realize Instance" node must now be used prior to applying deformers. ([510b7d1](https://github.com/Tams3d/T3D-GN-Presets/commit/510b7d1)). Deformers as Assets no longer exist. ([074b970](https://github.com/Tams3d/T3D-GN-Presets/commit/074b970))
+- `Deformers` no longer support direct input of instances. **Realize Instance** node must now be used prior to applying deformers. ([510b7d1](https://github.com/Tams3d/T3D-GN-Presets/commit/510b7d1)) Deformers as Assets no longer exist. ([074b970](https://github.com/Tams3d/T3D-GN-Presets/commit/074b970))
 
 # 🚨 Depreciated Features:
 - Removed **Shade Auto Smooth** as a replacement for the built-in [node](https://projects.blender.org/blender/blender/pulls/108014).
@@ -58,8 +58,8 @@
 - In case of any **missing data blocks**, raise an issue [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
 
 # 🎯 Development
-- Developments are happening regularly regarding bug fixes, and support for every upcoming [Blender Release](https://www.blender.org/download/releases/)
-- **Contributions are always welcomed!**
+- Developments are happening regularly regarding bug fixes, and support for every upcoming [Blender Release](https://www.blender.org/download/releases/).
+- 🧩 **Contributions are always welcomed!**
 
 ## 👻 Bug Reports
 - Bug reports are always welcomed in the form of reports or suggestions.

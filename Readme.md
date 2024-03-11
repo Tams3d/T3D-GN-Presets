@@ -13,6 +13,15 @@
 * [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/#t3d-gn-presets) contains Node groups for Geometry Nodes, which include Deformers, Fields, UV, Utilities, and much more for **free!**
 * This is an essential component of an artist’s toolkit, enabling users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools
 
+<div align="center">
+  
+![List of nodes](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/6941cd0e-3ac8-430f-a444-f25a54c14d12)
+
+<br>
+</div>
+  
+
+
 # 🪄 Release Notes:
 
 - **T3D-GN-Presets (v1.4.0)** released on 11.03.2024

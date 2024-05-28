@@ -23,66 +23,6 @@ from bpy.props import StringProperty
 from bpy.types import Operator, Menu
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # T3D GN Presets Menu at Geometry Node Editor > Add > T3D GN Presets
 def add_t3d_button(self, context):
     if context.area.ui_type == "GeometryNodeTree":

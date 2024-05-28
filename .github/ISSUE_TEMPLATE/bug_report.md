@@ -12,6 +12,7 @@ A clear and precise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behaviour:
+
 1. Go to '...'
 2. Add '....' Node
 3. Change value to '....'
@@ -24,9 +25,10 @@ A clear description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
- - OS: [e.g. Windows]
- - Blender [e.g. 3.5]
- - Addon Version [e.g. v1.2.0]
+
+- OS: [e.g. Windows]
+- Blender [e.g. 4.1.0]
+- Addon Version [e.g. v1.4.0]
 
 **Additional context**
 Add any other context about the problem here. (blend file or a video clip)

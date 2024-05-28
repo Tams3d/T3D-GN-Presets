@@ -1,5 +1,5 @@
 """
-    Copyright (C) 2023  Tamil Selvan
+    Copyright (C) 2024  Tamil Selvan
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,18 +22,65 @@ import os
 from bpy.props import StringProperty
 from bpy.types import Operator, Menu
 
-# Addon Info
-bl_info = {
-    "name": "T3D GN Presets",
-    "description": "T3D GN Presets contains Node groups for Geometry Nodes for a non-destructive workflow of proceduralism",
-    "author": "Tamil Selvan",
-    "version": (1, 4, 0),
-    "blender": (4, 1, 0),
-    "location": "Geometry Node Editor > Add > T3D GN Presets",
-    "doc_url": "https://github.com/Tams3d/T3D-GN-Presets",
-    "tracker_url": "https://github.com/Tams3d/T3D-GN-Presets/issues/new/",
-    "category": "Node",
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # T3D GN Presets Menu at Geometry Node Editor > Add > T3D GN Presets

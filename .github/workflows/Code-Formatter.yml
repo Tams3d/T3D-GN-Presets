@@ -8,36 +8,32 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # fetch the entire history to ensure we can check for code changes
 
       - name: Format code with Black
         uses: psf/black@stable
         with:
-          options: --line-length 79
-          src: .
+          black_args: .
 
       - name: Check for changes
         id: check_changes
         run: |
           # Check if there are code changes
           git diff --exit-code || echo "Code changes detected"
-          echo "::set-output name=changes_detected::$(git diff --exit-code || echo 'true')"
+        continue-on-error: true
 
       - name: Commit formatted code
-        if: steps.check_changes.outputs.changes_detected == 'true'
+        if: steps.check_changes.outputs.exit_code == '0'
         run: |
           # Configure Git user
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-
+          
           # Add and commit changes if any
           git add .
           git diff --quiet && git diff --staged --quiet || git commit -m "Format code with Black"
 
       - name: Push changes
-        if: steps.check_changes.outputs.changes_detected == 'true'
+        if: steps.check_changes.outputs.exit_code == '0'
         uses: ad-m/github-push-action@v0.7.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref_name }}

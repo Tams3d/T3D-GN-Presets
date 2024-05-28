@@ -1,92 +1,84 @@
 <div align="center">
 
 # T3D GN Presets
-##  A Collection of Incredibly Useful Nodes for Geometry Nodes - Blender 4.1
 
-![T3D GN Presets (v1.4.0)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
+## A Collection of Incredibly Useful Nodes for Geometry Nodes - Blender 4.2 LTS
 
-<br>
+![T3D GN Presets (v1.5.10)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
+
 </div>
 
-# 💡 Introduction:
+## 💡 Introduction
 
-* [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/#t3d-gn-presets) contains Node groups for Geometry Nodes, which include Deformers, Fields, UV, Utilities, and much more for **free!**
-* This is an essential component of an artist’s toolkit, enabling users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools
+- [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/#t3d-gn-presets) is a versatile collection of procedural node groups, enhancing your workflow with Geometry Nodes.
+- This is an essential component of an artist’s toolkit, containing node groups for deformers, fields, UV, utilities, and much more for **free!**
+- This allows users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
 
-<div align="center">
-  
 ![List of nodes](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/6941cd0e-3ac8-430f-a444-f25a54c14d12)
 
-<br>
-</div>
-  
+## 🪄 Release Notes
 
+- **T3D-GN-Presets (v1.5.0)** for Blender 4.2 LTS is a `maintenance release` primarily made to support [Blender Extensions](https://extensions.blender.org/) and minor fixes.
+- For Blender 4.1 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
 
-# 🪄 Release Notes:
+## ⚙️ Core
 
-- **T3D-GN-Presets (v1.4.0)** released on 11.03.2024
-- For Blender 4.0 & below, check out the latest releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
+### Source Files
 
-# ⚙️ Core:
-## Source Files
+- Added [manifest](https://github.com/Tams3d/T3D-GN-Presets/blob/main/blender_manifest.toml) file which includes required meta-data.
 
-- Follow **Black** code style [(6ca7f8b)](https://github.com/Tams3d/T3D-GN-Presets/commit/6ca7f8b)
-- Renamed **geonode_groups.json** >>> [**t3d_nodegroups.json**](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodegroups.json)
-- Renamed **geonode_nodes.blend** >>> [**t3d_nodes.blend**](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodes.blend)
+### Repository
 
-## Repository
-- Renamed branch name from **Master** to [`main`](https://github.com/Tams3d/T3D-GN-Presets/tree/main) to avoid grammar conflicts.
-- Include [workflows](https://github.com/Tams3d/T3D-GN-Presets/actions) for linting
+- Updated [Bug Report Template](https://github.com/Tams3d/T3D-GN-Presets/blob/main/.github/ISSUE_TEMPLATE/bug_report.md) information to latest releases.
+- Updated [Workflows](https://github.com/Tams3d/T3D-GN-Presets/blob/main/.github/workflows/Code-Formatter.yml) to stable version.
 
-# 🎉 New Nodes, Features & Changes:
+## 🎉 New Nodes, Features & Changes
 
-## 🎆 New Features & Changes:
-- Icon in the add menu has been changed to 🔹 similar to other Geometry Node-based addons. ([c6e1442](https://github.com/Tams3d/T3D-GN-Presets/commit/c6e1442))
-- **Rotation** inputs are changed to Rotation Sockets
-- Position and Normal inputs are set as default
-- **Geometry To Spline** inputs selection. Supports Mesh, Curve, and instances. Adapted new Points to Curve node. ([0a2f609](https://github.com/Tams3d/T3D-GN-Presets/commit/0a2f609))
-- **Instancers** get option panel for inputs. ([3df94bc](https://github.com/Tams3d/T3D-GN-Presets/commit/3df94bc))
-- Dropdown menu implemented for **Delete Island** and **Replace Vector**
-- **Seamless Vector** does not require inputs for Translation anymore
+### 🎆 New Features & Changes
 
-### Deformer
-- `Deformers` no longer support direct input of instances. **Realize Instance** node must now be used prior to applying deformers. ([510b7d1](https://github.com/Tams3d/T3D-GN-Presets/commit/510b7d1)) Deformers as Assets no longer exist. ([074b970](https://github.com/Tams3d/T3D-GN-Presets/commit/074b970))
+- **Extend Curve** now extends endpoints of curves along the tangent without extrusion. Supports multiple curves with individual endpoints extension.
+- **Center Elements** supports menu for Bound Center and Element Center.
+- **Set Geometry Size** supports menu for Proportional and Fit. Proportional is set by default; geometry size is determined by the maximum bounding box size scaled to the required size. Fit tries to scale geometry to fit into the required size.
+- Replaced deprecated nodes with suitable Rotation nodes.
 
-# 🚨 Depreciated Features:
-- Removed **Shade Auto Smooth** as a replacement for the built-in [node](https://projects.blender.org/blender/blender/pulls/108014).
-- Removed `SDF` nodes ([95ae7c2](https://github.com/Tams3d/T3D-GN-Presets/commit/95ae7c2)).
-- Removed **Simple Decimate** ([95ae7c2](https://github.com/Tams3d/T3D-GN-Presets/commit/95ae7c2)).
-- Replaced **Transform Position** with **Vector Mapping**, expected the same behavior ([07b67e8](https://github.com/Tams3d/T3D-GN-Presets/commit/07b67e8)).
+### 🚨 Deprecated Features
+
+- **Vertex Slide** is deprecated due to its instability and unsuitable use cases.
+- Instances are no longer internally supported. *Realize Instances* must be explicitly used in case of **Instances**. This change is made to support *Depth* in Realize Instances.
+
+> [!IMPORTANT]  
+> Nodes with geometry input only support **Mesh, Curves, Point Clouds**.
 
 ## 🪛 Compatibility
+
 - Make sure to have a supported **Blender** version and the corresponding addon version.
-- Nodes with a **Rotation** socket are not compatible with Blender versions 4.0 and below.
-- `Deformer` assets will work as expected.
-- [Depreciate nodes](https://github.com/Tams3d/T3D-GN-Presets?tab=readme-ov-file#-depreciationed-features) may still function as expected. Nodes modified by the user will remain modified. [Changes](https://github.com/Tams3d/T3D-GN-Presets#-new-features--changes) in newer addon versions are not useful for files migrated from Blender 4.0 and below, as nodes are only appended, not [linked](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py#L170).
-- The nodes that come with the addon are regular node groups; they do not include any additional code or provide new functionality to existing ones.
+- Nodes with **Rotation** or **Matrix** sockets are not compatible with Blender versions 4.1 and below.
+- Changes in newer addon versions are not retained for files migrated from older versions to newer versions, as nodes are only appended, not [linked](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py#L170).
 - In case of any **missing data blocks**, raise an issue [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
 
-# 🎯 Development
-- Developments are happening regularly regarding bug fixes, and support for every upcoming [Blender Release](https://www.blender.org/download/releases/).
-- 🧩 **Contributions are always welcomed!**
+## 🎯 Development
 
-## 👻 Bug Reports
-- Bug reports are always welcomed in the form of reports or suggestions.
-- Suggestions can be included with brief explanations of usability.
-- Submit Bug reports and feature requests [here](https://github.com/Tams3d/T3D-GN-Presets/issues)
+- Developments are happening regularly regarding bug fixes and support for every upcoming [Blender Release](https://www.blender.org/download/releases/).
+- **🧩 Community contributions are always welcomed!**
 
-# 📂 Access to Files:
-- [ `_init_.py` ](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py) defines the addon followed by [t3d_nodegroups.json](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodegroups.json), which contains a list of categories with nodes.
-- [t3d_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodes.blend) contains all the Node-groups which are displayed under `T3D GN Presets`
+### 👻 Bug Reports
 
-# 🦄 About 
-  - Hey! I am **Tamil Selvan**, also known as **tams_3d**. I am a 16-Year-Old Self Taught Blender Artist from **India**
-  - My Vision is to create *Free* for the Blender, which requires complex setups provided in a simplified and effective way.
-  - Currently developing Presets for Geometry Nodes which are similar to tools and features of other 3D Packages and some add-ons.
-  - I believe that my work contributes to a better world for 3D Artists, Game Developers and other artists who create incredible works.
-  
-  # 🥂 Socials
-  - Catch up with me here:
-    * [Behance](https://www.behance.net/tamilselvan3d)
-    * [GitHub](https://github.com/Tams3d)
-    * [X (Twitter)](https://twitter.com/Tams_3d)
+- Bug reports are always welcomed in the form of reports or requests.
+- Submit bug reports and feature requests [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
+
+## 📂 Access to Files
+
+- [`_init_.py`](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py) defines the addon followed by [t3d_nodegroups.json](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodegroups.json), which contains a list of categories with nodes.
+- [t3d_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodes.blend) contains all the Node-groups which are displayed under `T3D GN Presets`.
+
+## 🦄 About
+
+Hey! I am **Tamil Selvan**, also known as **tams_3d**. I am a 17-year-old self-taught Blender artist from **India**. My vision is to create *free* tools for Blender, which require complex setups provided in a simplified and effective way. I am currently developing presets for Geometry Nodes that are similar to tools and features of other 3D packages and some add-ons. I believe that my work contributes to a better world for 3D artists, game developers, and other artists who create incredible works.
+
+## 🥂 Socials
+
+Catch up with me here:
+
+- [Behance](https://www.behance.net/tamilselvan3d)
+- [GitHub](https://github.com/Tams3d)
+- [X](https://x.com/Tams_3d)

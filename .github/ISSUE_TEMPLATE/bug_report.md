@@ -7,10 +7,12 @@ assignees:
 
 ---
 
-**Describe the bug**
+### **Describe the bug**
+
 A clear and precise description of what the bug is.
 
-**To Reproduce**
+### **To Reproduce**
+
 Steps to reproduce the behaviour:
 
 1. Go to '...'
@@ -18,17 +20,20 @@ Steps to reproduce the behaviour:
 3. Change value to '....'
 4. See an issue
 
-**Expected behaviour**
+### **Expected behaviour**
+
 A clear description of what you expected to happen.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
+### **Desktop (please complete the following information):**
 
 - OS: [e.g. Windows]
 - Blender [e.g. 4.1.0]
 - Addon Version [e.g. v1.4.0]
 
-**Additional context**
+### **Screenshots**
+
+If applicable, add screenshots to help explain your problem.
+
+### **Additional context**
+
 Add any other context about the problem here. (blend file or a video clip)

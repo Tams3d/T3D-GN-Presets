@@ -2,17 +2,17 @@
 
 # T3D GN Presets
 
-## A Collection of Incredibly Useful Nodes for Geometry Nodes - Blender 4.2 LTS
+## A Versatile Collection of Useful node groups for Geometry Nodes - Blender 4.2 LTS
 
-![T3D GN Presets (v1.5.10)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
+![T3D GN Presets (v1.5.0)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
 
 </div>
 
 ## 💡 Introduction
 
-- [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/#t3d-gn-presets) is a versatile collection of procedural node groups, enhancing your workflow with Geometry Nodes.
+- [T3D GN Presets](https://github.com/Tams3d/T3D-GN-Presets/#t3d-gn-presets) is a versatile collection of useful node groups for Geometry Nodes.
 - This is an essential component of an artist’s toolkit, containing node groups for deformers, fields, UV, utilities, and much more for **free!**
-- This allows users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
+- It allows users to combine multiple nodes with endless possibilities in non-destructive workflows with existing Blender tools.
 
 ## 🪄 Release Notes
 
@@ -23,20 +23,20 @@
 
 ### Source Files
 
-- Added [manifest](https://github.com/Tams3d/T3D-GN-Presets/blob/main/blender_manifest.toml) file which includes required meta-data.
+- Added [manifest](https://github.com/Tams3d/T3D-GN-Presets/blob/main/blender_manifest.toml) file containing required meta-data.
 
 ### Repository
 
 - Updated [Bug Report Template](https://github.com/Tams3d/T3D-GN-Presets/blob/main/.github/ISSUE_TEMPLATE/bug_report.md) information to latest releases.
-- Updated [Workflows](https://github.com/Tams3d/T3D-GN-Presets/blob/main/.github/workflows/Code-Formatter.yml) to stable version.
 
 ## 🎉 New Nodes, Features & Changes
 
 ### 🎆 New Features & Changes
 
-- **Extend Curve** now extends endpoints of curves along the tangent without extrusion. Supports multiple curves with individual endpoints extension.
-- **Center Elements** supports menu for Bound Center and Element Center.
-- **Set Geometry Size** supports menu for Proportional and Fit. Proportional is set by default; geometry size is determined by the maximum bounding box size scaled to the required size. Fit tries to scale geometry to fit into the required size.
+- **Extend Curve** now extends endpoints of curves along the tangent without extrusion. Supports multiple curves with individual endpoints extension.[(cf3bd9c)](https://github.com/Tams3d/T3D-GN-Presets/commit/cf3bd9c)
+- **Center Elements** supports menu for Bound Center and Element Center.[(587f9a4)](https://github.com/Tams3d/T3D-GN-Presets/commit/587f9a4)
+- **Set Geometry Size** supports menu for Proportional and Fit. Proportional is set by default; geometry size is determined by the maximum bounding box size scaled to the required size. Fit tries to scale geometry to fit into the required size.[(ec71d44)](https://github.com/Tams3d/T3D-GN-Presets/commit/ec71d44)
+- **Point Honeycomb** Centers to Origin ignoring offsets. [(77278e8)](https://github.com/Tams3d/T3D-GN-Presets/commit/77278e8)
 - Replaced deprecated nodes with suitable Rotation nodes.
 
 ### 🚨 Deprecated Features
@@ -50,7 +50,7 @@
 ## 🪛 Compatibility
 
 - Make sure to have a supported **Blender** version and the corresponding addon version.
-- Nodes with **Rotation** or **Matrix** sockets are not compatible with Blender versions 4.1 and below.
+- Nodes with Menu, Rotation and Matrix sockets are *not* compatible with Blender versions 4.1 and below.
 - Changes in newer addon versions are not retained for files migrated from older versions to newer versions, as nodes are only appended, not [linked](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py#L156).
 - In case of any **missing data blocks**, raise an issue [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
 

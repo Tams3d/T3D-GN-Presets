@@ -4,7 +4,7 @@
 
 ## A Versatile Collection of Useful node groups for Geometry Nodes - Blender 4.2 LTS
 
-![T3D GN Presets (v1.5.0)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
+![T3D GN Presets (v1.5.1)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
 
 </div>
 
@@ -16,8 +16,11 @@
 
 ## 🪄 Release Notes
 
-- **T3D-GN-Presets (v1.5.0)** for Blender 4.2 LTS is a `maintenance release` primarily made to support [Blender Extensions](https://extensions.blender.org/) and minor fixes.
+- **T3D-GN-Presets (v1.5.1)** for Blender 4.2 LTS is a `corrective release` primarily made to enhance user experience with nodes and minor changes.
 - For Blender 4.1 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
+
+> [!TIP]
+> Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) to get regular updates for Stable Releases
 
 ## ⚙️ Core
 
@@ -29,9 +32,7 @@
 
 - Updated [Bug Report Template](https://github.com/Tams3d/T3D-GN-Presets/blob/main/.github/ISSUE_TEMPLATE/bug_report.md) information to latest releases.
 
-## 🎉 New Nodes, Features & Changes
-
-### 🎆 New Features & Changes
+## 🎆 New Features & Changes
 
 - **Extend Curve** now extends endpoints of curves along the tangent without extrusion. Supports multiple curves with individual endpoints extension.[(cf3bd9c)](https://github.com/Tams3d/T3D-GN-Presets/commit/cf3bd9c)
 - **Center Elements** supports menu for Bound Center and Element Center.[(587f9a4)](https://github.com/Tams3d/T3D-GN-Presets/commit/587f9a4)
@@ -42,6 +43,7 @@
 ### 🚨 Deprecated Features
 
 - **Vertex Slide** is deprecated due to its instability and unsuitable use cases.
+- Mesh can no longer be converted to Fields, depreciated **Mesh To Field**
 - Instances are no longer internally supported. *Realize Instances* must be explicitly used in case of **Instances**. This change is made to support *Depth* in Realize Instances.
 
 > [!NOTE]  
@@ -56,7 +58,7 @@
 
 ## 🎯 Development
 
-- Developments are happening regularly regarding bug fixes and support for every upcoming [Blender Release](https://www.blender.org/download/releases/).
+- Developments are happening regularly to provide support for every upcoming [Blender Release](https://www.blender.org/download/releases/).
 - **🧩 Community contributions are always welcomed!**
 
 ### 👻 Bug Reports
@@ -68,7 +70,6 @@
 
 - [`_init_.py`](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py) defines the addon followed by [t3d_nodegroups.json](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodegroups.json), which contains a list of categories with nodes.
 - [t3d_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodes.blend) contains all the Node-groups which are displayed under `T3D GN Presets`.
-
 
 ## 🦄 About
 
@@ -82,5 +83,6 @@
 Catch up with me here:
 
 - [Behance](https://www.behance.net/tamilselvan3d)
+- [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/)
 - [GitHub](https://github.com/Tams3d)
 - [X](https://x.com/Tams_3d)

@@ -102,9 +102,7 @@
         "^ Mesh Island",
         "_",
         "Align Islands ~ Aligns Mesh Island by axis",
-        "Delete Islands ~ Deletes Mesh Island by size",
-        "_",
-        "Mesh To Field ~ Mesh to proximate Field"
+        "Delete Islands ~ Deletes Mesh Island by size"
     ],
 
     " Point Primitives": [

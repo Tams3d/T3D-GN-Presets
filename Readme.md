@@ -20,7 +20,7 @@
 - For Blender 4.1 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
 
 > [!TIP]
-> Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) to get regular updates for Stable Releases
+> Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) to get regular updates for stable releases
 
 ## ⚙️ Core
 
@@ -44,6 +44,7 @@
 
 - **Vertex Slide** is deprecated due to its instability and unsuitable use cases.
 - Mesh can no longer be converted to Fields, depreciated **Mesh To Field**
+- UV nodes requires mandatory UV input. Accesing Default UVMap attribute is no longer supported.
 - Instances are no longer internally supported. *Realize Instances* must be explicitly used in case of **Instances**. This change is made to support *Depth* in Realize Instances.
 
 > [!NOTE]  
@@ -54,22 +55,22 @@
 - Make sure to have a supported **Blender** version and the corresponding addon version.
 - Nodes with Menu, Rotation and Matrix sockets are *not* compatible with Blender versions 4.1 and below.
 - Changes in newer addon versions are not retained for files migrated from older versions to newer versions, as nodes are only appended, not [linked](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py#L156).
-- In case of any **missing data blocks**, raise an issue [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
+- In case of any **missing data blocks**, raise an issue [here](https://github.com/Tams3d/T3D-GN-Presets/issues)
 
 ## 🎯 Development
 
-- Developments are happening regularly to provide support for every upcoming [Blender Release](https://www.blender.org/download/releases/).
+- Developments are happening regularly to provide support for every upcoming [Blender Release](https://www.blender.org/download/releases/)
 - **🧩 Community contributions are always welcomed!**
 
 ### 👻 Bug Reports
 
 - Bug reports are always welcomed in the form of reports or requests.
-- Submit bug reports and feature requests [here](https://github.com/Tams3d/T3D-GN-Presets/issues).
+- Submit bug reports and feature requests [here](https://github.com/Tams3d/T3D-GN-Presets/issues)
 
 ## 📂 Access to Files
 
 - [`_init_.py`](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py) defines the addon followed by [t3d_nodegroups.json](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodegroups.json), which contains a list of categories with nodes.
-- [t3d_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodes.blend) contains all the Node-groups which are displayed under `T3D GN Presets`.
+- [t3d_nodes.blend](https://github.com/Tams3d/T3D-GN-Presets/blob/main/t3d_nodes.blend) contains all the Node-groups which are displayed under `T3D GN Presets`
 
 ## 🦄 About
 

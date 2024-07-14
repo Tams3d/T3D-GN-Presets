@@ -104,7 +104,8 @@
     "Poke Faces ~ Poke faces at face center with access to depth",
     "_",
     "^ Topology",
-    "Vertex of Index ~ Outputs index of Vertex that a Edge is attached to."
+    "_",
+    "Vertex of Edge ~ Outputs index of Vertex that a Edge is attached to."
   ],
 
   " Point Primitives": [

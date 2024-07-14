@@ -20,7 +20,7 @@
 - For Blender 4.1 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
 
 > [!TIP]
-> Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) to get regular updates for stable releases
+> Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) to get regular updates.
 
 ## ⚙️ Core
 
@@ -30,9 +30,15 @@
 
 ### Repository
 
-- Updated [Bug Report Template](https://github.com/Tams3d/T3D-GN-Presets/blob/main/.github/ISSUE_TEMPLATE/bug_report.md) information to latest releases.
+- Updated [Feature Request Template](https://github.com/Tams3d/T3D-GN-Presets/commit/2e72d4c)
 
-## 🎆 New Features & Changes
+## 🎆 New Nodes, Features & Changes
+
+### New Nodes
+
+- **Vertex of Edge** outputs the index of the vertex that a edge is attached to. [(141cbff)](https://github.com/Tams3d/T3D-GN-Presets/commit/141cbff)
+
+### Features & Changes
 
 - **Extend Curve** now extends endpoints of curves along the tangent without extrusion. Supports multiple curves with individual endpoints extension.[(cf3bd9c)](https://github.com/Tams3d/T3D-GN-Presets/commit/cf3bd9c)
 - **Center Elements** supports menu for Bound Center and Element Center.[(587f9a4)](https://github.com/Tams3d/T3D-GN-Presets/commit/587f9a4)
@@ -42,10 +48,10 @@
 
 ### 🚨 Deprecated Features
 
-- **Vertex Slide** is deprecated due to its instability and unsuitable use cases.
+- Instances are no longer internally supported. _Realize Instances_ must be explicitly used in case of **Instances**. This change is made to support _Depth_ in Realize Instances.
 - Mesh can no longer be converted to Fields, depreciated **Mesh To Field**
 - UV nodes requires mandatory UV input. Accesing Default UVMap attribute is no longer supported.
-- Instances are no longer internally supported. *Realize Instances* must be explicitly used in case of **Instances**. This change is made to support *Depth* in Realize Instances.
+- **Vertex Slide** is deprecated due to its instability and unsuitable use cases.
 
 > [!NOTE]  
 > Nodes with geometry input only support **Mesh, Curves, Point Clouds**
@@ -53,7 +59,7 @@
 ## 🪛 Compatibility
 
 - Make sure to have a supported **Blender** version and the corresponding addon version.
-- Nodes with Menu, Rotation and Matrix sockets are *not* compatible with Blender versions 4.1 and below.
+- Nodes with Menu, Rotation and Matrix sockets are _not_ compatible with Blender versions 4.1 and below.
 - Changes in newer addon versions are not retained for files migrated from older versions to newer versions, as nodes are only appended, not [linked](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py#L156).
 - In case of any **missing data blocks**, raise an issue [here](https://github.com/Tams3d/T3D-GN-Presets/issues)
 
@@ -75,7 +81,7 @@
 ## 🦄 About
 
 - Hey! I am **Tamil Selvan**, also known as **tams_3d**. I am a 17-year-old self-taught Blender artist from **India**.
-- My vision is to create *free* tools for Blender, which require complex setups provided in a simplified and effective way.
+- My vision is to create _free_ tools for Blender, which require complex setups provided in a simplified and effective way.
 - I am currently developing presets for Geometry Nodes that are similar to tools and features of other 3D packages and some add-ons.
 - I believe that my work contributes to a better world for 3D artists, game developers, and other artists who create incredible works.
 

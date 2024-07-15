@@ -1,4 +1,4 @@
-schema_version = "1.0.1"
+schema_version = "1.0.0"
 
 id = "t3d_gn_presets"
 version = "1.5.1"
@@ -14,4 +14,4 @@ license = ["SPDX:GPL-3.0-or-later"]
 copyright = ["2024 Tamil Selvan"]
 
 [permissions]
-file = "For Loading node groups from .blend file"
+files = "For Loading node groups from .blend file"

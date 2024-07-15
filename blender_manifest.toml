@@ -1,4 +1,4 @@
-schema_version = "1.0.0"
+schema_version = "1.0.1"
 
 id = "t3d_gn_presets"
 version = "1.5.1"
@@ -6,10 +6,12 @@ name = "T3D GN Presets"
 tagline = "A versatile collection of useful node groups for Geometry Nodes"
 maintainer = "Tamil Selvan"
 type = "add-on"
-permissions = ["files"]
 website = "https://github.com/Tams3d/T3D-GN-Presets"
 tags = ["Geometry Nodes"]
 
 blender_version_min = "4.2.0"
 license = ["SPDX:GPL-3.0-or-later"]
 copyright = ["2024 Tamil Selvan"]
+
+[permissions]
+file = "For Loading node groups from .blend file"

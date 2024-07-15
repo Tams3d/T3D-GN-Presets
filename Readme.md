@@ -50,7 +50,7 @@
 
 - Instances are no longer internally supported. _Realize Instances_ must be explicitly used in case of **Instances**. This change is made to support _Depth_ in Realize Instances.
 - Mesh can no longer be converted to Fields, depreciated **Mesh To Field**
-- UV nodes requires mandatory UV input. Accesing Default UVMap attribute is no longer supported.
+- UV nodes requires mandatory UV input. Accessing Default UVMap attribute is no longer supported.
 - **Vertex Slide** is deprecated due to its instability and unsuitable use cases.
 
 > [!NOTE]  

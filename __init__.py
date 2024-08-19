@@ -139,7 +139,7 @@ class NODE_OT_group_add(Operator):
 
     @classmethod
     def poll(cls, context):
-        return context.space_data.node_tree
+        return hasattr(context.space_data, 'node_tree')
 
     @classmethod
     def description(self, context, props):

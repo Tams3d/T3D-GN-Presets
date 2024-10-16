@@ -16,7 +16,7 @@
 
 ## 🪄 Release Notes
 
-- **T3D-GN-Presets (v1.5.1)** for Blender 4.2 LTS is a `corrective release` primarily made to enhance user experience with nodes and minor changes.
+- **T3D-GN-Presets (v1.5.2)** for Blender 4.2 LTS is a `corrective release` primarily made to enhance user experience with nodes and minor changes.
 - For Blender 4.1 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
 
 > [!TIP]
@@ -26,6 +26,7 @@
 
 ### Source Files
 
+- Fixed SpaceView3D' object has no attribute 'node_tree' Error. [(25bdae5)](https://github.com/Tams3d/T3D-GN-Presets/commit/25bdae528851f332fd42b9483d0886cf71013c8a)
 - Added [manifest](https://github.com/Tams3d/T3D-GN-Presets/blob/main/blender_manifest.toml) file containing required meta-data.
 
 ### Repository

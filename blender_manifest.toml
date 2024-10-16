@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "t3d_gn_presets"
-version = "1.5.1"
+version = "1.5.2"
 name = "T3D GN Presets"
 tagline = "A versatile collection of useful node groups for Geometry Nodes"
 maintainer = "Tamil Selvan"
@@ -14,4 +14,4 @@ license = ["SPDX:GPL-3.0-or-later"]
 copyright = ["2024 Tamil Selvan"]
 
 [permissions]
-files = "For Loading node groups from .blend file"
+files = "To Load node groups from .blend file"

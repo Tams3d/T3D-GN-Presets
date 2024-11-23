@@ -164,6 +164,7 @@ class NODE_OT_group_add(Operator):
         # Place Node Group at Mouse Cursor Location
         node.location = context.space_data.cursor_location
         bpy.ops.transform.translate("INVOKE_DEFAULT")
+        bpy.ops.node.options_toggle()
         return {"FINISHED"}
 
     def invoke(self, context, event):

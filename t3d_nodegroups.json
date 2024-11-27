@@ -23,6 +23,7 @@
     "Displacer ~ Displace Geometry based on Texture",
     "Shear ~ Slide Geometry along specified axis",
     "Smooth Geometry ~ Averages Position",
+    "Stretch ~ Stretches or scales Geometry in multiple axes",
     "Taper ~ Linear Thickening or Thinning at edges",
     "Twist ~ Twist along specified axis",
     "_",

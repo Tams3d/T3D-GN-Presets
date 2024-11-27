@@ -1,152 +1,152 @@
 {
-  " Curve": [
+  "Curve": [
     "^ Operators",
     "_",
-    "Extend Curve ~ Extend endpoints of Curve along Tangent",
-    "Lathe Curve ~ Mesh from Curve by rotating points around a fixed circular axis",
-    "Sweep Curve ~ Mesh from Profile Curve with even thickness",
+    "Extend Curve - Extend curve endpoints along their tangent",
+    "Lathe Curve - Mesh from curve by rotating points around a fixed axis",
+    "Sweep Curve - Mesh from profile curve with even thickness",
     "_",
-    "Align To Spline ~ Align Geometry to Spline with tangential orientation"
+    "Align To Spline - Align geometry to spline with tangential orientation"
   ],
 
-  " Curve Primitives": [
-    "Curve Ellipse ~ Curve Ellipse Primitive",
-    "Logarithmic Spiral ~ Logarithmic Spiral Primitive",
-    "Spirograph ~ Spirograph Primitive"
+  "Curve Primitives": [
+    "Curve Ellipse - Elliptical curve",
+    "Logarithmic Spiral - Logarithmic spiral curve",
+    "Spirograph - Spirograph-like curve"
   ],
 
-  " Deformers": [
+  "Deformers": [
     "^ Geometry",
     "_",
-    "Bend ~ Bend along specified axis",
-    "Bulge ~ Thickening and Thinning at the center along specified axis",
-    "Displacer ~ Displace Geometry based on Texture",
-    "Shear ~ Slide Geometry along specified axis",
-    "Smooth Geometry ~ Averages Position",
-    "Stretch ~ Stretches or scales Geometry in multiple axes",
-    "Taper ~ Linear Thickening or Thinning at edges",
-    "Twist ~ Twist along specified axis",
+    "Bend - Bend geometry along a specified axis",
+    "Bulge - Thicken or thin geometry at the center along a specified axis",
+    "Displacer - Displace geometry based on a texture",
+    "Shear - Slide geometry along a specified axis",
+    "Smooth Geometry - Average positions to smooth geometry",
+    "Stretch - Stretch or scale geometry in multiple axes",
+    "Taper - Thicken or thin geometry towards the edges",
+    "Twist - Twist geometry along a specified axis",
     "_",
     "^ Mesh",
     "_",
-    "Spherify ~ Deform Mesh to a sphere (Similar to edit mode 'To Sphere')"
+    "Spherify - Deform mesh into a sphere (similar to 'To Sphere' in edit mode)"
   ],
 
-  " Easing": [
-    "easeSine ~ Easing In and Out",
-    "easeQuad ~ Easing In and Out",
-    "easeCubic ~ Easing In and Out",
-    "easeQuart ~ Easing In and Out",
-    "easeQuint ~ Easing In and Out",
-    "easeExpo ~ Easing In and Out",
-    "easeCirc ~ Easing In and Out",
-    "easeElastic ~ Easing In and Out"
+  "Easing": [
+    "easeSine - Easing In and Out",
+    "easeQuad - Easing In and Out",
+    "easeCubic - Easing In and Out",
+    "easeQuart - Easing In and Out",
+    "easeQuint - Easing In and Out",
+    "easeExpo - Easing In and Out",
+    "easeCirc - Easing In and Out",
+    "easeElastic - Easing In and Out"
   ],
 
-  " Fields": [
-    "Box Field ~ Cubical Falloff",
-    "Cylinder Field ~ Cylindrical Falloff",
-    "Linear Field ~ Gradient Falloff",
-    "Prism Field ~ Triangular Falloff",
-    "Spherical Field ~ Spherical Falloff",
-    "Torus Field ~ Torus Falloff"
+  "Fields": [
+    "Box Field - Cubical falloff ",
+    "Cylinder Field - Cylindrical falloff ",
+    "Linear Field - Linear gradient falloff",
+    "Prism Field - Triangular falloff ",
+    "Spherical Field - Spherical falloff ",
+    "Torus Field - Toroidal falloff "
   ],
 
-  " Geometry": [
-    "Center Elements ~ Reset Location to World space Coordinates",
-    "Parent To Object ~ Parent Location, Rotation, Scale to Object",
+  "Geometry": [
+    "Center Elements - Reset geometry to world space coordinates",
+    "Parent To Object - Parent geometry's location, rotation, and scale to another object",
     "_",
-    "Set Geometry Size ~ Reset Bound Geometry",
-    "Set Geometry Visibility ~ Set Visibility in the viewport or Render",
+    "Set Geometry Size - Reset the geometry's bounding box size",
+    "Set Geometry Visibility - Control geometry visibility in viewport and render",
     "_",
-    "Geometry To Spline ~ Convert Geometry to Spline"
+    "Geometry To Spline - Convert geometry to spline"
   ],
 
-  " Input": [
+  "Input": [
     "^ Selection",
     "_",
-    "Boundary Edge Selection ~ Selection of all edges with one neighboring face ",
-    "Component Selection ~ Select Individual Components",
-    "Edge Angle Selection ~ Selection of particular edge with specified edge angle ",
-    "Edge Path Selection ~ Select shortest edge path",
-    "Face Sides Selection ~ Selection of all faces that have a specified number of edges.",
-    "Loose Edge Selection ~ Selection of all faces that do not share edges with other faces",
-    "Non-Manifold Edge Selection ~ Selection of any edge shared by more than two faces",
+    "Boundary Edge Selection - Select edges with one neighboring face",
+    "Component Selection - Select individual components (vertices, edges, faces)",
+    "Edge Angle Selection - Select edges with a specific angle between connected faces",
+    "Edge Path Selection - Select the shortest path of edges between two points",
+    "Face Sides Selection - Select faces with a specific number of edges",
+    "Loose Edge Selection - Select edges not connected to any faces",
+    "Non-Manifold Edge Selection - Select edges shared by more than two faces",
     "_",
-    "Is Empty Geometry ~ Is Geometry Empty or with No Points, used with a switch to avoid computations",
-    "Is Inside Volume ~ Is Geometry have Volume inside it",
+    "Is Empty Geometry - Check if geometry is empty or has no points",
+    "Is Inside Volume - Check if geometry contains volume",
     "_",
     "^ Select by Similarity",
     "_",
-    "Select Similar Vertices ~ Selects Similar Vertices",
-    "Select Similar Edges ~ Selects Similar Edges",
-    "Select Similar Faces ~ Selects Similar Faces",
+    "Select Similar Vertices - Select vertices with similar properties",
+    "Select Similar Edges - Select edges with similar properties",
+    "Select Similar Faces - Select faces with similar properties",
     "_",
-    "Geometry Size ~ Outputs bound geometry size, bound center and max size",
-    "Island Center ~ Outputs individual Mesh Island center"
+    "Geometry Size - Output geometry's size, center, and extent",
+    "Island Center - Output the center of individual mesh islands"
   ],
 
-  " Instancers": [
-    "Grid Instancer ~ Instance along X,Y,Z Axis",
-    "Linear Instancer ~ Instance along Straight Line",
-    "Radial Instancer ~ Instance along Arc",
-    "Spherical Instancer ~ Instance on Spherical Spiral"
+  "Instancers": [
+    "Grid Instancer - Instance objects along X, Y, and Z axes",
+    "Linear Instancer - Instance objects along a straight line",
+    "Radial Instancer - Instance objects along an arc or circular pattern",
+    "Spherical Instancer - Instance objects along a spherical spiral"
   ],
 
-  " Mesh": [
+  "Mesh": [
     "^ Mesh Island",
     "_",
-    "Align Islands ~ Aligns Mesh Island by axis",
-    "Delete Islands ~ Deletes Mesh Island by size",
+    "Align Islands - Align mesh islands along a specific axis",
+    "Delete Islands - Delete mesh islands based on their size",
     "_",
     "^ Operators",
     "_",
-    "Inset Faces ~ Inner Extrusion of faces",
-    "Match Topology ~ Transforms Mesh by Topology",
-    "Poke Faces ~ Poke faces at face center with access to depth",
+    "Inset Faces - Inner extrusion of selected faces",
+    "Match Topology - Match mesh topology to another mesh",
+    "Poke Faces - Poke selected faces at their center with adjustable depth",
     "_",
     "^ Topology",
     "_",
-    "Vertex of Edge ~ Outputs index of Vertex that a Edge is attached to."
+    "Vertex of Edge - Output the vertex index where an edge is attached"
   ],
 
-  " Point Primitives": [
-    "Point Grid ~ Point Primitive with Points over XYZ Directions with spacing",
-    "Point Honeycomb ~ Point Primitive with Points offset over X & Y to form Honeycomb-like structure",
-    "Phyllotaxis ~ Point Primitive like arrangement of leaves on a plant stem"
+  "Point Primitives": [
+    "Point Grid - Grid of points distributed over XYZ axes",
+    "Point Honeycomb - Point grid in a honeycomb pattern",
+    "Phyllotaxis - Point pattern resembling leaf arrangement on a stem"
   ],
 
-  " UV": [
+  "UV": [
     "^ Deform Mesh with UV",
     "_",
-    "UV Deform ~ Deform Mesh by another mesh's UV",
-    "UV To Mesh ~ Geometrical Representation Of UV Mapping",
+    "UV Deform - Deform mesh using another mesh's UV mapping",
+    "UV To Mesh - Geometrical representation of UV coordinates",
     "_",
     "^ Modifiers",
     "_",
-    "Flip UV ~ Flip UV along X,Y axis",
-    "UV Displace ~ Displacer for UV",
+    "Flip UV - Flip UV coordinates along the X or Y axis",
+    "UV Displace - Displace UV coordinates based on a texture map",
     "_",
     "^ UV Projection",
     "_",
-    "UV Project ~ Project UV by rotation (Defaulted to Z positive)"
+    "UV Project - Project UV coordinates based on specified rotation (defaulted to Z-axis)"
   ],
 
-  " Vector": [
+  "Vector": [
     "^ Coordinates",
     "_",
-    "Cartesian to Cylindrical ~ Cartesian to Cylindrical ",
-    "Cartesian to Spherical ~ Cartesian to Spherical",
-    "Cylindrical to Cartesian ~ Cylindrical to Cartesian",
-    "Spherical to Cartesian ~ Spherical to Cartesian",
+    "Cartesian to Cylindrical - Convert Cartesian to cylindrical coordinates",
+    "Cartesian to Spherical - Convert Cartesian to spherical coordinates",
+    "Cylindrical to Cartesian - Convert cylindrical to Cartesian coordinates",
+    "Spherical to Cartesian - Convert spherical to Cartesian coordinates",
     "_",
     "^ Vector",
     "_",
-    "Replace Vector ~ Replace specific Values in X,Y,Z",
-    "Seamless Vector ~ Make 4D Texture Seamless",
-    "Vector Clamp ~ Clamp Vector Min and Max",
-    "Vector Mapping ~ Control Location, Rotation, Scale of a Vector",
+    "Replace Vector - Replace specific X, Y, or Z components of a vector",
+    "Seamless Vector - Seamless 4D texture by adjusting vector coordinates",
+    "Vector Clamp - Clamp vector components to specified minimum and maximum values",
+    "Vector Mapping - Control location, rotation, and scale of a vector",
     "_",
-    "Is Vector Coplanar ~ Is Vectors lie on same plane"
+    "Is Vector Coplanar - Check if vectors lie on the same plane"
   ]
 }

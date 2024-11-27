@@ -62,8 +62,8 @@ def geonode_cat_generator():
                     layout.label(text=group_name.split("^ ")[1])
                     continue
 
-                # Set group name after " ~ " as tooltip
-                entry = group_name.split(" ~ ")
+                # Set group name after " - " as tooltip
+                entry = group_name.split(" - ")
                 props = layout.operator(
                     NODE_OT_group_add.bl_idname,
                     text=entry[0],

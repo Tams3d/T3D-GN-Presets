@@ -144,6 +144,8 @@
     "Replace Vector ~ Replace specific Values in X,Y,Z",
     "Seamless Vector ~ Make 4D Texture Seamless",
     "Vector Clamp ~ Clamp Vector Min and Max",
-    "Vector Mapping ~ Control Location, Rotation, Scale of a Vector"
+    "Vector Mapping ~ Control Location, Rotation, Scale of a Vector",
+    "_",
+    "Is Vector Coplanar ~ Is Vectors lie on same plane"
   ]
 }

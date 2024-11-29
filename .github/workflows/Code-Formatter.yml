@@ -19,7 +19,8 @@ jobs:
       - name: Format code with Black
         uses: psf/black@stable
         with:
-          black_args: .
+          options: "."  # Options for Black (e.g., --line-length)
+          src: "."  # The directory to format (entire repo)
 
       - name: Check for changes
         id: check_changes

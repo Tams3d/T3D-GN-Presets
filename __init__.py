@@ -79,8 +79,8 @@ def geonode_cat_generator():
             "NODE_MT_category_" + itemid,
             (bpy.types.Menu,),
             {
-                "bl_idname": "NODE_MT_category_" + itemid.replace(' ', "_"),
-                "bl_space_type": "NODE_EDITOR",   
+                "bl_idname": "NODE_MT_category_" + itemid.replace(" ", "_"),
+                "bl_space_type": "NODE_EDITOR",
                 "bl_label": item[0],
                 "draw": custom_draw,
             },
@@ -93,7 +93,7 @@ def geonode_cat_generator():
 
                 return draw_menu
 
-            bpy.utils.register_class(menu_type     )
+            bpy.utils.register_class(menu_type)
             draw_menu = generate_menu_draw(menu_type.bl_idname, menu_type.bl_label)
             bpy.types.NODE_MT_t3d_menu.append(draw_menu)
 

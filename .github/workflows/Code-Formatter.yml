@@ -1,10 +1,17 @@
 name: Code-Formatter
 
-on: [push, pull_request]
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   lint:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -17,12 +24,12 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          # Check if there are code changes
+          # Check if there are code changes after formatting
           git diff --exit-code || echo "Code changes detected"
         continue-on-error: true
 
       - name: Commit formatted code
-        if: steps.check_changes.outputs.exit_code == '0'
+        if: steps.check_changes.outputs.exit_code != '0'
         run: |
           # Configure Git user
           git config --local user.email "actions@github.com"
@@ -33,7 +40,18 @@ jobs:
           git diff --quiet && git diff --staged --quiet || git commit -m "Format code with Black"
 
       - name: Push changes
-        if: steps.check_changes.outputs.exit_code == '0'
-        uses: ad-m/github-push-action@v0.7.0
+        if: steps.check_changes.outputs.exit_code != '0'
+        uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Display changes and success message
+        if: steps.check_changes.outputs.exit_code != '0'
+        run: |
+          # Show a summary of the changes made by Black
+          echo "The code has been successfully formatted with Black."
+          echo "The following changes were made:"
+          git diff --name-only HEAD~1 HEAD
+
+          # Display success message
+          echo "Code formatting completed successfully and changes have been pushed."

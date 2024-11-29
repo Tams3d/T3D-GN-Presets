@@ -19,24 +19,20 @@ jobs:
       - name: Format code with Black
         uses: psf/black@stable
         with:
-          options: "."  # Options for Black (e.g., --line-length)
-          src: "."  # The directory to format (entire repo)
+          options: "."
+          src: "."
 
       - name: Check for changes
         id: check_changes
         run: |
-          # Check if there are code changes after formatting
           git diff --exit-code || echo "Code changes detected"
         continue-on-error: true
 
       - name: Commit formatted code
         if: steps.check_changes.outputs.exit_code != '0'
         run: |
-          # Configure Git user
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          
-          # Add and commit changes if any
           git add .
           git diff --quiet && git diff --staged --quiet || git commit -m "Format code with Black"
 
@@ -49,10 +45,7 @@ jobs:
       - name: Display changes and success message
         if: steps.check_changes.outputs.exit_code != '0'
         run: |
-          # Show a summary of the changes made by Black
           echo "The code has been successfully formatted with Black."
           echo "The following changes were made:"
           git diff --name-only HEAD~1 HEAD
-
-          # Display success message
           echo "Code formatting completed successfully and changes have been pushed."

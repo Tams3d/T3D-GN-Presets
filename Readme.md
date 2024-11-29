@@ -2,9 +2,9 @@
 
 # T3D GN Presets
 
-## A Versatile Collection of Useful node groups for Geometry Nodes - Blender 4.2 LTS
+## A Versatile Collection of Useful node groups for Geometry Nodes - Blender 4.3
 
-![T3D GN Presets (v1.5.1)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
+![T3D GN Presets (v1.6.0)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
 
 </div>
 
@@ -16,17 +16,20 @@
 
 ## 🪄 Release Notes
 
-- **T3D-GN-Presets (v1.5.2)** for Blender 4.2 LTS is a `corrective release` primarily made to enhance user experience with nodes and minor changes.
-- For Blender 4.1 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
+- **T3D-GN-Presets (v1.6.0)** for Blender 4.3 brings several changes to the user experience with the extension.
+- For Blender 4.2 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
 
 > [!TIP]
-> Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) to get regular updates.
+> Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) for regular updates.
 
 ## ⚙️ Core
 
 ### Source Files
 
-- Fixed SpaceView3D' object has no attribute 'node_tree' Error. [(25bdae5)](https://github.com/Tams3d/T3D-GN-Presets/commit/25bdae528851f332fd42b9483d0886cf71013c8a)
+- Node options are hidden by default [(4f0a415)](https://github.com/Tams3d/T3D-GN-Presets/commit/4f0a4154cae52a2e8dc3e30aec9c0004bb506a56)
+
+- Use " - " to split name and tooltip [(5f9ee44)](https://github.com/Tams3d/T3D-GN-Presets/commit/5f9ee44)
+
 - Added [manifest](https://github.com/Tams3d/T3D-GN-Presets/blob/main/blender_manifest.toml) file containing required meta-data.
 
 ### Repository
@@ -37,22 +40,8 @@
 
 ### New Nodes
 
-- **Vertex of Edge** outputs the index of the vertex that a edge is attached to. [(141cbff)](https://github.com/Tams3d/T3D-GN-Presets/commit/141cbff)
-
-### Features & Changes
-
-- **Extend Curve** now extends endpoints of curves along the tangent without extrusion. Supports multiple curves with individual endpoints extension.[(cf3bd9c)](https://github.com/Tams3d/T3D-GN-Presets/commit/cf3bd9c)
-- **Center Elements** supports menu for Bound Center and Element Center.[(587f9a4)](https://github.com/Tams3d/T3D-GN-Presets/commit/587f9a4)
-- **Set Geometry Size** supports menu for Proportional and Fit. Proportional is set by default; geometry size is determined by the maximum bounding box size scaled to the required size. Fit tries to scale geometry to fit into the required size.[(ec71d44)](https://github.com/Tams3d/T3D-GN-Presets/commit/ec71d44)
-- **Point Honeycomb** Centers to Origin ignoring offsets. [(77278e8)](https://github.com/Tams3d/T3D-GN-Presets/commit/77278e8)
-- Replaced deprecated nodes with suitable Rotation nodes.
-
-### 🚨 Deprecated Features
-
-- Instances are no longer internally supported. _Realize Instances_ must be explicitly used in case of **Instances**. This change is made to support _Depth_ in Realize Instances.
-- Mesh can no longer be converted to Fields, depreciated **Mesh To Field**
-- UV nodes requires mandatory UV input. Accessing Default UVMap attribute is no longer supported.
-- **Vertex Slide** is deprecated due to its instability and unsuitable use cases.
+- **Is Vector Coplanar** - check if vectors lie on the same plane [(79df0cc)](https://github.com/Tams3d/T3D-GN-Presets/commit/79df0cc)
+- **Stretch** - stretches or scale geometry in multiple axes [(7f2f71a)](https://github.com/Tams3d/T3D-GN-Presets/commit/7f2f71a)
 
 > [!NOTE]  
 > Nodes with geometry input only support **Mesh, Curves, Point Clouds**

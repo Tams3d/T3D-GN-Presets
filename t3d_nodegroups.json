@@ -40,7 +40,9 @@
     "easeQuint - Easing In and Out",
     "easeExpo - Easing In and Out",
     "easeCirc - Easing In and Out",
-    "easeElastic - Easing In and Out"
+    "easeBack - Easing In and Out",
+    "easeElastic - Easing In and Out",
+    "easeBounce - Easing In and Out"
   ],
 
   " Fields": [

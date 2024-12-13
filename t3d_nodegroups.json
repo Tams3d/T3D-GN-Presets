@@ -94,6 +94,16 @@
     "Radial Instancer - Instance objects along an arc or circular pattern",
     "Spherical Instancer - Instance objects along a spherical spiral"
   ],
+  "Matrix": [
+    "Diagonal Matrix - Converts to Diagonal Matrix",
+    "Scalar Matrix - Matrix with constant values in principal diagonal",
+    "Trace Matrix  - Compute the trace of a matrix (sum of the elements of principal diagonal)",
+    "Triangular Matrix - Converts to Triangular Matrix",
+    "_",
+    "Is Symmetric Matrix - Checks if the matrix is symmetric",
+    "_",
+    "Matrix Viewer - View element of matrix as Instances"
+  ],
 
   " Mesh": [
     "^ Mesh Island",

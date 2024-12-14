@@ -94,7 +94,7 @@
     "Radial Instancer - Instance objects along an arc or circular pattern",
     "Spherical Instancer - Instance objects along a spherical spiral"
   ],
-  " Matrix": [
+  "Matrix": [
     "Diagonal Matrix - Converts to Diagonal Matrix",
     "Scalar Matrix - Matrix with constant values in principal diagonal",
     "Trace Matrix  - Compute the trace of a matrix (sum of the elements of principal diagonal)",

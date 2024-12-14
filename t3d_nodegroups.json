@@ -1,5 +1,5 @@
 {
-  " Curve": [
+  "Curve": [
     "^ Operators",
     "_",
     "Extend Curve - Extend curve endpoints along their tangent",
@@ -9,13 +9,13 @@
     "Align To Spline - Align geometry to spline with tangential orientation"
   ],
 
-  " Curve Primitives": [
+  "Curve Primitives": [
     "Curve Ellipse - Elliptical curve",
     "Logarithmic Spiral - Logarithmic spiral curve",
     "Spirograph - Spirograph-like curve"
   ],
 
-  " Deformers": [
+  "Deformers": [
     "^ Geometry",
     "_",
     "Bend - Bend geometry along a specified axis",
@@ -32,7 +32,7 @@
     "Spherify - Deform mesh into a sphere (similar to 'To Sphere' in edit mode)"
   ],
 
-  " Easing": [
+  "Easing": [
     "easeSine - Easing In and Out",
     "easeQuad - Easing In and Out",
     "easeCubic - Easing In and Out",
@@ -45,7 +45,7 @@
     "easeBounce - Easing In and Out"
   ],
 
-  " Fields": [
+  "Fields": [
     "Box Field - Cubical falloff ",
     "Cylinder Field - Cylindrical falloff ",
     "Linear Field - Linear gradient falloff",
@@ -54,7 +54,7 @@
     "Torus Field - Toroidal falloff "
   ],
 
-  " Geometry": [
+  "Geometry": [
     "Center Elements - Reset geometry to world space coordinates",
     "Parent To Object - Parent geometry's location, rotation, and scale to another object",
     "_",
@@ -64,7 +64,7 @@
     "Geometry To Spline - Convert geometry to spline"
   ],
 
-  " Input": [
+  "Input": [
     "^ Selection",
     "_",
     "Boundary Edge Selection - Select edges with one neighboring face",
@@ -88,7 +88,7 @@
     "Island Center - Output the center of individual mesh islands"
   ],
 
-  " Instancers": [
+  "Instancers": [
     "Grid Instancer - Instance objects along X, Y, and Z axes",
     "Linear Instancer - Instance objects along a straight line",
     "Radial Instancer - Instance objects along an arc or circular pattern",
@@ -105,7 +105,7 @@
     "Matrix Viewer - View element of matrix as Instances"
   ],
 
-  " Mesh": [
+  "Mesh": [
     "^ Mesh Island",
     "_",
     "Align Islands - Align mesh islands along a specific axis",
@@ -122,13 +122,13 @@
     "Vertex of Edge - Output the vertex index where an edge is attached"
   ],
 
-  " Point Primitives": [
+  "Point Primitives": [
     "Point Grid - Grid of points distributed over XYZ axes",
     "Point Honeycomb - Point grid in a honeycomb pattern",
     "Phyllotaxis - Point pattern resembling leaf arrangement on a stem"
   ],
 
-  " UV": [
+  "UV": [
     "^ Deform Mesh with UV",
     "_",
     "UV Deform - Deform mesh using another mesh's UV mapping",
@@ -144,7 +144,7 @@
     "UV Project - Project UV coordinates based on specified rotation (defaulted to Z-axis)"
   ],
 
-  " Vector": [
+  "Vector": [
     "^ Coordinates",
     "_",
     "Cartesian to Cylindrical - Convert Cartesian to cylindrical coordinates",

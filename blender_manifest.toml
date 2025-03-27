@@ -9,9 +9,9 @@ type = "add-on"
 website = "https://github.com/Tams3d/T3D-GN-Presets"
 tags = ["Geometry Nodes"]
 
-blender_version_min = "4.2.0"
+blender_version_min = "4.3.0"
 license = ["SPDX:GPL-3.0-or-later"]
 copyright = ["2024 Tamil Selvan"]
 
 [permissions]
-files = "To Load node groups from .blend file"
+files = "Append node-groups from source file"

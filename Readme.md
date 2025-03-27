@@ -2,7 +2,7 @@
 
 # T3D GN Presets
 
-## A Versatile Collection of Useful node groups for Geometry Nodes - Blender 4.3
+## A Versatile Collection of Useful node groups for Geometry Nodes - Blender 4.3 & Above
 
 ![T3D GN Presets (v1.6.0)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
 
@@ -20,7 +20,7 @@
 - For Blender 4.2 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
 
 > [!TIP]
-> Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) for regular updates.
+> Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) for regular updates
 
 ## ⚙️ Core
 
@@ -30,7 +30,7 @@
 
 - Use " - " to split name and tooltip [(5f9ee44)](https://github.com/Tams3d/T3D-GN-Presets/commit/5f9ee44)
 
-- Added [manifest](https://github.com/Tams3d/T3D-GN-Presets/blob/main/blender_manifest.toml) file containing required meta-data.
+- Updated [manifest](https://github.com/Tams3d/T3D-GN-Presets/blob/main/blender_manifest.toml) file containing required meta-data.
 
 ### Repository
 
@@ -38,12 +38,29 @@
 
 ## 🎆 New Nodes, Features & Changes
 
+### Changes
+
+- Node options are now hidden by default [(4f0a415)](https://github.com/Tams3d/T3D-GN-Presets/commit/4f0a415)
+- Better Easing nodes [(dc33d97)](https://github.com/Tams3d/T3D-GN-Presets/commit/dc33d97)
+- **Is Inside Volume** now works at origin [(2d2d8de)](https://github.com/Tams3d/T3D-GN-Presets/commit/2d2d8de)
+- New evaluation method in **Sweep Curve**, outputs UVs [(35aeabe)](https://github.com/Tams3d/T3D-GN-Presets/commit/35aeabe)
+- Selection Socket in **Extend Curve** [(d422cd6)](https://github.com/Tams3d/T3D-GN-Presets/commit/d422cd6)
+
 ### New Nodes
 
 - **Is Vector Coplanar** - check if vectors lie on the same plane [(79df0cc)](https://github.com/Tams3d/T3D-GN-Presets/commit/79df0cc)
 - **Stretch** - stretches or scale geometry in multiple axes [(7f2f71a)](https://github.com/Tams3d/T3D-GN-Presets/commit/7f2f71a)
 
-> [!NOTE]  
+### Matrix Nodes
+
+- **Scalar Matrix** - takes a float value and outputs a scalar matrix
+- **Diagonal Matrix** - converts input Matrix to output only elements in principal diagonal
+- **Trace Matrix** - computes sum of elements in principal diagonal
+- **Triangular Matrix** - converts input Matrix to output only elements in Upper/Lower Diagonal
+- **Is Symmetric Matrix** - Checks if the matrix is symmetric
+- **Matrix Viewer** - outputs elements as instances
+
+> [!NOTE]
 > Nodes with geometry input only support **Mesh, Curves, Point Clouds**
 
 ## 🪛 Compatibility

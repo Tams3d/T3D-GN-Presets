@@ -68,7 +68,6 @@
 - Make sure to have a supported **Blender** version and the corresponding addon version.
 - Nodes with Menu, Rotation and Matrix sockets are _not_ compatible with Blender versions 4.1 and below.
 - Changes in newer addon versions are not retained for files migrated from older versions to newer versions, as nodes are only appended, not [linked](https://github.com/Tams3d/T3D-GN-Presets/blob/main/__init__.py#L156).
-- In case of any **missing data blocks**, raise an issue [here](https://github.com/Tams3d/T3D-GN-Presets/issues)
 
 ## 🎯 Development
 

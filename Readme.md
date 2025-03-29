@@ -45,6 +45,7 @@
 - **Is Inside Volume** now works at origin [(2d2d8de)](https://github.com/Tams3d/T3D-GN-Presets/commit/2d2d8de)
 - New evaluation method in **Sweep Curve**, outputs UVs [(35aeabe)](https://github.com/Tams3d/T3D-GN-Presets/commit/35aeabe)
 - Selection Socket in **Extend Curve** [(d422cd6)](https://github.com/Tams3d/T3D-GN-Presets/commit/d422cd6)
+- Fixed Selection Socket links [(27d988a)](https://github.com/Tams3d/T3D-GN-Presets/commit/27d988a)
 
 ### New Nodes
 
@@ -86,7 +87,7 @@
 
 ## 🦄 About
 
-- Hey! I am **Tamil Selvan**, also known as **tams_3d**. I am a 17-year-old self-taught Blender artist from **India**.
+- Hey! I am **Tamil Selvan**, also known as **tams_3d**. I am a 18-year-old self-taught Blender artist from **India**.
 - My vision is to create _free_ tools for Blender, which require complex setups provided in a simplified and effective way.
 - I am currently developing presets for Geometry Nodes that are similar to tools and features of other 3D packages and some add-ons.
 - I believe that my work contributes to a better world for 3D artists, game developers, and other artists who create incredible works.

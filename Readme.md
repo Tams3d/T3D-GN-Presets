@@ -17,7 +17,7 @@
 ## 🪄 Release Notes
 
 - **T3D-GN-Presets (v1.6.0)** for Blender 4.4 brings several changes to the user experience with the extension.
-- For Blender 4.2 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
+- For Blender 4.3 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
 
 > [!TIP]
 > Download from [Blender Extensions](https://extensions.blender.org/add-ons/t3d-gn-presets/) for regular updates

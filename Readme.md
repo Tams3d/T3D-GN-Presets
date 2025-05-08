@@ -44,7 +44,7 @@
 - Better Easing nodes [(dc33d97)](https://github.com/Tams3d/T3D-GN-Presets/commit/dc33d97)
 - **Is Inside Volume** now works at origin [(2d2d8de)](https://github.com/Tams3d/T3D-GN-Presets/commit/2d2d8de)
 - New evaluation method in **Sweep Curve**, outputs UVs [(35aeabe)](https://github.com/Tams3d/T3D-GN-Presets/commit/35aeabe)
-- Selection Socket in **Extend Curve** [(d422cd6)](https://github.com/Tams3d/T3D-GN-Presets/commit/d422cd6)
+- Exposed selection socket in supported nodes.
 - Fixed Selection Socket links [(27d988a)](https://github.com/Tams3d/T3D-GN-Presets/commit/27d988a)
 
 ### New Nodes

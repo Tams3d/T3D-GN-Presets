@@ -2,7 +2,7 @@
 
 # T3D GN Presets
 
-## A Versatile Collection of Useful node groups for Geometry Nodes - Blender 4.3 & Above
+## A Versatile Collection of Useful node groups for Geometry Nodes - Blender 4.4 & Above
 
 ![T3D GN Presets (v1.6.0)](https://github.com/Tams3d/T3D-GN-Presets/assets/106262964/c3efe10c-5478-4ad7-954a-8a838cf1a0b1)
 
@@ -16,7 +16,7 @@
 
 ## 🪄 Release Notes
 
-- **T3D-GN-Presets (v1.6.0)** for Blender 4.3 brings several changes to the user experience with the extension.
+- **T3D-GN-Presets (v1.6.0)** for Blender 4.4 brings several changes to the user experience with the extension.
 - For Blender 4.2 & below, check out previous releases [here](https://github.com/Tams3d/T3D-GN-Presets/releases)
 
 > [!TIP]
